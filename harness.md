@@ -31,7 +31,8 @@ The creator asked for a full audit against the [course requirements](https://zli
 - **Self-trial.** [submission/pilot/self-trial.md](submission/pilot/self-trial.md) is a 6-video counterbalanced protocol. Assisted clips use saved runs, so it needs no new AI spend. The worksheet gained video name, length, concern count and AI-wait fields.
 - **Demo video.** [submission/demo-video-script.md](submission/demo-video-script.md) is a 2:50 shot list. It is added to the package allowlist.
 - **Verification.** 597 Python tests (340 backend, 257 top-level), 112 frontend tests, contract check, production build and the course, video-analysis and replay fixtures all passed with zero provider requests (`submission/evidence/verification-2026-10-25.json`).
-- **Open:** the timed self-trial (Mason), GitHub publication and the fresh-clone receipt, and Canvas upload. No outside-user pilot or labeled accuracy study exists.
+- **Published:** [github.com/mason-lewis/industrial-safety](https://github.com/mason-lewis/industrial-safety) (public, 581 allowlisted files). A cold clone from GitHub with `.env` only in the parent folder reached a healthy `./start --offline` in 63 s, and the parent key was detected (`submission/evidence/fresh-clone.json`). Re-publish after rebuilding: package to a new folder, then copy it over a clone of the repo and commit.
+- **Open:** the timed self-trial (Mason), a re-push with its results, and the Canvas upload. No outside-user pilot or labeled accuracy study exists.
 
 ## Slides restyle and title slide (2026-10-25)
 

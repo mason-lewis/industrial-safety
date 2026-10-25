@@ -1466,8 +1466,8 @@
   },
   {
     "path": "docs/course-requirements.md",
-    "bytes": 6995,
-    "sha256": "8c918605fb978d0a4915cc7b14a5e17989d292d0b2d96dfed834fb7556b84119"
+    "bytes": 7194,
+    "sha256": "5bef489469527c9daca4a6407bbee712bb28b87521ed5de34e83071f6acbb0b8"
   },
   {
     "path": "docs/course-research.md",
@@ -2176,8 +2176,8 @@
   },
   {
     "path": "harness.md",
-    "bytes": 296753,
-    "sha256": "9b458027e4199501052d593b0adde60f52cee40743136c1c403bc82b7634bc6a"
+    "bytes": 297168,
+    "sha256": "8a91fbebab48c313a8ee331ae954f38915846fd97964eb7ce5df113e32551b3d"
   },
   {
     "path": "pyproject.toml",
@@ -2446,8 +2446,8 @@
   },
   {
     "path": "submission/evidence/fresh-clone.json",
-    "bytes": 637,
-    "sha256": "8def7487d5d0b9d9fffe7435327f6682c7b79d78f99c5c3c268f38dd2b60bb77"
+    "bytes": 790,
+    "sha256": "ebca366c5d9192574d816e0d848ba1503f34cc98572e594ca95d74b493aeee42"
   },
   {
     "path": "submission/evidence/frontend-build.txt",

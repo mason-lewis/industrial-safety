@@ -17,7 +17,7 @@ Goals and the offline checker for this table: [submission-goals.md](submission-g
 | R5 | Impact, 5 points | Report §7 renders [self-trial.json](../submission/evidence/self-trial.json) using the [self-trial protocol](../submission/pilot/self-trial.md) | **Open: Mason must record the timed self-trial** |
 | R6 | Report design, 2 points | `report.html`, 14 letter pages, embedded images, no relative links; built by `scripts/build_course_artifacts.py` | Done |
 | S1 | Slides, 8 points | `slides.html`, 10 slides, reveal.js 6.0.2 from jsDelivr, embedded screenshots and diagram | Done; impact slide fills in with the self-trial |
-| P1 | Public repo, README, `.env.example`, no secrets | `scripts/package_submission.py` allowlist; G4 secret scan | Publish after creator approval |
+| P1 | Public repo, README, `.env.example`, no secrets | [github.com/mason-lewis/industrial-safety](https://github.com/mason-lewis/industrial-safety), built from the `scripts/package_submission.py` allowlist (581 files); G4 secret scan | Published 2026-10-25; GitHub clone healthy in 63 s with cold caches and `.env` in the parent folder |
 | P2 | Canvas: repo link, report.html, slides.html, optional video | [Demo video script](../submission/demo-video-script.md) | Open (manual) |
 
 The 2026-10-24 report and slides are archived in `submission/evidence/archive-20261024/`.
@@ -47,7 +47,7 @@ The 2026-10-24 report and slides are archived in `submission/evidence/archive-20
 
 - [x] Report and slides rebuilt from measured evidence (2026-10-25): token counts from the audit log, six-screenshot trace, prompt-injection test output, cost before/after.
 - [ ] Timed self-trial recorded in `submission/evidence/self-trial.json`, then report and slides rebuilt.
-- [ ] Public GitHub repository published from the allowlist package; fresh clone started with `.env` one folder up (`submission/evidence/fresh-clone.json`).
+- [x] Public GitHub repository published from the allowlist package; GitHub clone started with `.env` one folder up in 63 s (`submission/evidence/fresh-clone.json`).
 - [ ] `scripts/check_submission.py` passes G1–G7.
 - [ ] Submit the repository URL, report.html, slides.html and the optional 2–3 minute video on Canvas before Monday 6 p.m.
 - [ ] Still open after submission: independent 8/8/8 labels and a pilot with an outside safety coordinator.
