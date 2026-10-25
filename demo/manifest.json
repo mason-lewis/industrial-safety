@@ -1,0 +1,235 @@
+{
+  "dataset": "Video Dataset for Safe and Unsafe Behaviours",
+  "authors": "\u00d6nal and Dand\u0131l",
+  "year": 2024,
+  "version": 1,
+  "doi": "10.17632/xjmtb22pff.1",
+  "url": "https://data.mendeley.com/datasets/xjmtb22pff/1",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "location": "Eski\u015fehir, T\u00fcrkiye",
+  "independent_labels_complete": false,
+  "limitations": [
+    "Original behavior labels are not visible-hazard ground truth.",
+    "Raw recording/session identity is unavailable; independence between clips is unverified.",
+    "No US jurisdiction or recording calendar time is established."
+  ],
+  "clips": [
+    {
+      "id": "clip-001",
+      "file": "videos/clip-001.mp4",
+      "sha256": "715f3c4ed99b88bec32e852025504b1f90bfe97d08b85b102bb9320a3728cc0d",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": true
+    },
+    {
+      "id": "clip-002",
+      "file": "videos/clip-002.mp4",
+      "sha256": "9f11fddc7a9eccdbd1ca3d7012bf17c3fcdaf7533f7f4fd856b6c1686c106096",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-003",
+      "file": "videos/clip-003.mp4",
+      "sha256": "087cb80f14f07f266cee5397735d270bc0fb78b3ac725c9d570d3ea07c919c87",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-004",
+      "file": "videos/clip-004.mp4",
+      "sha256": "fa2c260568f183b154ab6b964bb3d0755be5710723eb6a5a8c35ba2daf52f881",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": true
+    },
+    {
+      "id": "clip-005",
+      "file": "videos/clip-005.mp4",
+      "sha256": "9244e31e1a9cafeb1a490c4ce14d82a26811967e42ebc7ede1ae919e14ca8e8b",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-006",
+      "file": "videos/clip-006.mp4",
+      "sha256": "39d1cc8ef8775c56e2c56f37968681e92c34e626e74026cf0942e5e03d48cc49",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-007",
+      "file": "videos/clip-007.mp4",
+      "sha256": "c8b6a328f78300e52409d6bb94f50a8c70a04d633f29df22eee07e13ff8ff9a6",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": true
+    },
+    {
+      "id": "clip-008",
+      "file": "videos/clip-008.mp4",
+      "sha256": "0f21ac38a587c1e8a4364085919b146525c20cc1f3a53ca97d315ec544022c8d",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-009",
+      "file": "videos/clip-009.mp4",
+      "sha256": "67c91affa782215b6397a39eabb848cfe5a9bf26062bde38b1636349962d5238",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-010",
+      "file": "videos/clip-010.mp4",
+      "sha256": "bf22a7d43e7764e69b5174330a189d03acb4e4cbb413e16e2af4430faf78d897",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": true
+    },
+    {
+      "id": "clip-011",
+      "file": "videos/clip-011.mp4",
+      "sha256": "f81d987ffa5909224c3329e93edc1acff735a9f0ca68efe2e0a5e9ff8ae29f47",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-012",
+      "file": "videos/clip-012.mp4",
+      "sha256": "83da399838e811b3b3b3c88a755f88fcd213dfcb46eda4e59778958d3b94e69e",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-013",
+      "file": "videos/clip-013.mp4",
+      "sha256": "91a65b528cc69c5c1445fde7cdf6ba963f99f5e7c847ab6cb8ef65990ede01ff",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": true
+    },
+    {
+      "id": "clip-014",
+      "file": "videos/clip-014.mp4",
+      "sha256": "f72cccd3c8fd366b5837137026331c486b41f6320dca95aae355b4d942b234d4",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-015",
+      "file": "videos/clip-015.mp4",
+      "sha256": "9cf2b6365e24688a2795d19771f9c219badb7677ffa3b4c49e819ad04947e0d4",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-016",
+      "file": "videos/clip-016.mp4",
+      "sha256": "d361fcd22f497d6b8ad22db614dd7a5d30400085b1033a4ec42a26f4ce2aa4e6",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": true
+    },
+    {
+      "id": "clip-017",
+      "file": "videos/clip-017.mp4",
+      "sha256": "c0ae6af7c992d42ec88c3c0c02eeecc0fb347bfed887e2e9ab39218bc79cc885",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-018",
+      "file": "videos/clip-018.mp4",
+      "sha256": "31e0cdd88025822b7bf5c8fa3e8219dc72c0b098b0a79a3a16192a9fa24d39b7",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-019",
+      "file": "videos/clip-019.mp4",
+      "sha256": "fd1d16a4d8a71b9ae23ffad3ece724ff0a35c0a5c61479630f5a25f119461075",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": true
+    },
+    {
+      "id": "clip-020",
+      "file": "videos/clip-020.mp4",
+      "sha256": "7079b0a8cef4bf0ac60dd3b0cac71450965e300aeb5c54d1b2945c0310b8790f",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-021",
+      "file": "videos/clip-021.mp4",
+      "sha256": "a22cba1c7373bbb4f30c78810c1823da97ebb37ed3e59b41a981329e6d6860ab",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-022",
+      "file": "videos/clip-022.mp4",
+      "sha256": "d6c4fc81f181491321a62c63890c5e781064f5036bdca78fd6940b4fed392922",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": true
+    },
+    {
+      "id": "clip-023",
+      "file": "videos/clip-023.mp4",
+      "sha256": "ba4872f0036d5f3f37b55076bb71bc406f7f700bc32493d0dc809ce714583023",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    },
+    {
+      "id": "clip-024",
+      "file": "videos/clip-024.mp4",
+      "sha256": "c96550375c9891ba98ffc4c28eee37d8447c84603b57c986b12caf7612bfc3d7",
+      "original_split": "test",
+      "source_group": "unresolved-recording-group",
+      "independent_label": null,
+      "app_demo": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[project]
+name = "safety-app"
+version = "0.2.0"
+description = "Local video safety review with stock person detection and bounded agents"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "openai==3.26.0", "fastapi==0.142.2", "uvicorn[standard]==0.54.0", "pydantic-ai-slim[openai]==2.54.0",
+  "imageio-ffmpeg==0.6.0", "python-dotenv==1.2.4", "av==19.0.1", "opencv-python==5.0.0.93",
+]
+
+[project.optional-dependencies]
+people = ["rfdetr==1.11.1", "supervision==0.30.6"]
+cv = ["rfdetr[train]==1.11.1", "supervision==0.30.6", "trackers==2.6.1"]
+
+# The root uv.lock is the authoritative development lock. Run from the repo root.
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+safety_app = "src/safety_app"
+app = "app"
+
+[tool.setuptools.packages.find]
+where = ["src", "."]
+include = ["safety_app*", "app*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.md"]

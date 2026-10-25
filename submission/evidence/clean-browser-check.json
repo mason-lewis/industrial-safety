@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-23",
+  "scope": "Isolated allowlist installation with no CV/training extras or credentials",
+  "review_runs": [
+    {
+      "id": "5b34bde4-d6cf-4b21-a6df-6ae68760b555",
+      "kind": "review",
+      "state": "ended",
+      "generation": 0,
+      "cutoff_ms": 10440,
+      "coverage_complete": true,
+      "windows": 2,
+      "pending_specialists": 0,
+      "provider_requests": 0
+    },
+    {
+      "id": "844f0107-c414-4397-9c33-220f6ba41310",
+      "kind": "live",
+      "state": "ended",
+      "generation": 0,
+      "cutoff_ms": 10440,
+      "coverage_complete": true,
+      "windows": 2,
+      "pending_specialists": 0,
+      "provider_requests": 0
+    },
+    {
+      "id": "e22f55b3-52f4-4403-9d5a-63f4bc644480",
+      "kind": "live",
+      "state": "paused",
+      "generation": 1,
+      "cutoff_ms": 0,
+      "coverage_complete": false,
+      "windows": 0,
+      "pending_specialists": 0,
+      "provider_requests": 0
+    }
+  ],
+  "observed_ui_actions": [
+    "Full Review submission and completion",
+    "Live opening, 1x playback, final tail and EOF",
+    "Restart creates new run/generation",
+    "Navigating from playing Live to Review pauses the source"
+  ],
+  "claims_excluded": [
+    "Hosted visual accuracy",
+    "Actual model cost",
+    "Real-user trial",
+    "GitHub clone"
+  ]
+}

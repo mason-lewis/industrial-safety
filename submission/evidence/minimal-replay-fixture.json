@@ -1,0 +1,12 @@
+{
+  "data_kind": "fictional_plumbing_only",
+  "output_directory": "/private/tmp/course-minimal-replay-20261023",
+  "replay_job": "ac2a4159-1d81-4bf6-a08d-1e56fda0d571",
+  "event_id": "9995f6af-4875-45ae-9d9b-24a9515a377b",
+  "review_job": "4356474d-81f7-451d-92d7-6dc8e790cb43",
+  "finding_id": "fictional-finding",
+  "decision_id": "b781a634-a73e-4c49-bc88-0f530a2b571f",
+  "specialist_calls": 2,
+  "provider_requests": 0,
+  "accuracy_claim": null
+}

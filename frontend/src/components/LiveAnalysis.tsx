@@ -1,0 +1,37 @@
+import {useEffect,useState} from 'react';
+import type {LabConfig,SceneReview} from '../types/contracts';
+import type {BudgetStatus} from '../api/generated';
+import type {Session} from '../types/api';
+import {request} from '../api/client';
+import {time} from './VideoView';
+import {money,budgetFields,reviewStatus} from './budgetInfo';
+
+type SceneState={live_review?:SceneReview|null;pending_review?:SceneReview|null;skipped_windows?:number;budget_exhausted?:boolean;image_allowance_usd?:number|null};
+const range=(r:SceneReview)=>`${time(r.packet.start_ms)}–${time(r.packet.cutoff_ms)}`;
+export default function LiveAnalysis({scene,session,reviews,config,enabled,busy,onSave,onInspect,onError}:{scene:unknown;session:Session|null;reviews:SceneReview[];config:LabConfig;enabled:boolean;busy:boolean;onSave:(c:Partial<LabConfig>)=>Promise<boolean>;onInspect:(id:string)=>void;onError:(e:string)=>void}){
+ const data=(scene??{}) as SceneState;
+ const belongs=(r:SceneReview)=>!!session&&r.session_id===(session.session_id??session.id)&&r.run_generation===session.run_generation;
+ const active=data.live_review&&belongs(data.live_review)?data.live_review:null;
+ const pending=data.pending_review&&belongs(data.pending_review)?data.pending_review:null;
+ const [cap,setCap]=useState(config.review_budget_usd==null?'':config.review_budget_usd.toFixed(4));
+ const [budgets,setBudgets]=useState<BudgetStatus|null>(null),[limits,setLimits]=useState<Record<string,string>>({}),[saving,setSaving]=useState(false);
+ useEffect(()=>setCap(config.review_budget_usd==null?'':config.review_budget_usd.toFixed(4)),[config.review_budget_usd]);
+ useEffect(()=>{let live=true;const refresh=()=>request<BudgetStatus>('/budgets').then(b=>{if(live)setBudgets(b);}).catch(e=>{if(live)onError(String(e));});refresh();const timer=setInterval(refresh,2000);return()=>{live=false;clearInterval(timer);};},[onError]);
+ const capValid=cap===''||(Number.isFinite(Number(cap))&&Number(cap)>0);
+ const keys=budgetFields.map(f=>f.key);
+ const limitsValid=keys.every(k=>Number.isFinite(Number(limits[k]??budgets?.limits[k]))&&Number(limits[k]??budgets?.limits[k])>=0);
+ const saveGlobal=async()=>{setSaving(true);try{await request('/budgets/settings',Object.fromEntries(keys.map(k=>[k,Number(limits[k]??budgets?.limits[k])])),'PUT');setBudgets(await request('/budgets'));setLimits({});}catch(e){onError(String(e));}finally{setSaving(false);}};
+ const phase=active?String(active.settings?.live_phase??'preparing_images').replaceAll('_',' '):!enabled?'AI off':pending?'Review queued':'Waiting for fresh footage';
+ const trace=(active?.settings?.tool_trace??[]) as {tool:string;arguments:unknown;result:unknown}[];
+ const age=active&&typeof active.settings?.started_at_unix_ms==='number'?Math.max(0,(Date.now()-active.settings?.started_at_unix_ms)/1000):0;
+ return <section className="panel live-analysis" aria-label="Live AI processing"><div className="panel-title"><h2>Live AI processing</h2><span className={`badge ${active?'blue':'amber'}`} role="status">{phase}</span></div>
+ <div className="live-metrics"><div><small>Analyzing source period</small><strong>{active?range(active):'No active review'}</strong><span>{active?`${age.toFixed(0)} s elapsed · ${(active.packet.trigger??'scheduled').replaceAll('_',' ')}`:'Updates every 2 seconds'}</span></div><div><small>Next queued period</small><strong>{pending?range(pending):'None queued'}</strong><span>One active review · one newest queued period</span></div><div><small>Current review</small><strong>{active?.usage?.requests??0} requests · {active?.received_images?.length??0} images</strong><span>{active?.usage?.input_tokens??0} input / {active?.usage?.output_tokens??0} output tokens reported</span></div></div>
+ <p className="muted">Each new scene review uses fresh footage after the previous review cutoff. The configured window is a maximum lookback. Skipped/coalesced windows: {data.skipped_windows??0}. Sampled images do not establish continuous coverage.</p>
+ {budgets?.stopped&&<p role="status" className="amber-text">Global paid-request stop is on.</p>}{(data.budget_exhausted||['blocked_pricing','blocked_media','blocked_request','budget_exhausted'].includes(reviews.at(-1)?.status??''))&&<p className="amber-text">A review was blocked by request limits. Inspect its error below. USD budgets do not change image or token ceilings. New periods check updated budgets.</p>}
+ <form className="live-budget" onSubmit={async e=>{e.preventDefault();if(capValid)await onSave({review_budget_usd:cap===''?null:Number(cap)});}}><label>Playback AI budget (USD)<input aria-label="Playback AI budget (USD)" type="number" min="0.0001" step="0.0001" placeholder="Global limits only" value={cap} onChange={e=>setCap(e.target.value)}/></label><button className="primary" disabled={busy||!capValid}>Apply budget</button><span className="muted">Applied: {config.review_budget_usd==null?'global limits only':money(config.review_budget_usd)} · blank removes the playback cap.</span></form><p className="muted">Playback limit: shared by scene reviews until you restart, seek, or open a new video. The setting is reused for the next playback generation. Daily, monthly, workflow and agent limits also apply.</p>
+ <details><summary>Global budgets &amp; remaining funds</summary><div className="budget-windows">{Object.entries(budgets?.windows??{}).map(([name,w])=><article key={name}><h3>{name==='day'?'Today (UTC)':'This month (UTC)'}</h3><strong>{money(w.remaining_usd)} available</strong><p>Spent {money(w.spent_usd)} · Held for requests {money(w.reserved_usd)}</p><small>Limit {money(w.limit_usd)} · period {w.window_utc}</small></article>)}</div><form className="budget-fields" onSubmit={e=>{e.preventDefault();void saveGlobal();}}>{budgetFields.map(({key,label,description})=><label key={key}>{label}<input aria-label={label} type="number" required min="0" step="0.0001" value={limits[key]??(budgets?.limits[key]==null?'':budgets.limits[key].toFixed(4))} onChange={e=>setLimits(old=>({...old,[key]:e.target.value}))}/><small>{description}</small></label>)}<button disabled={saving||!budgets||!limitsValid}>Apply global budgets</button></form><p className="muted">Available = limit − spent − held funds. Held funds cover pending requests and unresolved charges. Raising a limit keeps past spending and reservations. Values are rounded to four decimals for display; accounting retains full precision.</p></details>
+ <p className="muted">Monitoring image allowance: {data.image_allowance_usd==null?'not configured':`${money(data.image_allowance_usd)} per image per request`}. This is a conservative operator allowance for budget checks, not verified provider image pricing. Retransmitted images count again.</p>
+ {active&&<><button onClick={()=>onInspect(active.id??'')}>Inspect active review and images</button><details open><summary>Current request &amp; tool activity ({trace.length})</summary>{trace.length?trace.map((t,i)=><div className="live-trace" key={i}><strong>{i+1}. {t.tool.replaceAll('_',' ')}</strong><pre>{JSON.stringify({arguments:t.arguments,result:t.result},null,2)}</pre></div>):<p className="muted">Preparing the image packet before the first request.</p>}</details></>}
+ <div className="live-periods" aria-label="Recent review periods">{reviews.slice(-6).reverse().map(r=><button key={r.id} onClick={()=>onInspect(r.id??'')}><strong>{range(r)}</strong><span>{reviewStatus(r)} · {r.packet.refs.length} sampled frames</span>{r.error&&<span className="amber-text">{r.error}</span>}</button>)}</div>
+ </section>;
+}

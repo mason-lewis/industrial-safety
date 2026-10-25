@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-23",
+  "change": "Real AI default, persistent global stop, retired sample library",
+  "python_tests": 357,
+  "frontend_tests": 67,
+  "contracts": "passed",
+  "frontend_build": "passed",
+  "fixtures": {
+    "video_analysis": "passed; 0 provider requests",
+    "safety_replay": "passed; 0 provider requests",
+    "ten_minute_review": {
+      "windows": 60,
+      "frames": 120,
+      "pending_specialists": 59,
+      "provider_requests": 0
+    }
+  },
+  "browser_checks": [
+    "Live and Review use real AI",
+    "No demo selector in main settings",
+    "No sample cards; source API returns an empty library",
+    "Top switch disables new analysis",
+    "Off survives app restart",
+    "AI left on for operator validation"
+  ],
+  "caps_usd": {
+    "run": 0.15,
+    "daily": 2,
+    "monthly": 20
+  },
+  "historical_reservations_preserved": true,
+  "sample_library_entries_retired": 9,
+  "historical_footage_preserved": true,
+  "provider_access_tested": false,
+  "paid_test_calls": 0,
+  "pushed": false,
+  "files": {
+    "scripts/start_app.py": "ede226413bfdfdbb82fcd3b0aef16f8e016580b293708808e92ae618db64ab2b",
+    "backend/src/safety_app/infrastructure/ai_control.py": "ac2755b0219ce68e2e386490fcb13ec0c4d2c00f423687ac27677c596f53d88d",
+    "backend/src/safety_app/infrastructure/library_visibility.py": "63b11a3e6a6e0f0ffcb02a263d1b5bf15c71045b28147477bd15324fd349dd25",
+    "backend/src/safety_app/infrastructure/demo.py": "dd2e17adefc3c240b6216ed261cd00cc8b6c1fc165f89a6e2cd5e5882409586d",
+    "backend/src/safety_app/api/routes/operations.py": "7eddd6acfa3dc6fb47143e20ae453be537ffe887062c8eba9c883c087a389ed3",
+    "backend/src/safety_app/agents/shared/factory.py": "bf3edee814a296229defa9182edd35ec48aee6d0b33fa43eb1420cdf15c4d8e5",
+    "frontend/src/hooks/useAiControl.tsx": "321e900a466f1bc3280d7530b35530dfdb359fba1c9f263d615e0be6ff458611",
+    "frontend/src/hooks/useReviewRun.ts": "08d0fc9f327fcdc26195980abf73ef0d70edefdfefd544348976073f035a2501",
+    "frontend/src/app/Navigation.tsx": "d43f58ff5ebe5b2600e8d7559f38da60222d5ebd175b721e6a86fe9af357b8e7",
+    "frontend/src/components/ReviewRunWorkspace.tsx": "94f578c33c34f4e7af8d60064d873d3c99e9fcb3ba9cbc128c9db4c64548ddb6",
+    "frontend/src/components/reviewRun.css": "9dd7c9d37b583001307e981a70eb603579586d68884e6c8fde705f9a2449b46f",
+    "frontend/src/api/generated.ts": "a99f26323a1e95861ca8e8760b492f33313064a565e7f32c11f9e508f1706766"
+  }
+}

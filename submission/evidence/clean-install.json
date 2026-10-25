@@ -1,0 +1,51 @@
+{
+  "kind": "isolated_cold_dependency_install",
+  "date": "2026-10-23",
+  "seconds": 21.9,
+  "steps": [
+    {
+      "command": [
+        "./scripts/uv",
+        "sync",
+        "--frozen"
+      ],
+      "exit_code": 0,
+      "seconds": 9.369
+    },
+    {
+      "command": [
+        "npm",
+        "--prefix",
+        "frontend",
+        "ci",
+        "--no-audit",
+        "--no-fund"
+      ],
+      "exit_code": 0,
+      "seconds": 1.575
+    },
+    {
+      "command": [
+        "npm",
+        "--prefix",
+        "frontend",
+        "run",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 1.309
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-c",
+        "import importlib.util; from safety_app.api.main import app; assert importlib.util.find_spec(\"rfdetr\") is None; assert importlib.util.find_spec(\"torch\") is None; print(\"Core API import works without CV/training packages\")"
+      ],
+      "exit_code": 0,
+      "seconds": 9.647
+    }
+  ],
+  "success": true,
+  "prerequisites": "Existing macOS, python3 bootstrap, Node/npm and internet; no developer data, models, credentials, .venv, uv/npm caches copied. OS shared libraries and DNS/network state are not cold.",
+  "repository_clone_included": false
+}

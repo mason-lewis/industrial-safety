@@ -1,0 +1,897 @@
+{
+  "data_kind": "synthetic_fixture_only",
+  "seconds": 600,
+  "elapsed_seconds": 21.916,
+  "coverage_complete": true,
+  "completed_windows": 60,
+  "frames": 720,
+  "concerns": 120,
+  "pending_specialists": 119,
+  "fixture_model_calls": 125,
+  "provider_requests": 0,
+  "provider_cost_usd": null,
+  "root": "/var/folders/k0/tk0wm5cn3ldflcytl59_dvpm0000gn/T/industrial-course-fixture-kwz0w5zs",
+  "run_id": "e37640d2-1493-4dc7-8889-86db3f5e1d90",
+  "trace": [
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "video_observer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "4e082fed-e759-4862-ad7b-22188c033c65",
+      "fake_provider": true
+    },
+    {
+      "agent": "challenge_reviewer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "8e1df702-2729-4e89-963a-67d8c4e7c8bd",
+      "fake_provider": true
+    },
+    {
+      "agent": "safety_reviewer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "8e1df702-2729-4e89-963a-67d8c4e7c8bd",
+      "fake_provider": true
+    },
+    {
+      "agent": "specialist_emergency",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "8e1df702-2729-4e89-963a-67d8c4e7c8bd",
+      "fake_provider": true
+    },
+    {
+      "agent": "specialist_applicability",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "8e1df702-2729-4e89-963a-67d8c4e7c8bd",
+      "fake_provider": true
+    },
+    {
+      "agent": "safety_reviewer",
+      "event": "model_request",
+      "timestamp": null,
+      "job_id": "8e1df702-2729-4e89-963a-67d8c4e7c8bd",
+      "fake_provider": true
+    }
+  ],
+  "limitations": [
+    "Fixed FunctionModel responses; no visual-accuracy evidence.",
+    "Synthetic token counters excluded from provider-usage totals.",
+    "Remaining assessments intentionally left pending in this receipt."
+  ]
+}

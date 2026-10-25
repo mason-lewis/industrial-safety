@@ -1,0 +1,35 @@
+{
+  "kind": "clean_clone_one_command_start",
+  "date": "2026-10-24",
+  "success": true,
+  "elapsed_seconds_to_healthy": 62.4,
+  "revision": "a4af56c4d3f2c5cfe3da9e3e7ec4c18c9876d527",
+  "source": "local Git clone of the explicit-allowlist package (538 files)",
+  "command": "./start --offline --port 8010",
+  "github_clone_verified": false,
+  "cold": [
+    "uv bootstrapped via pip (no uv on PATH)",
+    "Python 3.12.15 downloaded",
+    "all Python dependencies including torch downloaded into an empty project uv cache",
+    "RF-DETR Small COCO weights (386 MB) downloaded and checksum-verified",
+    "npm ci with an empty npm cache",
+    "frontend production build"
+  ],
+  "not_cold": "Existing macOS, python3, Node/npm, Git, OS shared libraries and DNS/CDN state.",
+  "post_start_checks": {
+    "auth": 200,
+    "ai_status": "offline mode, no key configured",
+    "library": "empty",
+    "frontend": 200,
+    "course_fixture": {
+      "coverage_complete": true,
+      "completed_windows": 60,
+      "elapsed_seconds": 24.207,
+      "provider_requests": 0
+    }
+  },
+  "developer_data_copied": false,
+  "credentials_present": false,
+  "paid_calls_enabled": false,
+  "summary": "A cold clone of the allowlisted package reached a healthy app through ./start in 62.4 seconds on this Mac, downloading Python, all dependencies and the 386 MB detector weights with empty caches; the 600-second fixture then passed inside it."
+}

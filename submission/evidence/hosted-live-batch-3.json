@@ -1,0 +1,142 @@
+{
+  "batch_id": "numbered-live-20261024-3",
+  "date": "2026-10-24",
+  "model": "gpt-6-luna",
+  "mode": "hosted Live (1x camera simulation)",
+  "network": "home Wi-Fi with ~4% corrupted large uploads (see harness.md)",
+  "videos": [
+    {
+      "video": "05-warehouse-pallet-handling.mp4",
+      "windows_checked": 4,
+      "windows_total": 10,
+      "requests": 17,
+      "requests_by_agent": {
+        "video_observer": 17
+      },
+      "screening_usd": 0.025004,
+      "team_usd": 0.0,
+      "committed_usd": 0.025004,
+      "specialist_reviews_completed": 0,
+      "specialist_reviews_blocked_by_cap": 0,
+      "input_tokens": 149926,
+      "output_tokens": 12618
+    },
+    {
+      "video": "06-truck-pallet-unloading.mp4",
+      "windows_checked": 20,
+      "windows_total": 20,
+      "requests": 119,
+      "requests_by_agent": {
+        "video_observer": 65,
+        "safety_reviewer": 23,
+        "specialist": 17,
+        "challenge_reviewer": 14
+      },
+      "screening_usd": 0.096127,
+      "team_usd": 0.047545,
+      "committed_usd": 0.143672,
+      "specialist_reviews_completed": 7,
+      "specialist_reviews_blocked_by_cap": 30,
+      "input_tokens": 835864,
+      "output_tokens": 79018
+    },
+    {
+      "video": "09-construction-balcony.mp4",
+      "windows_checked": 2,
+      "windows_total": 2,
+      "requests": 29,
+      "requests_by_agent": {
+        "video_observer": 6,
+        "safety_reviewer": 9,
+        "specialist": 8,
+        "challenge_reviewer": 6
+      },
+      "screening_usd": 0.008816,
+      "team_usd": 0.02006,
+      "committed_usd": 0.028876,
+      "specialist_reviews_completed": 3,
+      "specialist_reviews_blocked_by_cap": 0,
+      "input_tokens": 167376,
+      "output_tokens": 16066
+    },
+    {
+      "video": "11-restaurant-kitchen-fire.mp4",
+      "windows_checked": 8,
+      "windows_total": 8,
+      "requests": 78,
+      "requests_by_agent": {
+        "video_observer": 28,
+        "safety_reviewer": 20,
+        "specialist": 16,
+        "challenge_reviewer": 14
+      },
+      "screening_usd": 0.040937,
+      "team_usd": 0.042222,
+      "committed_usd": 0.083159,
+      "specialist_reviews_completed": 6,
+      "specialist_reviews_blocked_by_cap": 0,
+      "input_tokens": 492112,
+      "output_tokens": 43701
+    },
+    {
+      "video": "13-warehouse-rack-collapse.mp4",
+      "windows_checked": 6,
+      "windows_total": 7,
+      "requests": 93,
+      "requests_by_agent": {
+        "video_observer": 24,
+        "safety_reviewer": 27,
+        "specialist": 22,
+        "challenge_reviewer": 20
+      },
+      "screening_usd": 0.036682,
+      "team_usd": 0.058791,
+      "committed_usd": 0.095473,
+      "specialist_reviews_completed": 9,
+      "specialist_reviews_blocked_by_cap": 0,
+      "input_tokens": 529589,
+      "output_tokens": 59058
+    },
+    {
+      "video": "14-store-shelf-collapse.mp4",
+      "windows_checked": 7,
+      "windows_total": 11,
+      "requests": 26,
+      "requests_by_agent": {
+        "video_observer": 26
+      },
+      "screening_usd": 0.042027,
+      "team_usd": 0.0,
+      "committed_usd": 0.042027,
+      "specialist_reviews_completed": 0,
+      "specialist_reviews_blocked_by_cap": 0,
+      "input_tokens": 216697,
+      "output_tokens": 15877
+    }
+  ],
+  "totals": {
+    "videos_attempted": 6,
+    "videos_fully_covered": 3,
+    "windows_checked": 47,
+    "paid_requests": 362,
+    "unsent_requests_recovered_at_zero": 3,
+    "ambiguous_unknown_charges": 1,
+    "batch_committed_usd": 0.418211,
+    "cumulative_committed_usd": 0.585616,
+    "screening_usd_per_checked_window": 0.00531,
+    "team_usd_per_specialist_review": 0.006745,
+    "mean_usd_per_fully_covered_video": 0.085236
+  },
+  "balcony_trace": {
+    "run_id": "2a2ddbd9-c7da-467f-8f89-7b75572e0c6f",
+    "wall_seconds": 228,
+    "model_requests": 29,
+    "tool_calls": 23,
+    "sequence": "observer (6 requests, 4 person lookups) -> boss -> applicability + surfaces/vehicles specialists -> independent challenger, for 3 cases",
+    "outcome": "2/2 windows; suspected struck-by at 5.2-5.6 s; challenger rated insufficient evidence; contact not confirmed",
+    "committed_usd": 0.028876
+  },
+  "recognition_spot_checks": "assistant inspection of saved outputs vs footage; not human labels",
+  "billing": "local calculated usage plus reservations; not an invoice",
+  "report": "data/artifacts/reports/numbered-live-20261024-3/index.html"
+}

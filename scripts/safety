@@ -1,0 +1,5 @@
+#!/bin/zsh
+set -e
+cd "${0:A:h:h}"
+export PYTHONPATH="$PWD/backend:$PWD/backend/src${PYTHONPATH:+:$PYTHONPATH}"
+exec ./scripts/uv run python scripts/safety.py "$@"

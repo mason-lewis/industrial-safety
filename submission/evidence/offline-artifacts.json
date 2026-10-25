@@ -1,0 +1,20 @@
+{
+  "report.html": {
+    "sha256": "06a7f2a60483ddb2aed03dbe6ba46d72077678764727f60a7e93f4e893f6b8fb",
+    "bytes": 134193,
+    "embedded_images": 1,
+    "script_blocks": 0,
+    "external_runtime_assets": []
+  },
+  "slides.html": {
+    "sha256": "0bfbac50ea4c86d8fe4a74f726d4c2b390cd710f9d36dcd9881a025515e259eb",
+    "bytes": 285419,
+    "embedded_images": 1,
+    "script_blocks": 2,
+    "external_runtime_assets": []
+  },
+  "limitations": [
+    "Browser layout checks confirm 12 fixed letter page boxes without content/footer overlap; physical printer/PDF output not independently captured.",
+    "All nine reveal.js slides visually inspected; report and deck are drafts until real-run and pilot evidence are added."
+  ]
+}

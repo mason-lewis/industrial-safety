@@ -1,0 +1,16 @@
+{
+  "data_kind": "synthetic_fixture_only",
+  "root": "/var/folders/k0/tk0wm5cn3ldflcytl59_dvpm0000gn/T/video-analysis-fixture-1omxp5zp",
+  "job_status": "completed",
+  "error": null,
+  "result_refs": [
+    "9fd0be18-dd42-4385-b0cc-fd4c8307ea2d"
+  ],
+  "observed_chunks": 6,
+  "model_requests": 23,
+  "provider_requests": 0,
+  "independent_verification": true,
+  "safety_review_jobs": 2,
+  "safety_assessments": 2,
+  "provisional_manager_attention": 6
+}

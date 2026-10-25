@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+SAFETY_PROJECT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+cd "$SAFETY_PROJECT"
+./scripts/uv sync --frozen --inexact --extra people
+./scripts/uv run --no-sync python scripts/prepare_people.py
+npm --prefix frontend ci --no-audit --no-fund
+npm --prefix frontend run build
+exec ./scripts/uv run --no-sync python scripts/start_app.py "$@"

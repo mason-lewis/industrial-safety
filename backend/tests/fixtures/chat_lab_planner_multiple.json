@@ -1,0 +1,62 @@
+{
+  "comparison_id": "e73942cc-6eaf-4ef5-ae81-4d220840a1be",
+  "outputs": [
+    {
+      "branch": "current",
+      "stage": "Task coordination",
+      "output": {
+        "assignments": [
+          {
+            "domain": "vehicles",
+            "question": "Identify the warehouse-specific conditions to assess for forklift\u2013pedestrian separation (traffic routes, crossing points, visibility, congestion, work tasks, and existing controls); flag which site facts are needed before judging adequacy."
+          },
+          {
+            "domain": "vehicles",
+            "question": "Check the applicable OSHA powered-industrial-truck provisions relevant to pedestrian interaction and travel, especially 29 CFR 1910.178(c)(2)(D) and 1910.178(n)(4); provide exact clauses and any applicability/effective-date limits, without claiming compliance from the limited cache excerpt."
+          }
+        ],
+        "missing_context": [
+          "Warehouse state/OSHA-plan jurisdiction and industry or operation type, needed to establish which OSHA regime applies.",
+          "Site layout, pedestrian and forklift routes/crossings, visibility and congestion conditions, truck/load types, work activities, and existing separation controls."
+        ]
+      }
+    },
+    {
+      "branch": "optimized",
+      "stage": "Task coordination",
+      "output": {
+        "assignments": [
+          {
+            "domain": "multiple",
+            "question": "Identify the warehouse and work context to check when assessing forklift\u2013pedestrian separation: pedestrian routes and crossing points, truck routes and operating areas, visibility/blind spots, traffic intensity and layout, and whether workers or visitors enter vehicle areas. Point out which site-specific facts are not supplied."
+          },
+          {
+            "domain": "multiple",
+            "question": "Locate and summarize the relevant OSHA references for forklift\u2013pedestrian interaction, especially 29 CFR 1910.178 provisions on pedestrian traffic, operator precautions and training/workplace evaluation; check related aisle/material-handling standards where relevant. Provide exact citations and distinguish binding standards from OSHA guidance; flag any applicability or source-text limitations."
+          }
+        ],
+        "missing_context": []
+      }
+    },
+    {
+      "branch": "optimized",
+      "stage": "Correction \u00b7 Task coordination",
+      "output": {
+        "assignments": [
+          {
+            "domain": "applicability",
+            "question": "Identify the operational/site context needed to assess forklift\u2013pedestrian separation in the US warehouse: warehouse layout and routes, pedestrian and truck interactions, controls already in use, and whether the work falls under federal OSHA or a state plan. Do not make a legal applicability conclusion; flag unknowns."
+          },
+          {
+            "domain": "multiple",
+            "question": "Find relevant primary OSHA references for forklift\u2013pedestrian separation, especially powered industrial truck rules and any related walking-working surface or traffic-control provisions. Provide exact source-linked references and concise summaries; distinguish binding text from OSHA guidance and note that applicability and full context remain to be verified."
+          }
+        ],
+        "missing_context": [
+          "Warehouse jurisdiction/state and whether federal OSHA or an OSHA-approved state plan applies",
+          "Specific layout, pedestrian routes, forklift routes, crossing points, visibility constraints, and current separation controls"
+        ]
+      }
+    }
+  ]
+}

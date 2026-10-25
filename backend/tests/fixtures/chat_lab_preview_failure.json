@@ -1,0 +1,105 @@
+{
+  "version": "preview-failure-8-replay-1",
+  "comparison_id": "1bd335a3-c585-437b-9c29-a49ed97e9900",
+  "question": "How do I preview a video and adjust person detection confidence?",
+  "route": {
+    "scope": "allow",
+    "task": "product",
+    "domain": "applicability",
+    "freshness": "unneeded",
+    "confidence": 0.99,
+    "policy_version": "current"
+  },
+  "plan": {
+    "assignments": [
+      {
+        "domain": "applicability",
+        "question": "No applicable safety requirement can be assessed from the available evidence: the request concerns how to preview a video and adjust person-detection confidence, and no product documentation or relevant safety source was retrieved. Product-specific steps and feature availability remain unverified; jurisdiction is unknown."
+      }
+    ],
+    "missing_context": [
+      "Product name/version and its documentation for video preview and person-detection confidence controls.",
+      "Jurisdiction, if a regulatory applicability assessment is sought."
+    ]
+  },
+  "answer": {
+    "answer": "This request concerns product operation (video preview and person-detection confidence), not an identified workplace safety activity or event for which a safety requirement can be assessed. The available product documentation describes Preview and the confidence slider, but no applicable safety requirement is established; jurisdiction and event details are unknown.",
+    "claims": [
+      {
+        "id": "scope",
+        "text": "The supplied request concerns product operation\u2014video preview and person-detection confidence\u2014not an identified workplace safety activity or event for which a safety requirement can be assessed.",
+        "kind": "product",
+        "citation_ids": [
+          "product:README.md:1:3",
+          "product:README.md:1:4"
+        ],
+        "exact_clause": null
+      },
+      {
+        "id": "applicability",
+        "text": "No applicable safety requirement is established from the available evidence; jurisdiction and event details are unknown.",
+        "kind": "record",
+        "citation_ids": [
+          "product:README.md:1:3",
+          "product:README.md:1:4"
+        ],
+        "exact_clause": null
+      }
+    ],
+    "missing_context": [
+      "Jurisdiction, employer/worker coverage, and event date are not provided.",
+      "No workplace activity or safety event is identified for an applicability assessment."
+    ],
+    "completion": "partial"
+  },
+  "retrieved_product_sources": [
+    {
+      "id": "product:README.md:1:4",
+      "title": "README.md",
+      "text": "The **Person detection confidence** slider ranges from 5% to 95%, initially 50%. Lower values admit more detections and possible false positives. Changes update Preview and set the threshold for newly opened Live/Review runs. Paused frames are checked automatically. The overlay uses source timestamps and preserves the video aspect ratio, including letterboxing. Use the player\u2019s **Full screen** button to keep overlays visible in fullscreen. Labels show confidence percentages without person numbers. Display smoothing does not establish identities or change saved detection evidence.",
+      "kind": "product",
+      "version": "f592afed478ccb6853107cb94ee16751f4f2f3d6d75550ac67540a538ff2c4f0",
+      "url": null,
+      "retrieved_at": null,
+      "clause": null,
+      "context_complete": true,
+      "jurisdiction": null,
+      "effective_date": null,
+      "provenance": {
+        "file": "README.md"
+      }
+    },
+    {
+      "id": "product:README.md:1:3",
+      "title": "README.md",
+      "text": "\nThe main interface starts on **Preview**. Choose a library video or **Open video**, then play, pause and seek normally. Person boxes and confidence scores appear directly over the playing video, with one confidence slider below it. Library thumbnails help identify each recording; they also appear in the Live/Review video picker. Preview works with AI off and does not start AI review, send footage to a provider or consume an AI allowance. Local CV checks run serially with a short lookahead buffer. Nearby, unambiguous boxes blend between sampled positions for smoother movement; new detections appear only at their observed time. Boxes clear on seeks, confidence changes or when older than half a second. This is sampled detection, not tracking or analysis of every frame. Browser playback requires a supported codec, such as H.264 MP4.",
+      "kind": "product",
+      "version": "f592afed478ccb6853107cb94ee16751f4f2f3d6d75550ac67540a538ff2c4f0",
+      "url": null,
+      "retrieved_at": null,
+      "clause": null,
+      "context_complete": true,
+      "jurisdiction": null,
+      "effective_date": null,
+      "provenance": {
+        "file": "README.md"
+      }
+    },
+    {
+      "id": "product:docs/safety-agent-workflows.md:3:1",
+      "title": "docs/safety-agent-workflows.md",
+      "text": "| Tool | Purpose |\n| --- | --- |\n| `delegate_specialist(task)` | Boss only: typed question/owner/observation IDs, initial assessment or targeted follow-up |\n| `search_safety_sources(query, jurisdiction, topic, limit, broaden)` | Specialist: at most five discovery previews, exact-citation lookup first, otherwise FTS5/BM25; no citation permission from previews |\n| `fetch_sources(source_ids)` | Specialist: exact clauses plus parent context and one-hop related context, without truncating requirements |\n| `get_site_rules(site_id, topic)` | Specialist/challenger: matching versioned site rules; no invented thresholds |\n| `read_source(source_id, section)` | Challenger: assigned exact excerpt subject to evidence size limit |\n| `get_evidence` / `sample_frames` / `get_camera_context` | Observer/challenger evidence functions retain their existing scope and camera limits |",
+      "kind": "product",
+      "version": "f0a5a59140c8dfa3266bfdf619c0024c97bf4769cb4877fbefb7467eb49d1a4c",
+      "url": null,
+      "retrieved_at": null,
+      "clause": null,
+      "context_complete": true,
+      "jurisdiction": null,
+      "effective_date": null,
+      "provenance": {
+        "file": "docs/safety-agent-workflows.md"
+      }
+    }
+  ]
+}

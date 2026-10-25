@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-25",
+  "kind": "git clone of the allowlist package, cold caches, .env only in the parent folder",
+  "package_files": 579,
+  "package_bytes": 55585001,
+  "command": "./start --offline --port 8030",
+  "seconds": 64,
+  "healthy": true,
+  "env_in_parent": true,
+  "key_configured_from_parent_env": true,
+  "ui_loaded": true,
+  "caches": "empty uv and npm caches (UV_CACHE_DIR, npm_config_cache in a new folder); minimal PATH",
+  "github_clone_verified": false,
+  "notes": "Local git clone; repeat against the published GitHub URL after pushing. The library starts empty; README step 4 opens a clip from demo/videos/."
+}

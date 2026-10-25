@@ -1,0 +1,641 @@
+{
+  "basis": "provider-reported tokens from data/audit model_response events; usage_usd is local calculated cost, not an invoice",
+  "model": "gpt-6-luna",
+  "runs": [
+    {
+      "run_id": "d8df4a8a-e6dc-4ff9-9f63-d3ac7f64feca",
+      "started_utc": "2026-10-24T16:57:17.701171+00:00",
+      "kind": "live",
+      "source": "05-warehouse-pallet-handling.mp4",
+      "duration_s": 97.6,
+      "input_tokens": 39737,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 38477,
+      "uncached_input_tokens": 0,
+      "output_tokens": 3192,
+      "reasoning_tokens": 378,
+      "requests": 10,
+      "usage_usd": 0,
+      "requests_by_agent": {
+        "video_observer": 10
+      }
+    },
+    {
+      "run_id": "4c049f2a-fbf0-4adc-a00b-7aa716870e2d",
+      "started_utc": "2026-10-24T17:28:25.102445+00:00",
+      "kind": "review",
+      "source": "18-warehouse-forklift-traffic.mp4",
+      "duration_s": 22.7,
+      "input_tokens": 15778,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 15274,
+      "uncached_input_tokens": 0,
+      "output_tokens": 807,
+      "reasoning_tokens": 0,
+      "requests": 4,
+      "usage_usd": 0,
+      "requests_by_agent": {
+        "video_observer": 4
+      }
+    },
+    {
+      "run_id": "04e84cd5-7f70-4863-8e21-9dcf98dc5f82",
+      "started_utc": "2026-10-24T17:29:39.633988+00:00",
+      "kind": "live",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 86063,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 83417,
+      "uncached_input_tokens": 0,
+      "output_tokens": 16546,
+      "reasoning_tokens": 159,
+      "requests": 21,
+      "usage_usd": 0,
+      "requests_by_agent": {
+        "video_observer": 4,
+        "safety_reviewer": 9,
+        "specialist_applicability": 4,
+        "specialist_surfaces": 2,
+        "specialist_emergency": 2
+      }
+    },
+    {
+      "run_id": "83fae9ce-09a1-4fcf-90ee-90f997ad43f4",
+      "started_utc": "2026-10-24T17:48:03.759797+00:00",
+      "kind": "live",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 16639,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 16387,
+      "uncached_input_tokens": 0,
+      "output_tokens": 34,
+      "reasoning_tokens": 0,
+      "requests": 2,
+      "usage_usd": 0,
+      "requests_by_agent": {
+        "video_observer": 2
+      }
+    },
+    {
+      "run_id": "f60c4301-dec3-44bf-8e21-dec4a59051ed",
+      "started_utc": "2026-10-24T17:48:57.183283+00:00",
+      "kind": "live",
+      "source": "18-warehouse-forklift-traffic.mp4",
+      "duration_s": 22.7,
+      "input_tokens": 24311,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 23933,
+      "uncached_input_tokens": 0,
+      "output_tokens": 79,
+      "reasoning_tokens": 0,
+      "requests": 3,
+      "usage_usd": 0,
+      "requests_by_agent": {
+        "video_observer": 3
+      }
+    },
+    {
+      "run_id": "aaafcdee-4c09-4e5e-b7e5-1aeb79a82ee8",
+      "started_utc": "2026-10-24T17:59:14.545206+00:00",
+      "kind": "review",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 73128,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 71742,
+      "uncached_input_tokens": 1386,
+      "output_tokens": 5383,
+      "reasoning_tokens": 0,
+      "requests": 11,
+      "usage_usd": 0.011798,
+      "requests_by_agent": {
+        "video_observer": 6,
+        "safety_reviewer": 1,
+        "specialist_applicability": 4
+      }
+    },
+    {
+      "run_id": "740c2f75-7d1e-483b-95de-66952c17ab24",
+      "started_utc": "2026-10-24T19:36:45.938670+00:00",
+      "kind": "review",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 71402,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 70394,
+      "uncached_input_tokens": 1008,
+      "output_tokens": 4465,
+      "reasoning_tokens": 157,
+      "requests": 8,
+      "usage_usd": 0.011133,
+      "requests_by_agent": {
+        "video_observer": 8
+      }
+    },
+    {
+      "run_id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d",
+      "started_utc": "2026-10-24T19:41:48.056677+00:00",
+      "kind": "review",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 199442,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 194150,
+      "uncached_input_tokens": 5292,
+      "output_tokens": 20697,
+      "reasoning_tokens": 0,
+      "requests": 42,
+      "usage_usd": 0.035146,
+      "requests_by_agent": {
+        "video_observer": 8,
+        "safety_reviewer": 11,
+        "specialist_applicability": 7,
+        "specialist_surfaces": 13,
+        "specialist_vehicles": 3
+      }
+    },
+    {
+      "run_id": "6fe23a16-58f3-4334-9e90-cc65dc8be26c",
+      "started_utc": "2026-10-24T19:49:05.923874+00:00",
+      "kind": "review",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 27749,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 27371,
+      "uncached_input_tokens": 378,
+      "output_tokens": 1083,
+      "reasoning_tokens": 0,
+      "requests": 4,
+      "usage_usd": 0.004001,
+      "requests_by_agent": {
+        "video_observer": 4
+      }
+    },
+    {
+      "run_id": "3d0354ad-44b1-4d84-a8b9-07f751497a6c",
+      "started_utc": "2026-10-24T20:26:46.656533+00:00",
+      "kind": "review",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 8719,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 8593,
+      "uncached_input_tokens": 126,
+      "output_tokens": 112,
+      "reasoning_tokens": 0,
+      "requests": 1,
+      "usage_usd": 0.001143,
+      "requests_by_agent": {
+        "video_observer": 1
+      }
+    },
+    {
+      "run_id": "eae532bd-7b3c-43a3-8a67-399270fff17e",
+      "started_utc": "2026-10-24T21:24:35.376222+00:00",
+      "kind": "review",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 345218,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 336146,
+      "uncached_input_tokens": 9072,
+      "output_tokens": 38193,
+      "reasoning_tokens": 8352,
+      "requests": 72,
+      "usage_usd": 0.062022,
+      "requests_by_agent": {
+        "video_observer": 9,
+        "safety_reviewer": 25,
+        "specialist_applicability": 11,
+        "specialist_vehicles": 4,
+        "specialist_surfaces": 10,
+        "challenge_reviewer": 13
+      }
+    },
+    {
+      "run_id": "952e6697-5ec3-404c-aafb-24b2c7c41ae7",
+      "started_utc": "2026-10-24T22:10:21.981508+00:00",
+      "kind": "live",
+      "source": "05-warehouse-pallet-handling.mp4",
+      "duration_s": 97.6,
+      "input_tokens": 109954,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 108442,
+      "uncached_input_tokens": 1512,
+      "output_tokens": 9078,
+      "reasoning_tokens": 0,
+      "requests": 12,
+      "usage_usd": 0.018245,
+      "requests_by_agent": {
+        "video_observer": 12
+      }
+    },
+    {
+      "run_id": "84ca4707-e76b-46fb-8450-783c60ed9fac",
+      "started_utc": "2026-10-24T22:12:57.969344+00:00",
+      "kind": "live",
+      "source": "06-truck-pallet-unloading.mp4",
+      "duration_s": 197.2,
+      "input_tokens": 34694,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 34190,
+      "uncached_input_tokens": 504,
+      "output_tokens": 2034,
+      "reasoning_tokens": 0,
+      "requests": 5,
+      "usage_usd": 0.005341,
+      "requests_by_agent": {
+        "video_observer": 5
+      }
+    },
+    {
+      "run_id": "bdcb79a6-eaea-4ce4-bc7b-30539cdeadd7",
+      "started_utc": "2026-10-24T22:55:35.333335+00:00",
+      "kind": "live",
+      "source": "05-warehouse-pallet-handling.mp4",
+      "duration_s": 97.6,
+      "input_tokens": 149926,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 147784,
+      "uncached_input_tokens": 2142,
+      "output_tokens": 12618,
+      "reasoning_tokens": 0,
+      "requests": 17,
+      "usage_usd": 0.024996,
+      "requests_by_agent": {
+        "video_observer": 17
+      }
+    },
+    {
+      "run_id": "dc940ad9-1601-4468-8df7-531f0955d809",
+      "started_utc": "2026-10-24T23:02:00.629235+00:00",
+      "kind": "live",
+      "source": "06-truck-pallet-unloading.mp4",
+      "duration_s": 197.2,
+      "input_tokens": 835864,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 820870,
+      "uncached_input_tokens": 14994,
+      "output_tokens": 79018,
+      "reasoning_tokens": 11706,
+      "requests": 119,
+      "usage_usd": 0.143617,
+      "requests_by_agent": {
+        "video_observer": 65,
+        "safety_reviewer": 23,
+        "specialist_applicability": 10,
+        "specialist_surfaces": 7,
+        "challenge_reviewer": 14
+      }
+    },
+    {
+      "run_id": "2a2ddbd9-c7da-467f-8f89-7b75572e0c6f",
+      "started_utc": "2026-10-24T23:23:08.624598+00:00",
+      "kind": "live",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 167376,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 163722,
+      "uncached_input_tokens": 3654,
+      "output_tokens": 16066,
+      "reasoning_tokens": 2965,
+      "requests": 29,
+      "usage_usd": 0.028864,
+      "requests_by_agent": {
+        "video_observer": 6,
+        "safety_reviewer": 9,
+        "specialist_applicability": 3,
+        "specialist_surfaces": 3,
+        "challenge_reviewer": 6,
+        "specialist_vehicles": 2
+      }
+    },
+    {
+      "run_id": "c429517f-6832-49bf-bae1-6b6261175d22",
+      "started_utc": "2026-10-24T23:28:00.183936+00:00",
+      "kind": "live",
+      "source": "11-restaurant-kitchen-fire.mp4",
+      "duration_s": 78.3,
+      "input_tokens": 492112,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 482410,
+      "uncached_input_tokens": 9702,
+      "output_tokens": 43701,
+      "reasoning_tokens": 7560,
+      "requests": 78,
+      "usage_usd": 0.083122,
+      "requests_by_agent": {
+        "video_observer": 28,
+        "safety_reviewer": 20,
+        "specialist_applicability": 6,
+        "specialist_surfaces": 1,
+        "challenge_reviewer": 14,
+        "specialist_vehicles": 5,
+        "specialist_emergency": 4
+      }
+    },
+    {
+      "run_id": "5caab826-3be5-4919-8a1a-68c93f989628",
+      "started_utc": "2026-10-24T23:42:06.474661+00:00",
+      "kind": "live",
+      "source": "13-warehouse-rack-collapse.mp4",
+      "duration_s": 64.8,
+      "input_tokens": 529589,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 517871,
+      "uncached_input_tokens": 11718,
+      "output_tokens": 59058,
+      "reasoning_tokens": 13897,
+      "requests": 93,
+      "usage_usd": 0.095435,
+      "requests_by_agent": {
+        "video_observer": 24,
+        "safety_reviewer": 27,
+        "specialist_applicability": 10,
+        "specialist_surfaces": 11,
+        "challenge_reviewer": 20,
+        "specialist_emergency": 1
+      }
+    },
+    {
+      "run_id": "4093066f-25b6-406d-9034-206e294e0dbb",
+      "started_utc": "2026-10-24T23:54:42.613156+00:00",
+      "kind": "live",
+      "source": "14-store-shelf-collapse.mp4",
+      "duration_s": 102.2,
+      "input_tokens": 208186,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 205288,
+      "uncached_input_tokens": 2898,
+      "output_tokens": 14077,
+      "reasoning_tokens": 225,
+      "requests": 26,
+      "usage_usd": 0.032989,
+      "requests_by_agent": {
+        "video_observer": 26
+      }
+    },
+    {
+      "run_id": "4df11e7e-e680-4817-82cc-e5f2de591da8",
+      "started_utc": "2026-10-25T15:41:01.192257+00:00",
+      "kind": "live",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 152104,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 148324,
+      "uncached_input_tokens": 3780,
+      "output_tokens": 14619,
+      "reasoning_tokens": 2179,
+      "requests": 30,
+      "usage_usd": 0.026228,
+      "requests_by_agent": {
+        "video_observer": 6,
+        "safety_reviewer": 11,
+        "specialist_applicability": 4,
+        "specialist_surfaces": 3,
+        "challenge_reviewer": 6
+      }
+    },
+    {
+      "run_id": "1157bc5f-f35e-44ed-a658-9af7d672fc57",
+      "started_utc": "2026-10-25T15:43:26.192709+00:00",
+      "kind": "live",
+      "source": "warehouse-forklifts.mp4",
+      "duration_s": 272.0,
+      "input_tokens": 53150,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 52394,
+      "uncached_input_tokens": 756,
+      "output_tokens": 4419,
+      "reasoning_tokens": 0,
+      "requests": 6,
+      "usage_usd": 0.008834,
+      "requests_by_agent": {
+        "video_observer": 6
+      }
+    },
+    {
+      "run_id": "43209d7c-27d9-4569-8484-434e2ca705ce",
+      "started_utc": "2026-10-25T15:58:41.737780+00:00",
+      "kind": "live",
+      "source": "19-narrow-aisle-forklift.mp4",
+      "duration_s": 23.2,
+      "input_tokens": 70960,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 69952,
+      "uncached_input_tokens": 1008,
+      "output_tokens": 6133,
+      "reasoning_tokens": 298,
+      "requests": 8,
+      "usage_usd": 0.011911,
+      "requests_by_agent": {
+        "video_observer": 8
+      }
+    },
+    {
+      "run_id": "048facfc-1161-4882-95f9-e3e5d28d5b17",
+      "started_utc": "2026-10-25T17:52:08.363253+00:00",
+      "kind": "live",
+      "source": "05-warehouse-pallet-handling.mp4",
+      "duration_s": 97.6,
+      "input_tokens": 148202,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 146186,
+      "uncached_input_tokens": 2016,
+      "output_tokens": 11029,
+      "reasoning_tokens": 178,
+      "requests": 16,
+      "usage_usd": 0.023989,
+      "requests_by_agent": {
+        "video_observer": 16
+      }
+    },
+    {
+      "run_id": "9e886270-c56d-4754-8751-87c825885d19",
+      "started_utc": "2026-10-25T18:59:36.676587+00:00",
+      "kind": "live",
+      "source": "11-restaurant-kitchen-fire.mp4",
+      "duration_s": 78.3,
+      "input_tokens": 575111,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 563141,
+      "uncached_input_tokens": 11970,
+      "output_tokens": 60531,
+      "reasoning_tokens": 12522,
+      "requests": 97,
+      "usage_usd": 0.101855,
+      "requests_by_agent": {
+        "video_observer": 24,
+        "safety_reviewer": 28,
+        "specialist_applicability": 9,
+        "specialist_emergency": 13,
+        "challenge_reviewer": 20,
+        "specialist_vehicles": 3
+      }
+    },
+    {
+      "run_id": "6edc4267-5437-4595-b5ac-15ec8c9742c2",
+      "started_utc": "2026-10-25T19:16:04.382967+00:00",
+      "kind": "live",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 73607,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 72599,
+      "uncached_input_tokens": 1008,
+      "output_tokens": 7011,
+      "reasoning_tokens": 0,
+      "requests": 8,
+      "usage_usd": 0.012681,
+      "requests_by_agent": {
+        "video_observer": 8
+      }
+    },
+    {
+      "run_id": "b588f5cb-ba1e-4760-a49b-4da441a11f69",
+      "started_utc": "2026-10-25T19:47:12.157634+00:00",
+      "kind": "live",
+      "source": "11-restaurant-kitchen-fire.mp4",
+      "duration_s": 78.3,
+      "input_tokens": 459556,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 452122,
+      "uncached_input_tokens": 7434,
+      "output_tokens": 40767,
+      "reasoning_tokens": 6130,
+      "requests": 60,
+      "usage_usd": 0.077642,
+      "requests_by_agent": {
+        "video_observer": 28,
+        "safety_reviewer": 10,
+        "specialist_applicability": 5,
+        "specialist_emergency": 7,
+        "challenge_reviewer": 10
+      }
+    },
+    {
+      "run_id": "56cf46ca-5397-4fdc-8696-e953b9474f51",
+      "started_utc": "2026-10-25T19:57:13.040473+00:00",
+      "kind": "live",
+      "source": "11-restaurant-kitchen-fire.mp4",
+      "duration_s": 78.3,
+      "input_tokens": 612650,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 601562,
+      "uncached_input_tokens": 11088,
+      "output_tokens": 60514,
+      "reasoning_tokens": 11334,
+      "requests": 91,
+      "usage_usd": 0.106561,
+      "requests_by_agent": {
+        "video_observer": 25,
+        "safety_reviewer": 19,
+        "specialist_applicability": 10,
+        "specialist_emergency": 15,
+        "challenge_reviewer": 20,
+        "specialist_vehicles": 2
+      }
+    },
+    {
+      "run_id": "0d129747-b7e8-4c72-8466-27c59792a4cb",
+      "started_utc": "2026-10-25T20:20:01.290019+00:00",
+      "kind": "live",
+      "source": "11-restaurant-kitchen-fire.mp4",
+      "duration_s": 78.3,
+      "input_tokens": 705609,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 691875,
+      "uncached_input_tokens": 13734,
+      "output_tokens": 68094,
+      "reasoning_tokens": 12976,
+      "requests": 109,
+      "usage_usd": 0.121905,
+      "requests_by_agent": {
+        "video_observer": 27,
+        "safety_reviewer": 22,
+        "specialist_applicability": 12,
+        "specialist_surfaces": 2,
+        "specialist_emergency": 21,
+        "challenge_reviewer": 21,
+        "specialist_vehicles": 3,
+        "team_combiner": 1
+      }
+    },
+    {
+      "run_id": "46f88eee-159f-4fa8-a2c0-b446e50ca711",
+      "started_utc": "2026-10-25T20:44:04.627319+00:00",
+      "kind": "live",
+      "source": "11-restaurant-kitchen-fire.mp4",
+      "duration_s": 78.3,
+      "input_tokens": 251711,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 246553,
+      "uncached_input_tokens": 5158,
+      "output_tokens": 26965,
+      "reasoning_tokens": 2042,
+      "requests": 34,
+      "usage_usd": 0.044817,
+      "requests_by_agent": {
+        "video_observer": 19,
+        "safety_reviewer": 4,
+        "specialist_applicability": 2,
+        "specialist_vehicles": 2,
+        "specialist_emergency": 2,
+        "challenge_reviewer": 4,
+        "team_combiner": 1
+      }
+    },
+    {
+      "run_id": "01e678b7-c1cc-4918-b5c8-838d0ffd95c0",
+      "started_utc": "2026-10-25T20:48:54.782444+00:00",
+      "kind": "live",
+      "source": "18-warehouse-forklift-traffic.mp4",
+      "duration_s": 22.7,
+      "input_tokens": 137260,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 134114,
+      "uncached_input_tokens": 3146,
+      "output_tokens": 10537,
+      "reasoning_tokens": 1425,
+      "requests": 22,
+      "usage_usd": 0.022347,
+      "requests_by_agent": {
+        "video_observer": 11,
+        "safety_reviewer": 2,
+        "specialist_applicability": 1,
+        "specialist_vehicles": 4,
+        "challenge_reviewer": 3,
+        "team_combiner": 1
+      }
+    },
+    {
+      "run_id": "dc578314-9a6d-4148-949a-842255e0345a",
+      "started_utc": "2026-10-25T21:22:53.102208+00:00",
+      "kind": "live",
+      "source": "06-truck-pallet-unloading.mp4",
+      "duration_s": 197.2,
+      "input_tokens": 836586,
+      "cached_input_tokens": 2901,
+      "cache_write_tokens": 818691,
+      "uncached_input_tokens": 14994,
+      "output_tokens": 76694,
+      "reasoning_tokens": 8722,
+      "requests": 119,
+      "usage_usd": 0.142212,
+      "requests_by_agent": {
+        "video_observer": 44,
+        "safety_reviewer": 27,
+        "specialist_applicability": 17,
+        "specialist_surfaces": 9,
+        "challenge_reviewer": 18,
+        "specialist_vehicles": 3,
+        "team_combiner": 1
+      }
+    }
+  ]
+}

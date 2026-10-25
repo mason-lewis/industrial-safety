@@ -1,0 +1,13 @@
+$ pytest -v  (selected defense tests, offline, zero provider requests) — 2026-10-25 19:33 EDT
+test_prompt_injection_defense.py::test_injected_footage_text_cannot_make_the_observer_cite_unseen_evidence[f9-0-allowed evidence IDs] PASSED
+test_prompt_injection_defense.py::test_injected_footage_text_cannot_make_the_observer_cite_unseen_evidence[f1-9000-outside assigned scope] PASSED
+test_prompt_injection_defense.py::test_injected_all_clear_becomes_not_assessed_never_clear PASSED
+test_prompt_injection_defense.py::test_every_footage_reading_prompt_says_image_text_is_untrusted PASSED
+test_review_runs.py::test_live_future_and_stale_window_rejected_before_model PASSED
+test_review_runs.py::test_report_is_escaped_embedded_and_partial_is_explicit PASSED
+test_overhaul.py::test_each_budget_blocks_before_dispatch[agent_usd-0.0001] PASSED
+test_overhaul.py::test_each_budget_blocks_before_dispatch[workflow_usd-0.0001] PASSED
+test_overhaul.py::test_each_budget_blocks_before_dispatch[day_usd-0.0001] PASSED
+test_overhaul.py::test_each_budget_blocks_before_dispatch[month_usd-0.0001] PASSED
+test_overhaul.py::test_budget_blocked_provider_is_never_called_and_timeouts_retained PASSED
+============================== 11 passed in 0.95s ==============================

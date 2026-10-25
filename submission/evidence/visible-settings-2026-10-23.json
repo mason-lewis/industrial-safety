@@ -1,0 +1,54 @@
+{
+  "change": "Visible review settings, first-visit guide, reduced landing copy",
+  "date": "2026-10-23",
+  "checks": {
+    "python_tests": 366,
+    "frontend_tests": 69,
+    "contracts": "match",
+    "production_build": "passed",
+    "legacy_video_fixture": "passed",
+    "legacy_safety_fixture": "passed",
+    "course_fixture": {
+      "seconds": 600,
+      "windows": 60,
+      "frames": 120,
+      "concerns": 60,
+      "pending_specialists": 59,
+      "provider_requests": 0
+    }
+  },
+  "browser": {
+    "initial_guide": "opens before first video",
+    "dismissal": "remembered after reload",
+    "help": "reopens guide",
+    "keyboard": "Escape closes; focus returns to How to use",
+    "preferences": "retained across Live/Review and reload; temporary test values restored to blank PPE and unknown location",
+    "osha": "inline explanation and official link shown when selected",
+    "layouts_px": [
+      390,
+      813
+    ],
+    "removed": [
+      "hero",
+      "footer slogan",
+      "Real AI analysis badge",
+      "settings icon/dialog"
+    ],
+    "workflow_label": "AI-powered review"
+  },
+  "provider_calls_for_verification": 0,
+  "pushed": false,
+  "screenshots": [
+    "submission/images/visible-review-settings.jpg",
+    "submission/images/welcome-guide.jpg"
+  ],
+  "limits_usd": {
+    "run": 0.15,
+    "daily": 2,
+    "monthly": 20
+  },
+  "limitations": [
+    "Offline verification does not establish hosted model quality, billed usage or user benefit.",
+    "Preferences are local to the browser; saved run requests and server decisions remain authoritative."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-25",
+  "python_tests": 597,
+  "python_breakdown": {"backend/tests": 340, "tests": 257},
+  "frontend_tests": 112,
+  "failed": 0,
+  "contracts": "match",
+  "production_build": "passed",
+  "isolated_fixtures": ["course_fixture", "video_analysis_fixture", "fixture-replay"],
+  "provider_requests_during_checks": 0,
+  "environment": "AI_ENABLED=false HOSTED_IMAGES_ALLOWED=false SAFETY_PAID_REVIEW=0 OPENAI_API_KEY empty",
+  "includes": "backend/tests/test_prompt_injection_defense.py (new, 4 tests)"
+}

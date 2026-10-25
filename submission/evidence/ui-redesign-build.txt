@@ -1,0 +1,31 @@
+
+> industrial-video-safety-lab@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.2 building client environment for production...
+transforming...
+✓ 330 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                               0.53 kB │ gzip:  0.35 kB
+dist/assets/AgentInsights-B5hyt_oz.css        1.95 kB │ gzip:  0.81 kB
+dist/assets/SafetyChat-Cy0n7Ttx.css           4.57 kB │ gzip:  1.52 kB
+dist/assets/LearningWorkspace-CXqv_gFp.css    5.86 kB │ gzip:  1.73 kB
+dist/assets/VideoSandbox-Bn5uE5Wc.css         7.07 kB │ gzip:  2.05 kB
+dist/assets/index-1Phz_By5.css               52.14 kB │ gzip: 11.60 kB
+dist/assets/budgetInfo-CI7R1tHA.js            1.02 kB │ gzip:  0.51 kB
+dist/assets/Audit-CBqK9vvM.js                 2.44 kB │ gzip:  1.07 kB
+dist/assets/ReplayJobs-dpFdpVG1.js            2.88 kB │ gzip:  1.24 kB
+dist/assets/Budgets-5QNsyAug.js               3.20 kB │ gzip:  1.38 kB
+dist/assets/Trials-p_hvX6Se.js                3.46 kB │ gzip:  1.44 kB
+dist/assets/Labeling-DVxQEhxZ.js              3.46 kB │ gzip:  1.55 kB
+dist/assets/AgentInsights-ClDHGrFm.js         5.48 kB │ gzip:  1.91 kB
+dist/assets/SafetyReview-Dl0CsOfr.js          6.58 kB │ gzip:  2.32 kB
+dist/assets/SafetyChat-BgGXh544.js           12.18 kB │ gzip:  3.99 kB
+dist/assets/VideoSandbox-DZy7zSOu.js         20.67 kB │ gzip:  6.82 kB
+dist/assets/LearningWorkspace-B2rq9PLB.js    66.49 kB │ gzip: 19.22 kB
+dist/assets/Monitoring-DJWoAzRI.js           96.44 kB │ gzip: 28.64 kB
+dist/assets/ChatMarkdown-D4g8583i.js        156.14 kB │ gzip: 46.73 kB
+dist/assets/index-B7CGn8NW.js               262.78 kB │ gzip: 81.41 kB
+
+✓ built in 85ms

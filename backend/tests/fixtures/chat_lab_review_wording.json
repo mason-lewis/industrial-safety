@@ -1,0 +1,71 @@
+{
+  "source_comparison": "d488c664-e47d-48aa-a4c1-3586094c8ea1",
+  "purpose": "Recorded old-contract failure. New assessments in tests are simulated; this replay does not measure hosted review accuracy.",
+  "answer": {
+    "answer": "The retrieved source summary reports that NIOSH\u2019s forklift alert describes struck-by and crushing risks, but focuses on prevention rather than response to an injury already occurring. The retrieved OSHA source summary identifies workplace medical/first-aid planning as relevant, but the available material does not support specific immediate actions or first-aid treatment for this incident. The cited summaries are not independently verified regulatory text; no regulatory requirement or incident-specific response is established.",
+    "claims": [
+      {
+        "kind": "guidance",
+        "id": "g1",
+        "text": "The retrieved source summary says NIOSH\u2019s forklift alert describes struck-by and crushing risks and focuses on prevention, not step-by-step response to an injury already occurring.",
+        "citation_ids": [
+          "web:2e1b98fa7e36d7b48cd0"
+        ],
+        "exact_clause": null
+      },
+      {
+        "kind": "guidance",
+        "id": "g2",
+        "text": "The retrieved OSHA source summary identifies workplace medical/first-aid planning and availability as relevant considerations; this is a summary, not independently verified regulatory text or an established applicable requirement.",
+        "citation_ids": [
+          "web:2e1b98fa7e36d7b48cd0"
+        ],
+        "exact_clause": null
+      },
+      {
+        "kind": "uncertain",
+        "id": "u1",
+        "text": "The available evidence does not establish incident-specific emergency actions or first-aid treatment instructions, and the injury details and emergency context are unspecified.",
+        "citation_ids": [
+          "web:2e1b98fa7e36d7b48cd0"
+        ],
+        "exact_clause": null
+      },
+      {
+        "kind": "uncertain",
+        "id": "u2",
+        "text": "Jurisdiction and applicability are unresolved; no regulatory requirement is established for this question.",
+        "citation_ids": [
+          "web:2e1b98fa7e36d7b48cd0"
+        ],
+        "exact_clause": null
+      }
+    ],
+    "missing_context": [
+      "Injury details and immediate hazards or emergency context",
+      "Authoritative guidance specifically addressing immediate injury response",
+      "Incident jurisdiction, date, worker/employer coverage, and activity needed to assess applicability"
+    ],
+    "completion": "partial"
+  },
+  "original_review": {
+    "approved": false,
+    "checked_claim_ids": [
+      "g1",
+      "g2",
+      "u1",
+      "u2"
+    ],
+    "issues": [
+      "The narrative says the summaries are not independently verified regulatory text; the web_summary explicitly marks primary text unverified, so this limitation is properly preserved.",
+      "g1 and g2 are appropriately attributed to the retrieved web summary, which supports the stated prevention focus and the relevance of medical/first-aid planning without claiming an applicable legal obligation.",
+      "u1 is too broad as phrased: the web summary says the retrieved sources did not establish incident-specific actions or treatment, not that the entire available evidence fails to establish them. The other supplied evidence excerpts likewise do not establish injury-response instructions, but the claim should retain this search/evidence limitation.",
+      "u2 says no regulatory requirement is established, which is supported as a conclusion about this record: applicability is unresolved, and the regulatory excerpts do not establish an immediate-response requirement. It should not be read as asserting that no requirement could apply.",
+      "The answer appropriately avoids prescribing specific first-aid actions from evidence that does not support them. Injury details, emergency circumstances, jurisdiction, and applicability remain unresolved."
+    ],
+    "unresolved_claims": [
+      "u1",
+      "u2"
+    ]
+  }
+}

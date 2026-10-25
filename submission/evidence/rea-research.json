@@ -1,0 +1,33 @@
+{
+  "tool": "REA",
+  "npm_version": "6.7.0",
+  "date": "2026-10-23",
+  "analyzed_path": "frontend/src",
+  "relevant_files": 71,
+  "parse_failures": 0,
+  "relationship_graph": "partial",
+  "structural_findings_are_not_verified_bugs": true,
+  "raw_output_bytes": 56276986,
+  "raw_output_sha256": "128fcec10d505fb7d3ebf16157328df12f3b74370fe24f6e2422910fcd7ed6e6",
+  "raw_output_packaged": false,
+  "operation": "analyze_javascript_application",
+  "parameters": {
+    "format": "auto",
+    "integrity_policy": "fail",
+    "analysis_timeout_ms": 20000
+  },
+  "authority": "shipped-artifact",
+  "analysis_profile": null,
+  "statistics": {
+    "relevant_files": 71,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 329076,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 71,
+    "skipped_javascript_files": 0,
+    "visited_ast_nodes": 64084,
+    "findings": 950,
+    "modules": 0,
+    "parse_failures": 0
+  }
+}

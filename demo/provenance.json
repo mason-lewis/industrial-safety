@@ -1,0 +1,170 @@
+[
+  {
+    "id": "clip-001",
+    "original_file": "test/0_safe_walkway_violation/0_te23.mp4",
+    "original_sha256": "e2c053d84413775e6becaf0dc2a1dd69cbfbb47a5747704345ede650d1987a7f",
+    "source_behavior_label": "0_safe_walkway_violation",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-002",
+    "original_file": "test/0_safe_walkway_violation/0_te21.mp4",
+    "original_sha256": "d6590425f1cf2571b9a145f5bb6ae54af6d78fcc5fb77434f01c4d0f016afdb5",
+    "source_behavior_label": "0_safe_walkway_violation",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-003",
+    "original_file": "test/0_safe_walkway_violation/0_te22.mp4",
+    "original_sha256": "f473fe4d14f084f13ee6f1b71eaff0b418cd66f518f2cedc79da4a5ce20c966d",
+    "source_behavior_label": "0_safe_walkway_violation",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-004",
+    "original_file": "test/1_unauthorized_intervention/1_te11.mp4",
+    "original_sha256": "c0bc265f24fc1b970a1cb49f2050ca092857e4f4c987f71d8f717d90bdf455e8",
+    "source_behavior_label": "1_unauthorized_intervention",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-005",
+    "original_file": "test/1_unauthorized_intervention/1_te10.mp4",
+    "original_sha256": "f6f9c6fb282c2e1a2dc99edbbfbd9f3276ef644801dea087c7f6937df303d140",
+    "source_behavior_label": "1_unauthorized_intervention",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-006",
+    "original_file": "test/1_unauthorized_intervention/1_te7.mp4",
+    "original_sha256": "64da383a4abbc2678259c5caef4ea2531f45e5a80600404439e93ad9171df04b",
+    "source_behavior_label": "1_unauthorized_intervention",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-007",
+    "original_file": "test/2_opened_panel cover/2_te12.mp4",
+    "original_sha256": "d41907f5de114dc6c7af495e101d0b29a917f843d3a609b1b91f237d7089d595",
+    "source_behavior_label": "2_opened_panel cover",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-008",
+    "original_file": "test/2_opened_panel cover/2_te13.mp4",
+    "original_sha256": "e19f83b3e2e28b5afa7f0449583eb2de0dfd55606c51b92976e784a91a6d7683",
+    "source_behavior_label": "2_opened_panel cover",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-009",
+    "original_file": "test/2_opened_panel cover/2_te1.mp4",
+    "original_sha256": "d415c9b21dc02d55daf352bfd0a3434fc59d5bef1d2647669f089f7374d91d6d",
+    "source_behavior_label": "2_opened_panel cover",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-010",
+    "original_file": "test/3_carrying_overload_with_forklift/3_te8.mp4",
+    "original_sha256": "0f2dd18398bce85d48caa69fa2339129794110a82e83e060983860613be621ce",
+    "source_behavior_label": "3_carrying_overload_with_forklift",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-011",
+    "original_file": "test/3_carrying_overload_with_forklift/3_te7.mp4",
+    "original_sha256": "be04d7b7664b890026cb54bda78d2d0fb29c613bbe4f730fdca3b834bcd24d19",
+    "source_behavior_label": "3_carrying_overload_with_forklift",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-012",
+    "original_file": "test/3_carrying_overload_with_forklift/3_te6.mp4",
+    "original_sha256": "bffe666267621f97211aad41a1b539f35495411df179fe83ead6fe8107b3e053",
+    "source_behavior_label": "3_carrying_overload_with_forklift",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-013",
+    "original_file": "test/4_safe_walkway/4_te5.mp4",
+    "original_sha256": "e1625075af049a642505e815cbf3243499fcdc136422c2ecf5725cab5c4bc9eb",
+    "source_behavior_label": "4_safe_walkway",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-014",
+    "original_file": "test/4_safe_walkway/4_te6.mp4",
+    "original_sha256": "60a0181ccf9a1748cf7f9cf9e85214d0e068364d51c1013f24abd8d422decf1d",
+    "source_behavior_label": "4_safe_walkway",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-015",
+    "original_file": "test/4_safe_walkway/4_te7.mp4",
+    "original_sha256": "748de33429fba32fef529f4da7a2ceae194c71c44659ae7d54216a88b0a36b73",
+    "source_behavior_label": "4_safe_walkway",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-016",
+    "original_file": "test/5_authorized_intervention/5_te13.mp4",
+    "original_sha256": "8dfdf568985de2ad21aa68389ab08de7c337ccc5fda3fea9111b2361cccb15bd",
+    "source_behavior_label": "5_authorized_intervention",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-017",
+    "original_file": "test/5_authorized_intervention/5_te12.mp4",
+    "original_sha256": "ac9846a67d2c922420f672c83a9a3ff01da11aadf18317538847544cdfe82aa6",
+    "source_behavior_label": "5_authorized_intervention",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-018",
+    "original_file": "test/5_authorized_intervention/5_te14.mp4",
+    "original_sha256": "8e23bbff83098289257fed976f0ebf04a19af0224f9450e8db34273fbdd1335b",
+    "source_behavior_label": "5_authorized_intervention",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-019",
+    "original_file": "test/6_closed_panel_cover/6_te12.mp4",
+    "original_sha256": "8c68b419e195b935e59ca962fad427fff9bede854184d2d9652172b259ef3b8a",
+    "source_behavior_label": "6_closed_panel_cover",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-020",
+    "original_file": "test/6_closed_panel_cover/6_te10.mp4",
+    "original_sha256": "070f88742836fc0cc4235aed12a4825471d1b8582c008d1cdf03a84ced65053c",
+    "source_behavior_label": "6_closed_panel_cover",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-021",
+    "original_file": "test/6_closed_panel_cover/6_te7.mp4",
+    "original_sha256": "275d2d77405512a174f06e93a7e19f9b804a75cc5bf7241b837515fd56c07d1f",
+    "source_behavior_label": "6_closed_panel_cover",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-022",
+    "original_file": "test/7_safe_carrying/7_te4.mp4",
+    "original_sha256": "edffc7547cd187b138e05c92440732e8ada60fe96061d90b9b0022ba4065a48d",
+    "source_behavior_label": "7_safe_carrying",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-023",
+    "original_file": "test/7_safe_carrying/7_te3.mp4",
+    "original_sha256": "3588957b805a3dc8b072a28508dc47cd63a7005e679dc9113fae42e68f4070ae",
+    "source_behavior_label": "7_safe_carrying",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  },
+  {
+    "id": "clip-024",
+    "original_file": "test/7_safe_carrying/7_te5.mp4",
+    "original_sha256": "37a357cf69ac970ee369831ad9c3b5245e56091c5a0466ed41b88d215584f6cc",
+    "source_behavior_label": "7_safe_carrying",
+    "modifications": "Full clip, resized to 1280px wide, H.264 CRF25, audio removed. No event edits."
+  }
+]

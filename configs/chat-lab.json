@@ -1,0 +1,30 @@
+{
+  "version": "chat-lab-14",
+  "policy_version": "scope-4",
+  "current_version": "boss-first-14",
+  "optimized_version": "decisions-routed-14",
+  "model": "gpt-6-luna",
+  "classification_confidence": 0.8,
+  "classification_ttl_seconds": 1800,
+  "retrieval_ttl_seconds": 1800,
+  "web_ttl_seconds": 300,
+  "max_web_searches_per_branch": 1,
+  "web_input_allowance_tokens": 32000,
+  "web_search_usd": 0.01,
+  "max_output_tokens": 1800,
+  "max_agent_calls_per_branch": 10,
+  "fixture_step_seconds": 0.18,
+  "primary_domains": [
+    "osha.gov",
+    "ecfr.gov",
+    "govinfo.gov",
+    "cdc.gov",
+    "niosh.cdc.gov",
+    "dol.gov",
+    "csb.gov"
+  ],
+  "pricing_basis": "OpenAI standard US rates, checked 2026-10-24; search content allowance is an estimate, not a provider cap",
+  "source_index_version": "title29-osha-v2",
+  "recovery_usd": 0.01,
+  "recovery_seconds": 45
+}

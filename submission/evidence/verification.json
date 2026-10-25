@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-23",
+  "python_tests": 351,
+  "frontend_tests": 62,
+  "generated_contracts": "passed",
+  "frontend_build": "passed",
+  "legacy_fixtures": "both passed",
+  "provider_requests": 0,
+  "paid_accuracy_evaluation": null,
+  "user_pilot": null,
+  "actual_provider_cost": null,
+  "limitations": [
+    "Full developer suite includes preserved source archive and optional CV packages.",
+    "Fresh submission backend suite checked separately.",
+    "FFmpeg duplicate-class and bundle-size warnings remain."
+  ],
+  "minimal_backend_tests": 94,
+  "minimal_legacy_fixtures": "both passed without Torch, RF-DETR, supervision or trackers",
+  "local_git_clone_start_seconds": 20.831,
+  "local_git_clone_revision": "770476f60923eb17673c25804582e646a2a1adb4",
+  "github_remote_access": "blocked: invalid local CLI authentication; connector lacks repository creation/invitation",
+  "final_live_ui": {
+    "completed_live_concern_seek_seconds": 10,
+    "paused_after_seek": true,
+    "fixture_run_id": "6188cf41-5b5e-4525-bd17-8e30ce0eba4c",
+    "provider_requests": 0
+  },
+  "final_review_run_tests": 12,
+  "final_review_run_checks": "passed after idempotent Live creation and unknown-check export changes",
+  "final_uncertainty_ui": {
+    "unknown_checks": 6,
+    "evidence_images": 6,
+    "visible": true,
+    "fixed_fixture_only": true
+  }
+}

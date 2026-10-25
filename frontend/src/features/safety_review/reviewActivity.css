@@ -1,0 +1,15 @@
+.review-activity .panel{background:#fff;color:#21364d;border-color:#d7e2ed}
+.review-activity .panel-title span,.review-activity .muted{color:#526c85}
+.review-activity .agent-node{background:#f1f6fc;color:#21364d;border-color:#adc3da}
+.review-activity .agent-node small{color:#48627c}
+.review-activity .agent-completed{background:#edf8f4;border-color:#86b4a4}
+.review-activity .agent-running{border-color:#367ab9;box-shadow:0 0 0 1px #367ab933}
+.review-activity .agent-incomplete,.review-activity .agent-error{background:#fff8ed;border-color:#c89b55}
+.review-activity .badge.blue{background:#edf4ff;color:#225a91;border-color:#b6cce2}
+.agent-team-card{display:flex;flex-direction:column;gap:14px;background:var(--hv-card,#fff);border-radius:24px;padding:20px 22px;box-shadow:var(--hv-shadow)}
+.agent-team-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.agent-team-stats span{background:var(--hv-soft,#efede7);border-radius:14px;padding:10px 12px}
+.agent-team-stats small{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--hv-muted,#6b6a65)}
+.agent-team-stats strong{font-family:var(--hv-mono,ui-monospace,monospace);font-size:16px}
+.agent-team-card .detail-disclosure ol{margin:0;padding-left:20px;display:grid;gap:4px}
+.agent-team-card .detail-disclosure li{font-size:12px}

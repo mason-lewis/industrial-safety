@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-23",
+  "change": "Video-only workspace with stock person evidence and scoped agent lookup",
+  "python_tests": 366,
+  "frontend_tests": 69,
+  "contracts": "passed",
+  "production_build": "passed",
+  "local_fixtures": {
+    "replay": "passed",
+    "video_analysis": "passed",
+    "600_second_review": {
+      "windows": 60,
+      "frames": 120,
+      "pending_specialists": 59
+    }
+  },
+  "provider_test_calls": 0,
+  "cloud_training_runs": 0,
+  "pushes": 0,
+  "active_runtime": {
+    "api": "safety_app.api.video_app:app",
+    "worker_kind": "video",
+    "ai_enabled": true,
+    "sample_library_size": 0,
+    "retired_routes_exposed": []
+  },
+  "person_model": {
+    "name": "RF-DETR Small",
+    "classes_retained": [
+      "person"
+    ],
+    "threshold": 0.5,
+    "max_per_frame": 12,
+    "weights_sha256": "d81979a9213a2109345158ce9232668df4c1ae52e9b8db3f2ec0a8cbad959b33",
+    "real_local_inference_smoke": "passed offline; blank image and three archived preview images",
+    "accuracy_claim": null
+  },
+  "remaining_limits": [
+    "Only retained sampled frames receive CV; no full-frame or continuous-identity coverage",
+    "Hosted accuracy and billing await operator validation",
+    "New full clean-install rehearsal is pending"
+  ],
+  "sha256": {
+    "backend/src/safety_app/api/video_app.py": "a5881845f8b6791e15661920dc92d1d73316d62fbc840f538d76b8c1046a1945",
+    "backend/src/safety_app/modules/monitoring/people.py": "d2dad6dd9adca50702579c737df595c8233a209866b79b00f6ca4a7c07d515eb",
+    "backend/src/safety_app/domain/people.py": "60af9ecb13373840aa2a497017dde426d0e6e6f61373ac02150df17effb6870e",
+    "backend/src/safety_app/agents/shared/people.py": "c4af21ed96837938b77a0a673c9ecda29780aed66d72a7057c2410cfec4ecb1e",
+    "backend/src/safety_app/workflows/full_review.py": "d1efa1f8c168144f54eef03b03a80f599d337306b858c028a9293ad06a2c405f",
+    "backend/src/safety_app/workflows/agent_stage.py": "2d7f0f0ca5aad6e1f2fada2954197e736117b213f94466b09ed028a6ec7039d1",
+    "backend/src/safety_app/modules/safety_review/run_report.py": "c208392f58c3aaccd769e474d3ef273842858e7baf5c1af558ccdaca17eb8095",
+    "frontend/src/App.tsx": "73d50f439d4701cac76f409bb327e0c38df482fe92c06de281da7778e3947be8",
+    "frontend/src/app/Navigation.tsx": "11e1b4b3817876589a216f9105d56bcbeae4c563f289e796fe351135ca9bbf13",
+    "frontend/src/components/PersonEvidence.tsx": "f19a171f0bf352300feb668752c645cf1c582c6abcc64156b4830dce72786232",
+    "scripts/start_app.py": "ebb2e2b2325e2ea28607d18e606e11ec9ead333366e9f821a845eb6b0548be40",
+    "scripts/prepare_people.py": "4b0ad14e3bccc3b0c4d090529dd9c7836f373cb106e135946d74dd21973af02c",
+    "pyproject.toml": "2afc40e0338f0fcc644bfaf5558482e0a0a77cd470d5e3a96ebd7dcfbabec804",
+    "uv.lock": "b3b2d2fb07901d39e1bd8b3d064938eed98641fbcc4b96fc350f45673dbd37fb"
+  }
+}

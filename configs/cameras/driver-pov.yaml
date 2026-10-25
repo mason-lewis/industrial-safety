@@ -1,0 +1,11 @@
+{
+  "id": "driver-pov",
+  "camera_id": "driver-pov",
+  "site_id": "local",
+  "view_type": "driver_pov",
+  "zones": [],
+  "calibration_version": null,
+  "limitations": [
+    "Moving camera. Fixed image zones are disabled. Physical distance and speed are unknown."
+  ]
+}

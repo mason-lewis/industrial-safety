@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-23",
+  "kind": "local_git_clone_and_one_command_start",
+  "revision": "770476f60923eb17673c25804582e646a2a1adb4",
+  "success": true,
+  "elapsed_seconds": 20.831,
+  "source_repository": "local explicit-allowlist Git repository",
+  "github_clone_verified": false,
+  "root": "/tmp/industrial-safety-clone-20261023",
+  "command": "./start",
+  "paid_calls_enabled": false,
+  "credentials_present": false,
+  "dependency_caches_copied": false,
+  "developer_data_copied": false,
+  "model_weights_copied": false,
+  "prerequisites": "Existing macOS, python3 bootstrap, Node/npm, Git and network. Network/CDN and operating-system caches not controlled."
+}

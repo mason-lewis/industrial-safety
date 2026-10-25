@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-23",
+  "scope": "Local video-first interface rebuild",
+  "mode": "offline fixtures only",
+  "python_tests": 351,
+  "frontend_tests": 67,
+  "contracts": "unchanged; check passed",
+  "frontend_build": "passed",
+  "initial_js_bytes": 262780,
+  "provider_requests": 0,
+  "cloud_training_runs": 0,
+  "browser_checks": [
+    "One-click Live creation and automatic playback",
+    "One-click full recorded Review and automatic team assessment",
+    "Pause/resume; pause on leaving Live; reopen via History",
+    "EOF: autoplay=false and paused=true at 10.43 of 10.44 seconds",
+    "Retained issue evidence and readable team assessment",
+    "Server-identified fixture decision persisted and exported",
+    "Coverage detail exposes exact fractional final interval, unclear checks and costs",
+    "Report HTTP 200 with embedded images, fixture decision and unknown checks",
+    "390px phone and 768px tablet landing layout visually checked",
+    "Restart creates a distinct run and automatically plays; both intervals and team assessments completed"
+  ],
+  "fixture_review_run_id": "8fe97ed6-367d-4f45-8a75-facf0046b983",
+  "fixture_live_run_id": "6a1011bc-6225-4963-b00d-ca210f132c24",
+  "ten_minute_fixture": {
+    "data_kind": "synthetic_fixture_only",
+    "seconds": 600,
+    "elapsed_seconds": 6.198,
+    "coverage_complete": true,
+    "completed_windows": 60,
+    "frames": 120,
+    "concerns": 60,
+    "pending_specialists": 59,
+    "fixture_model_calls": 65,
+    "provider_requests": 0,
+    "provider_cost_usd": null,
+    "root": "/var/folders/k0/tk0wm5cn3ldflcytl59_dvpm0000gn/T/industrial-course-fixture-ib94_j5c",
+    "run_id": "bb44d1d2-ec80-42a2-8809-0f2dd0faab2f",
+    "limitations": [
+      "Fixed FunctionModel responses; no visual-accuracy evidence.",
+      "Synthetic token counters excluded from provider-usage totals.",
+      "Remaining assessments intentionally left pending in this receipt."
+    ]
+  },
+  "known_limits": [
+    "Hosted accuracy and actual billing were not tested.",
+    "File chooser/drag-drop upload was not independently exercised in browser automation.",
+    "Prior course report/slides and submission archives remain historical snapshots, pending regeneration after user validation."
+  ],
+  "source_hashes": {
+    "frontend/src/App.tsx": "536b01de3264901499e1e0da9383db4073aa21cef99d9146f29fcf6b48a44b23",
+    "frontend/src/app/Navigation.tsx": "e5a4b274355784856b0c2327bf742cc592960d5e639e25e5ccc5f5282727f54e",
+    "frontend/src/components/ReviewRunWorkspace.tsx": "47bd66c671160d02961501a1914a11bd701c326039e0dfe216c5d9291d2a0e08",
+    "frontend/src/hooks/useReviewRun.ts": "8794baed9439ab979e27cb125adcff138b2d709fc2e337299f777683a9f1abd5",
+    "frontend/src/components/ReviewIssueDetails.tsx": "65fdf2cbdfa2b80e5887b3bf300958f335e46a3ac6a1174abc7b4df936d65821",
+    "frontend/src/components/ReviewDialog.tsx": "03daf39df10cae0a38ce0296d9886b0e3d749d9cc63ea85fdd406cdc648958dc",
+    "frontend/src/components/ReviewIcon.tsx": "52e0c6d438c1328766ef858febbf893bfe2a95a7d60e0628e0853f8a41ac6ae5",
+    "frontend/src/components/reviewRun.css": "4ff1c3462ce9b0ffcfccd718aeb87ee5615ec2c6a36ef9fee7c93d8967674877",
+    "frontend/src/components/reviewPresentation.ts": "3878c2d182b563119177d85268fa9d630f891b7aee5c55df5a1dc08755ce6f1c",
+    "frontend/src/components/reviewPresentation.test.ts": "a424ab0e0fd0061f0f706ed0877e68c224d6f7d9afbeed7418431301e1f3b975"
+  },
+  "restarted_live_run_id": "fc5615f3-94a8-4601-b00d-66a25d8dbd7d"
+}

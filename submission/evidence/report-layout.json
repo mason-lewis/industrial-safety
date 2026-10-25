@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "contentBottom": 785.296875,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 1
+    },
+    {
+      "contentBottom": 753.765625,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 2
+    },
+    {
+      "contentBottom": 656.2890625,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 3
+    },
+    {
+      "contentBottom": 798.640625,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 4
+    },
+    {
+      "contentBottom": 762.2578125,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 5
+    },
+    {
+      "contentBottom": 810.0625,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 6
+    },
+    {
+      "contentBottom": 817.0078125,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 7
+    },
+    {
+      "contentBottom": 756.453125,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 8
+    },
+    {
+      "contentBottom": 716.109375,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 9
+    },
+    {
+      "contentBottom": 720.859375,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 10
+    },
+    {
+      "contentBottom": 686.9375,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 11
+    },
+    {
+      "contentBottom": 696.71875,
+      "footerTop": 954.9453125,
+      "imagesLoaded": true,
+      "page": 12
+    }
+  ],
+  "pageCount": 12,
+  "printSpecification": "CSS @page letter; margins .65in .7in; twelve 9.7in page boxes; no content overflow in browser layout. Physical printer/PDF pagination not independently measured."
+}

@@ -1,0 +1,69 @@
+{
+  "call_id": "beba28b9014353b56cfe6c5306fe5c39",
+  "question_id": "applicability-walkway",
+  "specialist": "applicability",
+  "findings": [
+    {
+      "event_id": "beba28b9014353b56cfe6c5306fe5c39",
+      "review_id": "c8731633-39f3-495a-a2d1-50ebe5161253",
+      "question_id": "applicability-walkway",
+      "specialist": "applicability",
+      "condition": "Applicability cannot be fully established from supplied context. The visual description mentions a dirt work area and construction debris but does not establish the activity, employer/worker relationship, jurisdiction, or event date.",
+      "conclusion": "The supplied facts do not establish the activity, employer/worker coverage, jurisdiction, or event-date text needed to determine applicable requirements. 29 CFR 1910.12(a) provides a federal construction-standards applicability framework for employees engaged in construction work; 1910.12(b) defines construction work as construction, alteration, or repair. These excerpts do not resolve whether this event falls within that framework.",
+      "classification": "insufficient_evidence",
+      "exact_clause": null,
+      "evidence_refs": [
+        "aaafcdee-4c09-4e5e-b7e5-1aeb79a82ee8-10600000",
+        "aaafcdee-4c09-4e5e-b7e5-1aeb79a82ee8-13400000"
+      ],
+      "source_refs": [
+        "indexed-cfr-1910-12-6ac7d964504addae-25bf8e1a2393-b0002",
+        "indexed-cfr-1910-12-6ac7d964504addae-25bf8e1a2393-b0003"
+      ],
+      "element_checks": [
+        {
+          "element": "Activity is construction work under 29 CFR 1910.12(b).",
+          "status": "unknown",
+          "evidence_refs": [
+            "aaafcdee-4c09-4e5e-b7e5-1aeb79a82ee8-10600000",
+            "aaafcdee-4c09-4e5e-b7e5-1aeb79a82ee8-13400000"
+          ],
+          "source_refs": [
+            "indexed-cfr-1910-12-6ac7d964504addae-25bf8e1a2393-b0003"
+          ],
+          "explanation": "A work area is described, but the task is not established as construction, alteration, or repair."
+        },
+        {
+          "element": "Employer and employee coverage is established.",
+          "status": "unknown",
+          "source_refs": [
+            "indexed-cfr-1910-12-6ac7d964504addae-25bf8e1a2393-b0002"
+          ],
+          "explanation": "The excerpt addresses employers and employees engaged in construction work; no employer, worker status, or employment relationship is supplied."
+        },
+        {
+          "element": "Jurisdiction and state-plan coverage are established.",
+          "status": "unknown",
+          "explanation": "Jurisdiction and state are unspecified, so federal versus state-plan coverage cannot be resolved."
+        },
+        {
+          "element": "Event-date regulatory text and historical applicability are established.",
+          "status": "unknown",
+          "explanation": "No event date is provided; fetched excerpts lack verified event-date applicability and complete scope/definitions/exceptions context."
+        }
+      ],
+      "uncertainty": [
+        "The observation is a provisional sampled-frame description and does not establish regulatory applicability."
+      ],
+      "recommendations": [
+        "Obtain the task/activity, employer and worker status, state/jurisdiction, and event date before determining applicable regulatory text."
+      ],
+      "status": "draft"
+    }
+  ],
+  "missing_context": [
+    "Activity/task, employer type and worker/employment status, state, jurisdiction, and event date are unknown.",
+    "Fetched 29 CFR 1910.12(a) and (b) excerpts provide a construction applicability framework and definition, but event-date applicability and full scope/definitions/exceptions context are unverified.",
+    "Supporting context and 1910.12(d) were omitted from the returned evidence packet and are not cited."
+  ]
+}

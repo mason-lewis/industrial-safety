@@ -1,0 +1,244 @@
+{
+  "comparison_id": "e61c77e2-0851-4a7b-a7c9-a8f184dd5442",
+  "draft": {
+    "claims": [
+      {
+        "kind": "uncertain",
+        "id": "status",
+        "text": "The provided web-summary evidence reports that, as of October 24, 2026, OSHA\u2019s heat-specific standard remained a proposal: published August 30, 2024, with the post-hearing comment period ending October 30, 2025. Because this is a summary bundle rather than verified primary regulatory text, treat its status and dates as reported\u2014not independently confirmed here. Proposed provisions are not established by this evidence as currently effective requirements.",
+        "citation_ids": [
+          "web:f87cb35c9220505ad39a"
+        ],
+        "exact_clause": null,
+        "depends_on": []
+      },
+      {
+        "kind": "uncertain",
+        "id": "existing-duty",
+        "text": "The same summary says OSHA identifies the OSH Act General Duty Clause, \u00a7 5(a)(1), as applicable to recognized heat hazards likely to cause death or serious physical harm. This is a general existing statutory duty, not a heat-specific checklist; whether it supports a citation depends on case-specific elements. Primary text and case applicability were not verified in the retrieved evidence.",
+        "citation_ids": [
+          "web:f87cb35c9220505ad39a"
+        ],
+        "exact_clause": null,
+        "depends_on": []
+      },
+      {
+        "kind": "guidance",
+        "id": "guidance",
+        "text": "OSHA prevention recommendations\u2014such as training, controls, rest, shade, and fluids\u2014and its heat enforcement directive are guidance/enforcement materials, not the proposed heat standard itself. The summary evidence does not establish that each recommendation is a binding requirement.",
+        "citation_ids": [
+          "web:f87cb35c9220505ad39a"
+        ],
+        "exact_clause": null,
+        "depends_on": []
+      },
+      {
+        "kind": "uncertain",
+        "id": "coverage",
+        "text": "This comparison is limited to the supplied summary of federal OSHA sources. It does not determine coverage for a particular employer or workplace, or address state-plan requirements; jurisdiction and workplace facts are not established.",
+        "citation_ids": [
+          "web:f87cb35c9220505ad39a"
+        ],
+        "exact_clause": null,
+        "depends_on": []
+      }
+    ],
+    "missing_context": [
+      "Current authoritative primary OSHA sources confirming rulemaking status and dates.",
+      "Workplace jurisdiction and employer, worker, and activity facts for a site-specific applicability determination."
+    ]
+  },
+  "review": {
+    "claim_checks": [
+      {
+        "claim_id": "status",
+        "verdict": "uncertain",
+        "independently_publishable": true,
+        "note": "Faithfully attributes the proposal status and dates to the supplied summary and explicitly says they are not independently confirmed. The packet itself records that summary as checked October 24, 2026."
+      },
+      {
+        "claim_id": "existing-duty",
+        "verdict": "uncertain",
+        "independently_publishable": true,
+        "note": "Accurately presents the General Duty Clause account as reported by the summary, preserves the case-specific limitation, and says primary text and applicability were not verified."
+      },
+      {
+        "claim_id": "guidance",
+        "verdict": "uncertain",
+        "independently_publishable": true,
+        "note": "The supplied summary supports the attributed distinction between prevention recommendations, the enforcement directive, and the proposed standard; the answer appropriately avoids asserting each recommendation is binding."
+      },
+      {
+        "claim_id": "coverage",
+        "verdict": "uncertain",
+        "independently_publishable": true,
+        "note": "Appropriately limits the comparison to the supplied federal-source summary and preserves the unresolved workplace and state-plan questions."
+      }
+    ],
+    "blocking_issues": [],
+    "observations": [
+      "The answer addresses the requested requirements-versus-guidance comparison while clearly disclosing that its evidence is a provisional summary, not verified primary regulatory text.",
+      "The repeated missing-context items are preserved as evidence gaps and do not undermine the attributed, qualified comparison."
+    ]
+  },
+  "citations": [
+    {
+      "id": "osha-v2-b97000b56712-\u00a7 1919.90-22",
+      "title": "\u00a7 1919.90 Documentation.",
+      "text": "(3) In the event that the heat treatment of any loose gear is recommended by its manufacturer, the latest heat treatment certificate, attesting to compliance with the manufacturer's specifications, shall be part of the available documentation.",
+      "kind": "requirement",
+      "version": "title29-osha-v2:b97000b56712757101dd9b7edec34a37f852ff027eb0c1e0f762c003b35b71ed",
+      "url": "https://www.ecfr.gov/current/title-29/section-\u00a7 1919.90",
+      "retrieved_at": "2026-09-30",
+      "clause": "\u00a7 1919.90(d)(3)",
+      "context_complete": false,
+      "jurisdiction": "US-federal-OSHA",
+      "effective_date": null,
+      "provenance": {
+        "snapshot_sha256": "b97000b56712757101dd9b7edec34a37f852ff027eb0c1e0f762c003b35b71ed",
+        "section": "\u00a7 1919.90",
+        "original": "federal-2026-09-30/raw/ECFR-title29.xml",
+        "neighbors": [
+          "osha-v2-b97000b56712-\u00a7 1919.90-21",
+          "osha-v2-b97000b56712-\u00a7 1919.90-23"
+        ],
+        "gaps": [
+          "Historical applicability, effective date and complete context have not been verified."
+        ]
+      }
+    },
+    {
+      "id": "osha-v2-b97000b56712-\u00a7 1910.1450-408",
+      "title": "\u00a7 1910.1450 Occupational exposure to hazardous chemicals in laboratories.",
+      "text": "6. Code of Federal Regulations, 29 CFR part 1910 subpart Z. U.S. Govt. Printing Office, Washington, DC 20402 (latest edition).",
+      "kind": "requirement",
+      "version": "title29-osha-v2:b97000b56712757101dd9b7edec34a37f852ff027eb0c1e0f762c003b35b71ed",
+      "url": "https://www.ecfr.gov/current/title-29/section-\u00a7 1910.1450",
+      "retrieved_at": "2026-09-30",
+      "clause": null,
+      "context_complete": false,
+      "jurisdiction": "US-federal-OSHA",
+      "effective_date": null,
+      "provenance": {
+        "snapshot_sha256": "b97000b56712757101dd9b7edec34a37f852ff027eb0c1e0f762c003b35b71ed",
+        "section": "\u00a7 1910.1450",
+        "original": "federal-2026-09-30/raw/ECFR-title29.xml",
+        "neighbors": [
+          "osha-v2-b97000b56712-\u00a7 1910.1450-407",
+          "osha-v2-b97000b56712-\u00a7 1910.1450-409"
+        ],
+        "gaps": [
+          "Historical applicability, effective date and complete context have not been verified."
+        ]
+      }
+    },
+    {
+      "id": "osha-v2-b97000b56712-\u00a7 1926.503-13",
+      "title": "\u00a7 1926.503 Training requirements.",
+      "text": "(2) The latest training certification shall be maintained.",
+      "kind": "requirement",
+      "version": "title29-osha-v2:b97000b56712757101dd9b7edec34a37f852ff027eb0c1e0f762c003b35b71ed",
+      "url": "https://www.ecfr.gov/current/title-29/section-\u00a7 1926.503",
+      "retrieved_at": "2026-09-30",
+      "clause": "\u00a7 1926.503(b)(2)",
+      "context_complete": false,
+      "jurisdiction": "US-federal-OSHA",
+      "effective_date": null,
+      "provenance": {
+        "snapshot_sha256": "b97000b56712757101dd9b7edec34a37f852ff027eb0c1e0f762c003b35b71ed",
+        "section": "\u00a7 1926.503",
+        "original": "federal-2026-09-30/raw/ECFR-title29.xml",
+        "neighbors": [
+          "osha-v2-b97000b56712-\u00a7 1926.503-12",
+          "osha-v2-b97000b56712-\u00a7 1926.503-14"
+        ],
+        "gaps": [
+          "Historical applicability, effective date and complete context have not been verified."
+        ]
+      }
+    },
+    {
+      "id": "web:f87cb35c9220505ad39a",
+      "title": "Web discovery \u00b7 source summary bundle",
+      "text": "- **Current federal status (checked October 24, 2026):** OSHA\u2019s heat-specific rule is still identified as a **proposed rule**, not a final standard. OSHA says the proposal was published August 30, 2024; the post-hearing comment period ended October 30, 2025. The proposed plan, monitoring, rest-break, and other provisions should therefore not be described as currently effective federal heat-standard requirements. ([osha.gov](https://www.osha.gov/heat-exposure/rulemaking?utm_source=openai))\n\n- **Existing federal obligation:** OSHA identifies the OSH Act\u2019s General Duty Clause, Section 5(a)(1), as applying to recognized heat hazards likely to cause death or serious physical harm. Whether it supports a citation depends on the facts and the elements established in an individual case; the clause is not a single heat-specific checklist. ([osha.gov](https://www.osha.gov/heat-exposure/standards?utm_source=openai))\n\n- **Guidance and enforcement materials:** OSHA recommends prevention measures such as training, controls, rest, shade, and fluids. Its heat enforcement directive guides OSHA inspectors in evaluating potential General Duty Clause citations; it is not itself the proposed heat standard. ([osha.gov](https://www.osha.gov/heat-exposure/prevention?utm_source=openai))\n\n- **Limit:** This summary concerns federal OSHA sources; it does not establish which rules apply to a particular workplace or address state-plan requirements. ([osha.gov](https://www.osha.gov/heat-exposure/standards?utm_source=openai))",
+      "kind": "web_summary",
+      "version": "live:2026-10-24T15:03:29.319444+00:00",
+      "url": null,
+      "retrieved_at": "2026-10-24T15:03:29.319447+00:00",
+      "clause": null,
+      "context_complete": false,
+      "jurisdiction": null,
+      "effective_date": null,
+      "provenance": {
+        "provider": "OpenAI native web_search",
+        "verified_regulatory_text": false,
+        "sources": [
+          {
+            "url": "https://www.osha.gov/heat-exposure/rulemaking",
+            "title": "Web source"
+          },
+          {
+            "url": "https://www.osha.gov/heat-exposure/standards",
+            "title": "Web source"
+          },
+          {
+            "url": "https://www.osha.gov/laws-regs/federalregister/2024-11-29",
+            "title": "Web source"
+          },
+          {
+            "url": "https://www.osha.gov/sites/default/files/laws-regs/federalregister/2024-08-30.pdf",
+            "title": "Web source"
+          },
+          {
+            "url": "https://www.osha.gov/sites/default/files/enforcement/directives/CPL_03-00-024_0.pdf",
+            "title": "Web source"
+          },
+          {
+            "url": "https://www.osha.gov/sites/default/files/enforcement/directives/SFO-CPL-04-00-16.pdf",
+            "title": "Web source"
+          },
+          {
+            "url": "https://www.osha.gov/sites/default/files/publications/heat-rulemaking-factsheet.pdf",
+            "title": "Web source"
+          },
+          {
+            "url": "https://www.osha.gov/laws-regs/interlinking/standards/1910.141/federal_register",
+            "title": "Web source"
+          }
+        ],
+        "citation_spans": [
+          {
+            "url": "https://www.osha.gov/heat-exposure/rulemaking?utm_source=openai",
+            "start_index": 416,
+            "end_index": 493,
+            "annotated_text": "([osha.gov](https://www.osha.gov/heat-exposure/rulemaking?utm_source=openai))",
+            "basis": "Provider citation span only; no attribution beyond this span is inferred."
+          },
+          {
+            "url": "https://www.osha.gov/heat-exposure/standards?utm_source=openai",
+            "start_index": 841,
+            "end_index": 917,
+            "annotated_text": "([osha.gov](https://www.osha.gov/heat-exposure/standards?utm_source=openai))",
+            "basis": "Provider citation span only; no attribution beyond this span is inferred."
+          },
+          {
+            "url": "https://www.osha.gov/heat-exposure/prevention?utm_source=openai",
+            "start_index": 1204,
+            "end_index": 1281,
+            "annotated_text": "([osha.gov](https://www.osha.gov/heat-exposure/prevention?utm_source=openai))",
+            "basis": "Provider citation span only; no attribution beyond this span is inferred."
+          },
+          {
+            "url": "https://www.osha.gov/heat-exposure/standards?utm_source=openai",
+            "start_index": 1442,
+            "end_index": 1518,
+            "annotated_text": "([osha.gov](https://www.osha.gov/heat-exposure/standards?utm_source=openai))",
+            "basis": "Provider citation span only; no attribution beyond this span is inferred."
+          }
+        ],
+        "attribution": "Summary bundle; individual source support is not inferred outside provider citation spans.",
+        "query": "Check the latest federal OSHA heat requirements and distinguish requirements from guidance."
+      }
+    }
+  ]
+}

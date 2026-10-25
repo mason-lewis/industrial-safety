@@ -1,0 +1,13 @@
+
+> industrial-video-safety-lab@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.3 /Users/masonlewis/Dev/video-analysis/frontend
+
+
+ Test Files  17 passed (17)
+      Tests  67 passed (67)
+   Start at  16:03:44
+   Duration  311ms (transform 51%, import 31%, tests 14%, worker 4%)
+

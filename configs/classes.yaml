@@ -1,0 +1,16 @@
+{
+  "version": "1",
+  "classes": [
+    {
+      "class_id": 0,
+      "name": "person",
+      "definition": "Visible human figure",
+      "examples": [
+        "Standing worker"
+      ],
+      "exclusions": [
+        "Printed image of a person"
+      ]
+    }
+  ]
+}

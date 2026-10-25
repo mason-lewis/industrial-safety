@@ -1,0 +1,238 @@
+{
+  "specialist": {
+    "call_id": "delegation-2",
+    "question_id": "surfaces-debris-trip",
+    "specialist": "surfaces",
+    "findings": [
+      {
+        "id": "b9e84498-b75b-47d7-bc89-d267e3bfe42b",
+        "event_id": "0b2488525a67dee93c59b4f93d28d651",
+        "review_id": "e23631e6-02b2-4ed1-be25-b83dc7b5fda4",
+        "conclusion": "Sampled frames show loose boards and construction debris scattered on the ground around a bent worker, consistent with a possible walking-surface trip exposure. No liquid spill is apparent. This establishes neither a fall nor a specific requirement violation.",
+        "evidence_refs": [
+          "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+          "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+          "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+          "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+        ],
+        "rule_refs": [],
+        "source_refs": [],
+        "uncertainty": [
+          "Still-frame sampling does not establish movement, whether debris obstructed a walking route, or how long it was present.",
+          "Activity, employer coverage, jurisdiction, and event date are unknown; federal applicability cannot be established.",
+          "Relevant OSHA walking-surface text could not be fetched, so no specific requirement or violation can be concluded."
+        ],
+        "recommendations": [],
+        "status": "draft",
+        "classification": "general_hazard",
+        "question_id": "surfaces-debris-trip",
+        "specialist": "surfaces",
+        "condition": "Loose boards and construction debris scattered on the ground in the sampled frames.",
+        "exact_clause": null,
+        "element_checks": [
+          {
+            "element": "Loose boards and construction debris are visibly scattered on the ground in sampled frames.",
+            "status": "supported",
+            "evidence_refs": [
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+            ],
+            "source_refs": [],
+            "rule_refs": [],
+            "explanation": "The observation describes loose boards and debris across the ground; motion between sampled frames is unknown."
+          },
+          {
+            "element": "A specific mandatory walking-surface requirement was violated.",
+            "status": "unknown",
+            "evidence_refs": [],
+            "source_refs": [],
+            "rule_refs": [],
+            "explanation": "A potentially relevant federal clause was discovered, but exact source text was unavailable. Activity, coverage, jurisdiction, and event date are also unknown."
+          }
+        ],
+        "corrective_actions": [
+          {
+            "action": "If the area is accessible to workers, remove or secure the loose boards and debris from the walking route, or restrict access to the affected area until it is cleared.",
+            "failed_control": "Loose boards and debris are visibly scattered on the ground, presenting a possible trip exposure.",
+            "verification": "Inspect the route after cleanup or access restriction and confirm loose boards and debris no longer obstruct it.",
+            "evidence_refs": [
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+            ]
+          }
+        ]
+      }
+    ],
+    "applicability_checks": [],
+    "hypotheses": [],
+    "missing_context": [
+      "Missing source 1910.22(a)",
+      "Missing source 1910.22(a)(1)",
+      "Missing source 1910.22(a)(3)",
+      "Exact text for the discovered OSHA walking-surface clauses was unavailable after fetch attempts; no requirement claim is supported by a citation.",
+      "Activity/task, jurisdiction (including state-plan coverage if applicable), employer/worker coverage, and event date are needed to assess legal applicability."
+    ]
+  },
+  "final": {
+    "findings": [
+      {
+        "id": "b9e84498-b75b-47d7-bc89-d267e3bfe42b",
+        "event_id": "0b2488525a67dee93c59b4f93d28d651",
+        "review_id": "e23631e6-02b2-4ed1-be25-b83dc7b5fda4",
+        "conclusion": "Sampled frames show loose boards and construction debris scattered on the ground around a bent worker, consistent with a possible walking-surface trip exposure. No liquid spill is apparent. This establishes neither a fall nor a specific requirement violation.",
+        "evidence_refs": [
+          "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+          "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+          "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+          "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+        ],
+        "rule_refs": [],
+        "source_refs": [],
+        "uncertainty": [
+          "Still-frame sampling does not establish movement, whether debris obstructed a walking route, or how long it was present.",
+          "Activity, employer coverage, jurisdiction, and event date are unknown; federal applicability cannot be established.",
+          "Relevant OSHA walking-surface text could not be fetched, so no specific requirement or violation can be concluded."
+        ],
+        "recommendations": [],
+        "status": "draft",
+        "classification": "general_hazard",
+        "question_id": "surfaces-debris-trip",
+        "specialist": "surfaces",
+        "condition": "Loose boards and construction debris scattered on the ground in the sampled frames.",
+        "exact_clause": null,
+        "element_checks": [
+          {
+            "element": "Loose boards and construction debris are visibly scattered on the ground in sampled frames.",
+            "status": "supported",
+            "evidence_refs": [
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+            ],
+            "source_refs": [],
+            "rule_refs": [],
+            "explanation": "The observation describes loose boards and debris across the ground; motion between sampled frames is unknown."
+          },
+          {
+            "element": "A specific mandatory walking-surface requirement was violated.",
+            "status": "unknown",
+            "evidence_refs": [],
+            "source_refs": [],
+            "rule_refs": [],
+            "explanation": "A potentially relevant federal clause was discovered, but exact source text was unavailable. Activity, coverage, jurisdiction, and event date are also unknown."
+          }
+        ],
+        "corrective_actions": [
+          {
+            "action": "If the area is accessible to workers, remove or secure the loose boards and debris from the walking route, or restrict access to the affected area until it is cleared.",
+            "failed_control": "Loose boards and debris are visibly scattered on the ground, presenting a possible trip exposure.",
+            "verification": "Inspect the route after cleanup or access restriction and confirm loose boards and debris no longer obstruct it.",
+            "evidence_refs": [
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+              "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+            ]
+          }
+        ]
+      }
+    ],
+    "missing_context": [
+      "Activity/task, jurisdiction (including state-plan coverage if applicable), employer/worker coverage, and event date are needed to assess legal applicability.",
+      "Missing source 1910.22(a), 1910.22(a)(1), and 1910.22(a)(3); exact text unavailable, so no requirement claim is supported by a citation. The applicability specialist also noted \u00a71910.12(b) only as discovery preview, not fetched governing text."
+    ],
+    "investigation": {
+      "sequence": [
+        {
+          "start_ms": 5100,
+          "end_ms": 5600,
+          "media_id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d",
+          "description": "Sampled frames show loose boards and construction debris scattered on the ground around a bent worker; no liquid spill is apparent. Movement between frames is unknown.",
+          "evidence_refs": [
+            "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+            "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+            "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+            "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+          ]
+        }
+      ],
+      "hypotheses": [
+        {
+          "id": "possible-trip-exposure",
+          "explanation": "Loose boards and debris may present a trip exposure if located on an accessible walking route.",
+          "status": "supported",
+          "supporting_refs": [
+            "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+            "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+            "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+            "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+          ],
+          "contradicting_refs": [],
+          "missing_facts": [
+            "Whether the debris obstructed an accessible walking route",
+            "Duration and whether anyone tripped"
+          ],
+          "distinguishing_test": "Inspect the area and establish whether workers used or needed to use this route; seek incident or witness information about any trip."
+        }
+      ],
+      "cause_status": "not_established",
+      "limitations": [
+        "Sparse sampled stills do not establish movement, injury, duration, or causation.",
+        "Activity, employer/worker coverage, jurisdiction, and event date remain unknown.",
+        "Exact text of potentially relevant walking-surface provisions was unavailable."
+      ]
+    },
+    "triage": {
+      "priority": "routine",
+      "reason": "Possible trip exposure is visible, but supplied evidence does not establish an immediate concrete danger or injury.",
+      "finding_ids": [
+        "b9e84498-b75b-47d7-bc89-d267e3bfe42b"
+      ],
+      "evidence_refs": [
+        "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+        "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+        "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+        "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+      ]
+    }
+  },
+  "frames": {
+    "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000": {
+      "id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000",
+      "media_id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d",
+      "frame_id": "5100000",
+      "timestamp_ms": 5100,
+      "content_hash": "09ad8999447809836777a6d374b03d15ce14c8091d282f884d8e2724c7fbf264",
+      "image_url": "/api/media/frames/dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5100000"
+    },
+    "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000": {
+      "id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000",
+      "media_id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d",
+      "frame_id": "5400000",
+      "timestamp_ms": 5400,
+      "content_hash": "979d79f21e73b858f4ab8442e9e0df6e78f41a3d1d05816d9ae07bd6095dafea",
+      "image_url": "/api/media/frames/dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5400000"
+    },
+    "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000": {
+      "id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000",
+      "media_id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d",
+      "frame_id": "5500000",
+      "timestamp_ms": 5500,
+      "content_hash": "06f570d376d5c8fdfaa222c365e2f4941ccd0325e7eaa85921deadadf184a2d0",
+      "image_url": "/api/media/frames/dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5500000"
+    },
+    "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000": {
+      "id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000",
+      "media_id": "dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d",
+      "frame_id": "5600000",
+      "timestamp_ms": 5600,
+      "content_hash": "34c5c5a70f3098eac927e44b37d5638ae1c04d931f97ab30f93e533924bae305",
+      "image_url": "/api/media/frames/dc5fa4c1-d9a9-455d-8b9d-d5920f9c784d-5600000"
+    }
+  }
+}
