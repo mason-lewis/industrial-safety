@@ -69,6 +69,8 @@ def check_report(skip_print):
             problems.append(f'relative link breaks after download: {href}')
     if not re.search(r'https://github\.com/[\w.-]+/[\w.-]+', html):
         problems.append('no GitHub repository URL')
+    if 'public github repository' not in text.lower() and 'private' not in text.lower():
+        problems.append('report does not say whether the repo is public or private')
     if found := sorted(set(m.group(0).lower() for m in PLACEHOLDERS.finditer(text))):
         problems.append(f'placeholder words present: {found}')
     if not skip_print:
@@ -123,6 +125,10 @@ def check_slides():
         problems.append('a slide image is not embedded')
     if len(images) < 2:
         problems.append(f'{len(images)} embedded screenshots; 2+ needed')
+    if not re.search(r'https://github\.com/[\w.-]+/[\w.-]+', html):
+        problems.append('no GitHub repository URL in slides (Canvas takes only the two HTML files)')
+    if 'public repo' not in text_of(html).lower():
+        problems.append('slides do not say whether the repo is public or private')
     if 'class="diagram"' not in html:
         problems.append('no agent diagram (class="diagram")')
     text = text_of(html).lower()

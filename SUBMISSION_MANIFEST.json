@@ -1466,8 +1466,8 @@
   },
   {
     "path": "docs/course-requirements.md",
-    "bytes": 7194,
-    "sha256": "5bef489469527c9daca4a6407bbee712bb28b87521ed5de34e83071f6acbb0b8"
+    "bytes": 7496,
+    "sha256": "c28da97e436b5bc73c5095dc0e458f553069b218ef02481efa8829008b3180a6"
   },
   {
     "path": "docs/course-research.md",
@@ -1536,8 +1536,8 @@
   },
   {
     "path": "docs/submission-goals.md",
-    "bytes": 2720,
-    "sha256": "4146e448a7ae738c2e81da74ad58a49df9097bf57fa50c41b66ef987582fa57e"
+    "bytes": 3430,
+    "sha256": "c3a03947ec2f07c7f6bf84b860199077c4701147087b0d186ff15f13e94bd534"
   },
   {
     "path": "docs/two-layer-safety.md",
@@ -2176,8 +2176,8 @@
   },
   {
     "path": "harness.md",
-    "bytes": 297168,
-    "sha256": "8a91fbebab48c313a8ee331ae954f38915846fd97964eb7ce5df113e32551b3d"
+    "bytes": 297689,
+    "sha256": "bd18ba4781f1412e1b49aad6d863c12ec45317816df2bdfb5ac2d38ebe0aa6a1"
   },
   {
     "path": "pyproject.toml",
@@ -2186,8 +2186,8 @@
   },
   {
     "path": "report.html",
-    "bytes": 1496786,
-    "sha256": "0a31ddbdb412ae6d306f2f09a265fd02a42875a98bf8b576647da3180a5f4e70"
+    "bytes": 1496912,
+    "sha256": "9ac29b391deaf1140899a6aa933410f9236368a1a2e24bd74a0c6d14805e2467"
   },
   {
     "path": "scripts/balcony_retest.py",
@@ -2206,8 +2206,8 @@
   },
   {
     "path": "scripts/build_course_artifacts.py",
-    "bytes": 50933,
-    "sha256": "5c04938f91439b4718aed37d381cb5c9873ec345f005e8d744941efa96895913"
+    "bytes": 51340,
+    "sha256": "9847d8e8aa2e54da7a3af8ce3c0ce418663fff8299eee330dde6c14f0002382f"
   },
   {
     "path": "scripts/build_safety_library.py",
@@ -2231,8 +2231,8 @@
   },
   {
     "path": "scripts/check_submission.py",
-    "bytes": 9743,
-    "sha256": "f3df48f61bbf47fac01daa0c6d047fe7759ad626bb3366a638fc359756a7ede6"
+    "bytes": 10220,
+    "sha256": "fd2386e6175ed7e4be4942a2d5e71e4b6b8faba2978ceae6aecd24b4d234f80a"
   },
   {
     "path": "scripts/compare_scenes.py",
@@ -2381,8 +2381,8 @@
   },
   {
     "path": "slides.html",
-    "bytes": 934502,
-    "sha256": "3f855eced4ad3afefa16649321cbae458e66a50aa5dddde66c8d252b801f9f5e"
+    "bytes": 935457,
+    "sha256": "30aef94714abb80ef4c13c542cfde7bc7dc920f7a64da3b677f15bf8d98edc4a"
   },
   {
     "path": "start",
@@ -2391,8 +2391,8 @@
   },
   {
     "path": "submission/demo-video-script.md",
-    "bytes": 3005,
-    "sha256": "211d02d24887ef2d05dddf8b818f7c6e98cdfb3b5a1d2ca9c4a159e4d3ce62ba"
+    "bytes": 3056,
+    "sha256": "55a46a8261f04716c7a6320c7d75f11394bbc115c233f532b97920be3ab68877"
   },
   {
     "path": "submission/evidence/ai-control-2026-10-23.json",

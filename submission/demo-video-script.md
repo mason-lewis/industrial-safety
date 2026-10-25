@@ -15,4 +15,4 @@ The course rubric says the video can earn "It works" and "Look and feel" points 
 | 2:10–2:35 | Back on the player: **Coverage details**; mention caps | "Every request is capped: 15 cents a run, $2 a day, $20 a month. If text in the footage tries to hijack the model, Python rejects any answer that cites frames or times it wasn't given." |
 | 2:35–2:50 | Back to the home screen | "In my timed test, reviewing with the app took less of my time than scrubbing by hand. Next is a pilot with a real safety coordinator. Thanks." Update this line with the real self-trial numbers. |
 
-Upload the file to Canvas with the other deliverables. Keep it under 3 minutes.
+Upload it to Canvas next to `report.html` and `slides.html`. Those three files are all Canvas should get. Keep it under 3 minutes.

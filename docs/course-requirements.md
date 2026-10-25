@@ -18,7 +18,7 @@ Goals and the offline checker for this table: [submission-goals.md](submission-g
 | R6 | Report design, 2 points | `report.html`, 14 letter pages, embedded images, no relative links; built by `scripts/build_course_artifacts.py` | Done |
 | S1 | Slides, 8 points | `slides.html`, 10 slides, reveal.js 6.0.2 from jsDelivr, embedded screenshots and diagram | Done; impact slide fills in with the self-trial |
 | P1 | Public repo, README, `.env.example`, no secrets | [github.com/mason-lewis/industrial-safety](https://github.com/mason-lewis/industrial-safety), built from the `scripts/package_submission.py` allowlist (581 files); G4 secret scan | Published 2026-10-25; GitHub clone healthy in 63 s with cold caches and `.env` in the parent folder |
-| P2 | Canvas: repo link, report.html, slides.html, optional video | [Demo video script](../submission/demo-video-script.md) | Open (manual) |
+| P2 | Canvas (files only, per the 25 Oct instructor update): report.html, slides.html, optional video, nothing else; the GitHub URL and public/private status must be inside both HTML files | Report cover and every slide footer carry `github.com/mason-lewis/industrial-safety` and state it is public; title slide and cover give the clone command. [Demo video script](../submission/demo-video-script.md) | Open (manual upload) |
 
 The 2026-10-24 report and slides are archived in `submission/evidence/archive-20261024/`.
 
@@ -49,5 +49,5 @@ The 2026-10-24 report and slides are archived in `submission/evidence/archive-20
 - [ ] Timed self-trial recorded in `submission/evidence/self-trial.json`, then report and slides rebuilt.
 - [x] Public GitHub repository published from the allowlist package; GitHub clone started with `.env` one folder up in 63 s (`submission/evidence/fresh-clone.json`).
 - [ ] `scripts/check_submission.py` passes G1–G7.
-- [ ] Submit the repository URL, report.html, slides.html and the optional 2–3 minute video on Canvas before Monday 6 p.m.
+- [ ] Upload only report.html, slides.html and the optional 2–3 minute video to Canvas before Monday 6 p.m. (no URL field, no other files).
 - [ ] Still open after submission: independent 8/8/8 labels and a pilot with an outside safety coordinator.
