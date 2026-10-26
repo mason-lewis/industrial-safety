@@ -1466,8 +1466,8 @@
   },
   {
     "path": "docs/course-requirements.md",
-    "bytes": 7724,
-    "sha256": "ed04302a8abb5f8a69a9cafdfa744a19684acbc1abf92dce9a7d46c0a2867124"
+    "bytes": 7833,
+    "sha256": "d8977faa70f6ba0e1701243d64bfc4dfbe8708ba283dc22754a90c8c470cdfec"
   },
   {
     "path": "docs/course-research.md",
@@ -2176,8 +2176,8 @@
   },
   {
     "path": "harness.md",
-    "bytes": 298808,
-    "sha256": "87507d431e0081980ea02440f8575858900efb24cdbcdaa94328d75da5a1934b"
+    "bytes": 300120,
+    "sha256": "092c3be5011a82d2432aba719c199779a79ec3398d7724fbc6730d51595e303f"
   },
   {
     "path": "pyproject.toml",
@@ -2186,8 +2186,8 @@
   },
   {
     "path": "report.html",
-    "bytes": 1499100,
-    "sha256": "cc34e2b692064056d2f408f5a54bd62341b13f4358d99fcb66e41896666a7fb5"
+    "bytes": 1501351,
+    "sha256": "777143b33a8dc503051b2decb6aca7a1e76903107884820c01f3290adcc7b9a3"
   },
   {
     "path": "scripts/balcony_retest.py",
@@ -2206,8 +2206,8 @@
   },
   {
     "path": "scripts/build_course_artifacts.py",
-    "bytes": 52834,
-    "sha256": "85e7c0468735b18db55887dbc36b8877fb808b0c24380402e414d5ca5e05838c"
+    "bytes": 56755,
+    "sha256": "ddcefe0a7b376a7084cef2deeed626469b770150081f6a05c3505bc706c0ad1e"
   },
   {
     "path": "scripts/build_safety_library.py",
@@ -2381,8 +2381,8 @@
   },
   {
     "path": "slides.html",
-    "bytes": 935836,
-    "sha256": "c23dc643bf2721f081a9ae99221237b86e204953cbed8a1bea3e37b8e2be3962"
+    "bytes": 936688,
+    "sha256": "d340eac445c33f15fee0e2a410bde64b40aa0e8d2ad0787cc6c7851d88b5d44d"
   },
   {
     "path": "start",
@@ -2391,8 +2391,8 @@
   },
   {
     "path": "submission/demo-video-script.md",
-    "bytes": 3188,
-    "sha256": "013d6eccd589a340d48780113abaabb9a83d70b86df51d2898945d6da7171046"
+    "bytes": 3358,
+    "sha256": "29427cf67e5355b9f1b9afd0c1142915a53acb193cd6579ee13771d76d73b606"
   },
   {
     "path": "submission/evidence/ai-control-2026-10-23.json",

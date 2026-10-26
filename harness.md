@@ -38,6 +38,12 @@ The creator asked for a full audit against the [course requirements](https://zli
   - He accepted 5 of 7 app findings; the 2 struck-by flags were false alarms.
   - The app missed 2 of the 3 accidents in its videos (truck boxes falling at 3:02, a board landing on the balcony worker's head). Manually he caught all three accidents in his videos.
   - Report §7, the impact slide and the limits now state that the app is not faster yet and misses fast impacts. The impact case is framed as a cheap first pass on routine footage, with a person on every incident clip. The token table uses the current balcony run.
+- **Creator's slide review (25 Oct): live-feed cost as the headline.** The key metric is now cost per camera-hour of footage: $3.08, the median of six measured runs (`AI_HOUR` in the generator). "One user" now means one live camera running 24/7 (720 h/month): $2,220 per camera, $222k for 100 and $22.2M for 10,000 cameras per month.
+  - It is compared with a specialist reviewing by hand at the measured self-trial pace: 1.41 min per footage-minute × $40.34/h = $57 per camera-hour, 18× more.
+  - Stated caveats: the rates come from 14–197 s clips, not tested 24-hour runs; deciding every finding, as in the trial, costs $85/camera-hour, so the saving needs people to check only priority findings.
+  - The problem slide and §2 now explain why the 2.5M injuries and the $40/h wage matter together: expert review costs about $57 per camera-hour, so nobody watches routine footage. The §3 callout and slide 3 say no option does both (check every minute and show evidence for every call) at a site-affordable price.
+  - The safety slide and §6 answer plainly whether text on the video can hijack the review. They also state what is not proven (a fooled "clear" on a filled-in check).
+  - The impact slide and §7 read "slower per clip, 18× cheaper per camera-hour, coverage nobody would pay for otherwise".
 - **Open:** the Canvas upload (`report.html`, `slides.html`, optional video only). No outside-user pilot or labeled accuracy study exists.
 
 ## Slides restyle and title slide (2026-10-25)
