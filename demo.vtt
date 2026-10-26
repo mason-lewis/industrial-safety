@@ -1,0 +1,182 @@
+WEBVTT
+
+1
+00:00:00.550 --> 00:00:05.018
+Last year, American workplaces
+recorded 2.5 million injuries.
+
+2
+00:00:05.018 --> 00:00:08.680
+A lot of them happened
+right in front of a camera.
+
+3
+00:00:08.680 --> 00:00:10.950
+And almost nobody was watching.
+
+4
+00:00:11.650 --> 00:00:14.233
+This is Industrial Safety.
+
+5
+00:00:14.233 --> 00:00:19.300
+An AI safety reviewer for
+workplace camera footage.
+
+6
+00:00:20.000 --> 00:00:24.750
+Here's the problem. Having a
+safety specialist review footage
+
+7
+00:00:24.750 --> 00:00:27.554
+costs about $57 an hour, per camera.
+
+8
+00:00:27.554 --> 00:00:33.161
+So nobody does it, and footage only
+gets pulled after someone gets hurt.
+
+9
+00:00:33.161 --> 00:00:37.600
+Industrial Safety does that
+first pass for $3.08 an hour.
+
+10
+00:00:38.300 --> 00:00:40.895
+It runs on your own computer.
+
+11
+00:00:40.895 --> 00:00:45.100
+Clone the repo, run one
+command, and you're in.
+
+12
+00:00:45.800 --> 00:00:50.419
+Pick a video, and it reviews
+the footage as it plays.
+
+13
+00:00:50.419 --> 00:00:55.299
+Every 10 seconds gets checked:
+struck-by hazards, falls,
+
+14
+00:00:55.299 --> 00:01:00.440
+fire, PPE, blocked exits,
+unstable stacks, slips and trips.
+
+15
+00:01:00.440 --> 00:01:07.150
+Here, it flags the kitchen fire as a
+priority within seconds of the flare-up.
+
+16
+00:01:07.850 --> 00:01:11.191
+Behind each review is
+a team of AI agents.
+
+17
+00:01:11.191 --> 00:01:13.657
+A coordinator splits the video.
+
+18
+00:01:13.657 --> 00:01:16.600
+An observer fills a safety checklist.
+
+19
+00:01:16.600 --> 00:01:20.180
+A safety lead sends each
+case to specialists,
+
+20
+00:01:20.180 --> 00:01:23.600
+and an independent
+challenger re-checks the
+
+21
+00:01:23.600 --> 00:01:27.100
+original frames before
+anything reaches you.
+
+22
+00:01:27.800 --> 00:01:33.159
+Every finding shows the exact frames
+the AI looked at, with timestamps.
+
+23
+00:01:33.159 --> 00:01:37.008
+It says what it can see,
+and what it can't confirm.
+
+24
+00:01:37.008 --> 00:01:39.650
+And a person always makes the call.
+
+25
+00:01:40.350 --> 00:01:46.600
+Then it rolls everything into a one-page
+report a manager can read in a minute.
+
+26
+00:01:47.300 --> 00:01:49.988
+I also tested what happens if someone
+
+27
+00:01:49.988 --> 00:01:53.112
+writes instructions on
+a sign in the video,
+
+28
+00:01:53.112 --> 00:01:55.945
+telling the AI to mark everything safe.
+
+29
+00:01:55.945 --> 00:01:59.796
+Even if the model obeys,
+the code rejects the answer,
+
+30
+00:01:59.796 --> 00:02:04.300
+and a skipped check is recorded
+as not checked. Never as safe.
+
+31
+00:02:05.000 --> 00:02:09.966
+Running live, 24/7, that's
+about $3 an hour per camera.
+
+32
+00:02:09.966 --> 00:02:12.314
+18× cheaper than a person,
+
+33
+00:02:12.314 --> 00:02:17.100
+with hard spending caps on
+every run, day, and month.
+
+34
+00:02:17.800 --> 00:02:19.458
+It's not perfect yet.
+
+35
+00:02:19.458 --> 00:02:24.591
+In my own timed test, reviewing
+with the app was slower per clip,
+
+36
+00:02:24.591 --> 00:02:27.434
+and it missed 2 of 3 fast accidents.
+
+37
+00:02:27.434 --> 00:02:29.250
+Catching those is next.
+
+38
+00:02:29.950 --> 00:02:35.048
+Industrial Safety. Coverage
+nobody could afford before.
+
+39
+00:02:35.048 --> 00:02:37.550
+It's open source on GitHub.
