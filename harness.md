@@ -44,6 +44,7 @@ The creator asked for a full audit against the [course requirements](https://zli
   - The problem slide and §2 now explain why the 2.5M injuries and the $40/h wage matter together: expert review costs about $57 per camera-hour, so nobody watches routine footage. The §3 callout and slide 3 say no option does both (check every minute and show evidence for every call) at a site-affordable price.
   - The safety slide and §6 answer plainly whether text on the video can hijack the review. They also state what is not proven (a fooled "clear" on a filled-in check).
   - The impact slide and §7 read "slower per clip, 18× cheaper per camera-hour, coverage nobody would pay for otherwise".
+- **Plain wording (creator, 25 Oct).** "Camera-hour" and "footage-minute" were replaced throughout with "$3.08/hour per camera" ("/hr" in number tiles) and "minutes of my time per minute of video".
 - **Open:** the Canvas upload (`report.html`, `slides.html`, optional video only). No outside-user pilot or labeled accuracy study exists.
 
 ## Slides restyle and title slide (2026-10-25)

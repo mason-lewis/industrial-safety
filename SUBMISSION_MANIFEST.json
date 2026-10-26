@@ -2176,8 +2176,8 @@
   },
   {
     "path": "harness.md",
-    "bytes": 300120,
-    "sha256": "092c3be5011a82d2432aba719c199779a79ec3398d7724fbc6730d51595e303f"
+    "bytes": 300318,
+    "sha256": "05d5a4909079677bac8da84e520de09783d022a5e2ffef1b1aa53327e8f818a5"
   },
   {
     "path": "pyproject.toml",
@@ -2186,8 +2186,8 @@
   },
   {
     "path": "report.html",
-    "bytes": 1501351,
-    "sha256": "777143b33a8dc503051b2decb6aca7a1e76903107884820c01f3290adcc7b9a3"
+    "bytes": 1501328,
+    "sha256": "8a02b4fa1035eb67c0b12e0bb788ffaebfcf4ccd4ff3ff70bc1055339d9d464d"
   },
   {
     "path": "scripts/balcony_retest.py",
@@ -2206,8 +2206,8 @@
   },
   {
     "path": "scripts/build_course_artifacts.py",
-    "bytes": 56755,
-    "sha256": "ddcefe0a7b376a7084cef2deeed626469b770150081f6a05c3505bc706c0ad1e"
+    "bytes": 56764,
+    "sha256": "666e68c09d9be8244ff211c1b36b8e7ee1615d0029f0e88f44f1d087c4d5f643"
   },
   {
     "path": "scripts/build_safety_library.py",
@@ -2381,8 +2381,8 @@
   },
   {
     "path": "slides.html",
-    "bytes": 936688,
-    "sha256": "d340eac445c33f15fee0e2a410bde64b40aa0e8d2ad0787cc6c7851d88b5d44d"
+    "bytes": 936725,
+    "sha256": "f2292a79aee717deb5f38e5bd74f9f055ba80ab2c2e8f0297a0435b707fb7b93"
   },
   {
     "path": "start",
