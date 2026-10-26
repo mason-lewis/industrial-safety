@@ -2,6 +2,8 @@
 
 Industrial Safety is an AI review desk for workplace video: drop in a recording and a team of AI agents checks every 10-second interval for struck-by, fall, fire/burn, PPE, blocked-access, unstable-stack and slip/trip concerns. It shows the frames behind each concern and cites safety guidance. A person makes the final call, and the app exports a one-page report for managers. Spending is capped at $0.15 per run.
 
+**Online:** [project page](https://mason-lewis.github.io/industrial-safety/) · [report](https://mason-lewis.github.io/industrial-safety/report.html) · [slides](https://mason-lewis.github.io/industrial-safety/slides.html) · [demo video](https://mason-lewis.github.io/industrial-safety/demo.html)
+
 **Course deliverables:** [report.html](report.html) · [slides.html](slides.html) · [submission goals](docs/submission-goals.md)
 
 ## Quick start

@@ -1,5 +1,16 @@
 # Industrial Safety harness
 
+## GitHub Pages and slide controls (2026-10-26)
+
+- **Public site:** https://mason-lewis.github.io/industrial-safety/ is served from the `gh-pages` branch (an orphan branch with only site files, separate from `main`). It has:
+  - a landing page linking the report, slides, demo video and source;
+  - `report.html` and `slides.html`, copied unchanged;
+  - `demo.html`, which plays `demo.mp4` (the checked 1080p final, 42 MB) with a poster frame and a WebVTT captions track converted from the `.srt`. The captions are also burned in.
+- **Building the site:** `./scripts/uv run --no-sync python scripts/publish_pages.py SITE_DIR` builds it from the current files. To republish, copy `SITE_DIR` over a clone checked out on `gh-pages`, then commit as `Mason Lewis <234726058+mason-lewis@users.noreply.github.com>` and push. That is a normal push; no force is needed.
+- **Pages links:** `submission/evidence/repository.json` gains a `pages` URL. The report cover, the title slide and the README now link the site.
+- **Slide controls:** `slides.html` now has a fixed control bar at the top right: a "Use ← → keys" hint, clickable ‹ › buttons (`Reveal.prev/next`) and a Full screen toggle (Fullscreen API; its label flips to "Exit full screen"). The bar dims to 25% opacity in full screen until hovered, is hidden when printing and sits outside `.slides`, so the slide count is unchanged.
+- **Verification:** all six live URLs returned 200. Headless Chrome loaded the video (readyState 4, 159.9 s, 1920 wide, one text track), and Reveal reports 10 slides with the control bar present. The ‹ › buttons move between slides. Full screen needs a real user click, so it was not exercised headlessly.
+
 ## Submission audit, rebuilt report/slides and goal checker (2026-10-25)
 
 The creator asked for a full audit against the [course requirements](https://zlisto.github.io/mgt_409_fa26/project_requirements.html) and loopable goals.

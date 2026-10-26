@@ -21,8 +21,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 70785,
-    "sha256": "50fb9445c6dd3415024dd122789103e7244e69328868e98dfb9b628e7d29fcf6"
+    "bytes": 71084,
+    "sha256": "30829baf1c9b89d43acfd5edab9244531ef1d2db37eec21c16f9dad9f5087da1"
   },
   {
     "path": "backend/app/__init__.py",
@@ -1466,8 +1466,8 @@
   },
   {
     "path": "docs/course-requirements.md",
-    "bytes": 7836,
-    "sha256": "825314cdb09d6c836982915cfcb49f2d43be4819b34339dc9f5d97dfe3b6370c"
+    "bytes": 7992,
+    "sha256": "099bf50a35ab8ceba68dd1bed432dad1c8b632ae2bb72d0f543600e5adf17edc"
   },
   {
     "path": "docs/course-research.md",
@@ -2176,8 +2176,8 @@
   },
   {
     "path": "harness.md",
-    "bytes": 303292,
-    "sha256": "438e78548d001faa3249a455ef432f45844603169f4c765d9e04437b0f2e6ca5"
+    "bytes": 304991,
+    "sha256": "70a6d7955ea77a68d0c24ee76e7555716f797892e6ab7dee71ae382f30e41bed"
   },
   {
     "path": "pyproject.toml",
@@ -2186,8 +2186,8 @@
   },
   {
     "path": "report.html",
-    "bytes": 1501328,
-    "sha256": "8a02b4fa1035eb67c0b12e0bb788ffaebfcf4ccd4ff3ff70bc1055339d9d464d"
+    "bytes": 1501471,
+    "sha256": "9d8f8a85350078bc414bfd903c44fe99da20c0737153deca3fecefd5b0665f31"
   },
   {
     "path": "scripts/balcony_retest.py",
@@ -2206,8 +2206,8 @@
   },
   {
     "path": "scripts/build_course_artifacts.py",
-    "bytes": 56764,
-    "sha256": "666e68c09d9be8244ff211c1b36b8e7ee1615d0029f0e88f44f1d087c4d5f643"
+    "bytes": 58445,
+    "sha256": "16fa2bcc2a271dc1ed8f8bd10a486164e04aea73145aad74293111ba181e79d6"
   },
   {
     "path": "scripts/build_safety_library.py",
@@ -2355,6 +2355,11 @@
     "sha256": "4b0ad14e3bccc3b0c4d090529dd9c7836f373cb106e135946d74dd21973af02c"
   },
   {
+    "path": "scripts/publish_pages.py",
+    "bytes": 5111,
+    "sha256": "40cff34f5155de0494e66faa7d87621f971903c0254082708f4aebc8088a8a77"
+  },
+  {
     "path": "scripts/register_industrial_model.py",
     "bytes": 262,
     "sha256": "9017773e892c4b4b5d9943caec25d65c13c0324792f303a83daa2f39afd1c4f9"
@@ -2426,8 +2431,8 @@
   },
   {
     "path": "slides.html",
-    "bytes": 936725,
-    "sha256": "f2292a79aee717deb5f38e5bd74f9f055ba80ab2c2e8f0297a0435b707fb7b93"
+    "bytes": 938263,
+    "sha256": "8c66dc9aa0a66c8a340427fd249f19ff796b7a330f5b10ab729bc4aedfb61230"
   },
   {
     "path": "start",
@@ -2581,8 +2586,8 @@
   },
   {
     "path": "submission/evidence/repository.json",
-    "bytes": 109,
-    "sha256": "d0addf914d00111946efebed1412fd4f6e266189cb1942040cfd0aedafab26f5"
+    "bytes": 169,
+    "sha256": "f4eb27124dfbbea756cf272a2550663d9c7e64d41337eb441e5c773a4cee11bc"
   },
   {
     "path": "submission/evidence/safety-tests.txt",

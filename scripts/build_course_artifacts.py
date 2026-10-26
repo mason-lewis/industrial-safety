@@ -23,6 +23,7 @@ def receipt(name):
 
 
 REPO = receipt('repository.json').get('url', '').rstrip('/')
+PAGES = receipt('repository.json').get('pages', '').rstrip('/')
 hosted = receipt('hosted-live-batch-3.json')
 ht = hosted.get('totals', {})
 usage = {run['run_id'][:8]: run for run in receipt('token-usage.json').get('runs', [])}
@@ -133,7 +134,7 @@ def page(section, kicker, title, content):
 repo_line = f'<a href="{REPO}">{REPO.removeprefix("https://")}</a>' if REPO else 'Repository link added at publication'
 pages.append(f'''<section class="page" data-section="1"><div class="band"><div class="eyebrow dark">1 · Title and links</div><h1 class="cover">Industrial Safety</h1>
 <p class="lead">An AI review desk for workplace video. A team of agents checks every 10-second interval of a recording, shows the exact frames behind each concern, cites safety guidance, and leaves the final call to a person, for about {usd(AI_HOUR, 2)}/hour per camera.</p>
-<p><b>Mason Lewis</b> · MGT 409 AI Foundations for Managers · Fall 2026<br>Public GitHub repository (no access request needed): {repo_line}<br>Clone: <code>git clone {REPO}.git</code><br>Runs locally (no hosted app): <code>./start</code>, then http://127.0.0.1:8000 · Slides: <code>slides.html</code></p></div>
+<p><b>Mason Lewis</b> · MGT 409 AI Foundations for Managers · Fall 2026<br>Public GitHub repository (no access request needed): {repo_line}<br>Clone: <code>git clone {REPO}.git</code><br>Online (report, slides, demo video): <a href="{PAGES}/">{PAGES.removeprefix('https://')}</a><br>Runs locally (no hosted app): <code>./start</code>, then http://127.0.0.1:8000 · Slides: <code>slides.html</code></p></div>
 <div class="tiles"><div><strong>{TRACE.get("requests", 34)}</strong><span>model requests in the traced kitchen-fire review</span></div><div><strong>{usd(typical_cost, 3)}</strong><span>cost of that 78-second review (measured)</span></div><div><strong>{usd(AI_HOUR, 2)}/hr</strong><span>per camera, AI review (median of 6 measured runs)</span></div><div><strong>{len(safety_lines) - 2 if safety_lines else 0}</strong><span>safety-defense tests passing, incl. prompt injection</span></div></div>
 <h2>The app in one sentence</h2><p>Safety and operations staff drop in a camera recording and get a checked list of possible hazards (struck-by, falls, fire, PPE, blocked exits, unstable stacks, slip/trip), each with timestamped evidence frames, an independent second opinion and a one-tap decision, all rolled into a one-page report for a manager.</p>
 <h2>Who it is for</h2><p>The person who has to answer "what happened on camera, and what do we do about it?" after a near miss, a complaint or a weekly walk-through: a site safety coordinator, a warehouse operations lead, or a restaurant manager. Section 2 explains why that job is slow today.</p>
@@ -353,7 +354,7 @@ def slide(kicker, title, body): slides.append((kicker, title, body))
 def shot(name, caption): return f'<figure><img src="{data_uri(name)}" alt="{escape(caption)}"><figcaption>{caption}</figcaption></figure>'
 
 
-slide('MGT 409 · Final project', 'Industrial Safety', f'<p class="pitch">An AI safety reviewer for workplace camera footage: every 10 seconds checked, every concern backed by frames, every decision made by a person, for about <em>{usd(AI_HOUR, 2)}/hour per camera</em>.</p><p class="who">Mason Lewis · Fall 2026</p><p class="repo">Public repo: <a href="{REPO}">{REPO.removeprefix("https://")}</a><br><code>git clone {REPO}.git</code></p>')
+slide('MGT 409 · Final project', 'Industrial Safety', f'<p class="pitch">An AI safety reviewer for workplace camera footage: every 10 seconds checked, every concern backed by frames, every decision made by a person, for about <em>{usd(AI_HOUR, 2)}/hour per camera</em>.</p><p class="who">Mason Lewis · Fall 2026</p><p class="repo">Public repo: <a href="{REPO}">{REPO.removeprefix("https://")}</a><br><code>git clone {REPO}.git</code><br>Report, slides &amp; demo video: <a href="{PAGES}/">{PAGES.removeprefix("https://")}</a></p>')
 slide('Problem', 'Cameras everywhere. <em>Nobody watching.</em>', f'<div class="numbers"><div><b>2.5M</b><span>U.S. private-sector workplace injuries and illnesses in 2024 (BLS)</span></div><div><b>{usd(PERSON_HOUR or 57, 0)}</b><span>to have a $40/h safety specialist review one hour of one camera’s footage (my measured pace)</span></div></div><p class="big">Injuries are common and often caught on camera, but paying an expert to watch footage is so expensive that nobody does it. Footage gets pulled only <em>after</em> someone is hurt.</p>')
 slide('What is new', 'Between enterprise platforms <em>and a chatbot.</em>', '<div class="columns"><div><h3>Intenseye · Protex AI · viAct</h3><p>Enterprise contracts, fixed detectors, live feeds. Alerts, not reviewable evidence.</p></div><div><h3>ChatGPT + screenshots</h3><p>One confident paragraph. No coverage, no audit trail.</p></div><div class="hl"><h3>Industrial Safety</h3><p>The only option that does <b>both</b>: checks every minute of footage <b>and</b> shows the frames and reasoning behind every call, at a price a single site can pay.</p></div></div>')
 slide('Agents', 'Python coordinates. <em>Agents argue.</em>', DIAGRAM + '<p class="muted">All agents: gpt-6-luna via PydanticAI · typed outputs · no fallback · local person detector</p>')
@@ -378,18 +379,26 @@ slide_css = '''.reveal{font:30px/1.35 Inter,"Helvetica Neue",Arial,sans-serif;co
 .reveal h1,.reveal h2,.reveal h3{font-family:Inter,"Helvetica Neue",Arial,sans-serif;color:#111;text-transform:none;letter-spacing:-.01em;font-weight:800}.reveal h1{font-size:84px;margin:150px 0 24px}.reveal h2{font-size:50px;line-height:1.08;margin:0 0 26px}.reveal h3{font-size:28px;margin:0 0 10px}
 .reveal em{font-style:normal;background:linear-gradient(transparent 12%,#f2c500aa 12%,#f2c500aa 92%,transparent 92%);padding:0 .08em}.reveal p{margin:0 0 18px}
 .kicker{display:inline-block;background:#f2c500;font-size:17px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 10px;border-radius:4px;margin-bottom:20px}
-.pitch{font-size:36px;max-width:1060px}.repo{font-size:22px;margin-top:6px}.repo a{color:#111}.repo code{font:18px Menlo,monospace;background:#f3f4f2;padding:2px 6px}.reveal h1{margin-top:110px!important}.who{font-size:24px;color:#5b6570;margin-top:30px}.big{font-size:32px;max-width:1080px}.mid{font-size:25px}.reveal .muted{font-size:20px;color:#5b6570}
+.pitch{font-size:36px;max-width:1060px}.repo{font-size:22px;margin-top:6px}.repo a{color:#111}.repo code{font:18px Menlo,monospace;background:#f3f4f2;padding:2px 6px}.reveal h1{margin-top:70px!important}.who{font-size:24px;color:#5b6570;margin-top:30px}.big{font-size:32px;max-width:1080px}.mid{font-size:25px}.reveal .muted{font-size:20px;color:#5b6570}
 .numbers{display:flex;gap:56px;margin:4px 0 26px}.numbers b{display:block;font-size:72px;line-height:.95;font-weight:800;letter-spacing:-.02em}.numbers span{display:block;font-size:20px;color:#5b6570;margin-top:8px;max-width:260px}
 .columns{display:flex;gap:28px}.columns>div{flex:1;border-top:6px solid #111;padding-top:14px}.columns p{font-size:24px}.columns .hl{background:#f2c500;border-color:#111;padding:14px 16px}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.reveal figure{margin:0}.reveal figure img{display:block;width:100%;max-height:430px;object-fit:contain;border:1px solid #d0d5da;border-radius:8px;margin:0}.reveal figcaption{font-size:19px;color:#5b6570;margin-top:8px}
 svg.diagram{display:block;width:100%;max-height:430px;margin:-10px 0 4px}
 .terminal{background:#111;color:#9fe3a8;font:15px/1.5 Menlo,Consolas,monospace;padding:16px;border-radius:8px;word-break:break-all}
 .reveal ol{font-size:28px;margin-left:36px}.reveal li{margin:10px 0}
-.foot{position:absolute;left:72px;right:72px;bottom:26px;display:flex;justify-content:space-between;font-size:15px;color:#5b6570}.pn{font-weight:700;color:#111}'''
+.foot{position:absolute;left:72px;right:72px;bottom:26px;display:flex;justify-content:space-between;font-size:15px;color:#5b6570}.pn{font-weight:700;color:#111}
+.deck-nav{position:fixed;top:14px;right:14px;z-index:30;display:flex;align-items:center;gap:6px;background:#111;color:#fff;border-radius:999px;padding:6px 8px 6px 14px;font:600 14px/1 Inter,"Helvetica Neue",Arial,sans-serif;box-shadow:0 4px 16px #0003;transition:opacity .3s}
+.deck-nav kbd{display:inline-block;min-width:22px;padding:3px 6px;border-radius:5px;background:#f2c500;color:#111;font:700 13px/1 Inter,Arial,sans-serif;text-align:center}
+.deck-nav button{border:0;border-radius:999px;background:#2a2a2a;color:#fff;font:600 14px/1 Inter,Arial,sans-serif;padding:8px 12px;cursor:pointer}.deck-nav button:hover{background:#f2c500;color:#111}
+.deck-nav .hint{margin:0 6px}:fullscreen .deck-nav{opacity:.25}:fullscreen .deck-nav:hover{opacity:1}@media print{.deck-nav{display:none}}'''
 (ROOT / 'slides.html').write_text(
     '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Industrial Safety — slides</title>'
     f'<link rel="stylesheet" href="{REVEAL}/reveal.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap">'
-    f'<style>{slide_css}</style><div class="reveal"><div class="slides">' + ''.join(render(i, *s) for i, s in enumerate(slides)) + '</div></div>'
-    f'<script src="{REVEAL}/reveal.js"></script><script>Reveal.initialize({{width:1280,height:720,margin:0.04,hash:true,transition:"none",center:false,controls:false,progress:true}});</script></html>')
+    f'<style>{slide_css}</style>'
+    '<nav class="deck-nav" aria-label="Slide controls"><span class="hint">Use <kbd>←</kbd> <kbd>→</kbd> keys</span>'
+    '<button type="button" onclick="Reveal.prev()" aria-label="Previous slide">‹</button><button type="button" onclick="Reveal.next()" aria-label="Next slide">›</button>'
+    '<button type="button" id="fs" onclick="document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()">⛶ Full screen</button></nav>'
+    '<div class="reveal"><div class="slides">' + ''.join(render(i, *s) for i, s in enumerate(slides)) + '</div></div>'
+    f'<script src="{REVEAL}/reveal.js"></script><script>Reveal.initialize({{width:1280,height:720,margin:0.04,hash:true,transition:"none",center:false,controls:false,progress:true}});document.addEventListener("fullscreenchange",()=>{{document.getElementById("fs").textContent=document.fullscreenElement?"✕ Exit full screen":"⛶ Full screen"}});</script></html>')
 print(json.dumps({'report_pages': len(pages), 'slides': len(slides), 'report_bytes': (ROOT / 'report.html').stat().st_size,
                   'slides_bytes': (ROOT / 'slides.html').stat().st_size, 'self_trial': bool(manual and assisted)}, indent=2))

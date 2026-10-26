@@ -2,6 +2,8 @@
 
 Source: [MGT 409 Fall 2026 project requirements](https://zlisto.github.io/mgt_409_fa26/project_requirements.html), accessed 2026-10-23. Deadline: **Monday, October 26, 2026, 6 p.m.** Status meanings: implemented = local code exists and has offline evidence; prepared = artifact/protocol ready but measurements missing; open = required external evidence or action remains. A fixture is never a real-user or hosted-model result.
 
+Public site with report, slides and demo video: https://mason-lewis.github.io/industrial-safety/ (`gh-pages` branch, built by `scripts/publish_pages.py`).
+
 Goals and the offline checker for this table: [submission-goals.md](submission-goals.md), `scripts/check_submission.py` (updated 2026-10-25).
 
 | ID | Requirement | Implementation / evidence | State |
