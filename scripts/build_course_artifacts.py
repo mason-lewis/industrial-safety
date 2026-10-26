@@ -74,7 +74,7 @@ BEFORE = usage.get('0d129747', {})          # kitchen fire, one case per box (13
 SERIAL = usage.get('9e886270', {})          # kitchen fire, old sequential backend (777 s)
 PARALLEL = usage.get('56cf46ca', {})        # kitchen fire, parallel team (271 s)
 TABLE_RUNS = [  # (run, label, coverage) — coverage from the run records and the hosted batch receipt
-    ('2a2ddbd9', '09 Construction balcony', '2/2'), ('46f88eee', '11 Kitchen fire', '8/8'),
+    ('686811e3', '09 Construction balcony (re-run)', '2/2'), ('46f88eee', '11 Kitchen fire', '8/8'),
     ('5caab826', '13 Rack collapse', '6/7'), ('4093066f', '14 Shelf collapse', '7/11'),
     ('dc940ad9', '06 Truck unloading', '20/20'), ('01e678b7', '18 Forklift traffic', '2/3')]
 rows_runs = [(usage[r], label, cov) for r, label, cov in TABLE_RUNS if r in usage]
@@ -254,32 +254,38 @@ page(6, '6 · Safety', 'Defenses caught working', f'''
 <p class="small">Output of <code>pytest -v</code> on the defense tests ({link("backend/tests/test_prompt_injection_defense.py", "test_prompt_injection_defense.py")}, saved in {link("submission/evidence/safety-tests.txt", "safety-tests.txt")}). No model calls are made: a scripted model stands in for the hijacked one.</p>
 ''')
 
+app_findings = [f for t in trials if t.get('condition') == 'assisted' for f in t.get('findings', [])]
+accepted = sum(f.get('decision') == 'accept' for f in app_findings)
+false_alarms = sum(bool(f.get('false_alarm')) for f in app_findings)
+missed = [m for t in trials if t.get('condition') == 'assisted' for m in t.get('missed', [])]
+acute_assisted = len(missed) + sum(f.get('decision') == 'accept' and 'fire' in f.get('finding', '').lower() for f in app_findings)
+wrap = trial.get('wrap_up', {})
 if manual and assisted:
-    trial_rows = [[t.get('block_order', ''), t['condition'], escape(str(t.get('clip_id', ''))), f'{t.get("video_seconds") or 0:.0f} s', f'{t["elapsed_seconds"]:.0f} s',
-                   '' if t.get('concerns_found') is None else t['concerns_found'], '' if t.get('ai_wait_seconds') is None else f'{t["ai_wait_seconds"]:.0f} s'] for t in trials]
-    impact_trial = f'''<div data-self-trial>{table(['Order', 'Condition', 'Video', 'Length', 'My review time', 'Concerns listed', 'AI wait'], trial_rows, 'num')}</div>
-<div class="tiles three"><div><strong>{manual["per_minute"] / 60:.1f} min</strong><span>manual review per minute of footage</span></div><div><strong>{assisted["per_minute"] / 60:.1f} min</strong><span>app-assisted review per minute of footage (plus {assisted["wait"] / 60:.0f} min of unattended AI time)</span></div><div><strong>{saving:.0%}</strong><span>less reviewer time</span></div></div>'''
-    org = (manual['per_minute'] - assisted['per_minute']) / 3600 * 60   # hours saved per footage-hour
-    impact_org = f'''<p>If a site reviews 2 hours of incident and walk-through footage a month, the measured difference saves about <b>{org * 2:.1f} reviewer-hours</b> ({usd(org * 2 * WAGE, 0)} at $40/hour) for about {usd(usd_per_footage_minute * 120, 2)} of model cost. Across 100 sites that is {org * 200:,.0f} hours a month. The bigger change is reach: routine footage that nobody watches today can get a first pass for about {usd(usd_per_footage_minute, 2)} per minute.</p>'''
+    change = assisted['per_minute'] / manual['per_minute'] - 1
+    trial_rows = [[t.get('block_order', ''), t['condition'], escape(str(t.get('clip_id', ''))), f'{t.get("video_seconds") or 0:.0f} s', f'{t["elapsed_seconds"] // 60:.0f}:{t["elapsed_seconds"] % 60:02.0f}',
+                   '' if t.get('concerns_found') is None else t['concerns_found'], '' if t.get('ai_wait_seconds') is None else f'{t["ai_wait_seconds"] // 60:.0f}:{t["ai_wait_seconds"] % 60:02.0f}'] for t in trials]
+    impact_trial = f"""<div data-self-trial>{table(['Order', 'Condition', 'Video', 'Length', 'My review time', 'Concerns listed', 'AI time (before review)'], trial_rows, 'compact')}</div>
+<div class="tiles"><div><strong>{manual["per_minute"] / 60:.1f} min</strong><span>my time per minute of footage, by hand</span></div><div><strong>{assisted["per_minute"] / 60:.1f} min</strong><span>my time per minute of footage, with the app ({change:+.0%})</span></div><div><strong>{accepted} of {len(app_findings)}</strong><span>app findings I accepted; {false_alarms} were false alarms</span></div><div><strong>{len(missed)} of {acute_assisted}</strong><span>accidents in the assisted videos the app missed</span></div></div>
+<h2>What the numbers say</h2><ul>
+<li><b>The app did not save me time.</b> Reviewing with it took {change:.0%} longer per minute of footage. Most of that went to opening each finding, reading the team’s assessment and writing a reason for every decision. By hand I only wrote down the one incident per clip. Part of it was learning the interface: “{escape(wrap.get('slowest', '').split('. ')[0])}.”</li>
+<li><b>It saw more, but missed the dramatic moments.</b> I accepted {accepted} findings, mostly routine hazards I never wrote down by hand (wet uneven ground, a leaning stack, debris). But it missed {len(missed)} of the {acute_assisted} accidents in its videos: boxes falling off the dock at 3:02 and a board landing on a worker’s head. By hand I caught all 3 accidents in my 3 videos.</li>
+<li><b>It did not invent anything.</b> Both false alarms were cautious struck-by flags. In my words: “{escape(wrap.get('wrong', ''))}”</li></ul>"""
+    impact_org = f"""<h2>What this means for impact</h2><p>The trial does not support “saves reviewer time” yet, and the report doesn’t claim it. What it does support is <b>reach</b>: the app gave a documented first pass on routine hazards in every interval for about {usd(usd_per_footage_minute, 2)} per minute of footage. Today nobody reviews that footage at all, because watching it costs a $40/hour specialist about {manual["per_minute"] / 60:.1f} minutes per footage-minute. Because it misses fast impacts, a person still watches every incident clip.</p>"""
 else:
     impact_trial = callout('The self-trial table appears here once <code>submission/evidence/self-trial.json</code> exists. Protocol: <code>submission/pilot/self-trial.md</code>.')
     impact_org = ''
-page(7, '7 · Impact', 'Measured against doing it by hand', f'''
-<p><b>Self-trial.</b> I timed myself doing the same task both ways: list every safety concern in a clip, with a timestamp and a next action, ready to send to a supervisor. Manual clips were watched in Preview (no AI). Assisted clips were reviewed from the app’s saved runs: read the findings, check the evidence, record decisions, open the report. The two sets used different videos of similar mix, alternating order ({link("submission/pilot/self-trial.md", "protocol")}, raw data in {link("submission/evidence/self-trial.json", "self-trial.json")}).</p>
+page(7, '7 · Impact', 'Measured against doing it by hand', f"""
+<p><b>Self-trial, 25 October.</b> I timed myself doing the same task both ways on six real videos: list every safety concern I would raise with a supervisor, with a timestamp and a next action. Manual: Preview, no AI. Assisted: the app’s finished run; read the findings, check the evidence, decide each with a reason, open the report. The two sets used different videos, alternating order ({link("submission/pilot/self-trial-notes.md", "my notes")}, {link("submission/evidence/self-trial.json", "data")}).</p>
 {impact_trial}
 {impact_org}
-<h2>Quality: what the agents got right and wrong</h2>{table(['Video', 'What actually happens', 'What the app reported'], [
-    ['Kitchen fire', 'Stove flare-up beside a cook', 'Priority fire/burn concern across 0:10–1:18; contact and injury correctly marked not established.'],
-    ['Rack collapse', 'Rack and load collapse', 'Suspected unstable stack at the right moment.'],
-    ['Shelf collapse', 'Display collapses in a store', 'Suspected struck-by / unstable stack.'],
-    ['Construction balcony', 'Board falls onto a worker', '<b>Partly wrong:</b> flagged the right moment but described the board as rising; the challenger rated the evidence insufficient.']], 'compact')}
-<p class="small"><b>Honest limits of this evidence:</b> one participant, who also built the app and had seen the videos; small sample; the assisted time does not include waiting for the AI (shown separately). These are spot checks, not a labeled accuracy study. The strongest next evidence is a real safety coordinator doing the same timed task.</p>''')
+<p class="small"><b>Limits of this evidence:</b> one participant (the builder, who had seen the videos); six clips; the assisted set was longer and busier. The balcony run was re-run with the current app just before the trial ({usd(usage.get("686811e3", {}).get("usage_usd", 0), 3)}). Next: a real safety coordinator doing the same task.</p>""")
 
 page(8, '8 · Limits and next steps', 'What does not work yet, and the next month', f'''
 <h2>What does not work yet</h2><ul>
-<li><b>Fast events can be missed.</b> The model sees sampled frames, not every frame; the balcony impact fell between samples.</li>
+<li><b>Fast accidents are missed.</b> The model sees sampled frames, not every frame. In the self-trial it missed boxes falling off a dock and a board hitting a worker’s head; by hand I caught both kinds of event.</li>
+<li><b>Not faster for the reviewer yet.</b> Opening every finding and writing a reason took longer than scrubbing by hand, and the navigation took some learning.</li>
 <li><b>Accuracy is not measured at scale.</b> Spot checks on six videos and a self-trial are not precision and recall on independently labeled footage.</li>
-<li><b>No real user yet.</b> The design is built around a safety coordinator’s job, but no outside coordinator has used it.</li>
+<li><b>No outside user yet.</b> The only timed user is me. No safety coordinator has used it.</li>
 <li><b>Context is unknown by default.</b> Jurisdiction, date and employer are not supplied, so findings cannot say whether a rule was broken. The UI repeats these gaps a lot.</li>
 <li><b>Single-site, single-operator.</b> One local workspace, a project-wide $20/month cap, no multi-tenant login. Not ready for 100 customers as-is.</li>
 <li><b>Network fragility.</b> A bad connection can stop a paid run (by design) and leave an interval unchecked.</li>
@@ -287,7 +293,8 @@ page(8, '8 · Limits and next steps', 'What does not work yet, and the next mont
 <h2>With another month</h2><ol>
 <li><b>Real pilot.</b> Two safety coordinators each review 10 clips manually and 10 with the app; record time, missed hazards and quotes.</li>
 <li><b>Labeled evaluation.</b> Label the 24 packaged clips (8 positive, 8 negative, 8 ambiguous) independently and report precision and recall at temporal IoU ≥ 0.5.</li>
-<li><b>Cheaper and sharper.</b> Turn off useless cache writes (~{cache_saving:.0%} saving), and spend the savings on denser frames around motion peaks to catch fast impacts.</li>
+<li><b>Catch the accidents.</b> Spend more frames around sudden motion (falling objects, collisions), funded by turning off useless cache writes (~{cache_saving:.0%} saving). Re-test on the balcony, truck and forklift clips.</li>
+<li><b>Faster to review.</b> Batch decisions for routine findings, make the reason optional for dismissals, and put the next finding one key-press away.</li>
 <li><b>Site profile.</b> Let a manager set jurisdiction, required PPE and site rules once, so findings can cite the rule that applies.</li>
 <li><b>Hosted version.</b> Per-customer budgets, login and storage, so a coordinator can use it without installing anything.</li></ol>
 {callout("<b>Verification at submission:</b> " + f"{checks.get('python_tests', '—')} Python tests and {checks.get('frontend_tests', '—')} frontend tests pass, along with the API contract check, production build and isolated fixtures, with zero model calls (" + link("submission/evidence", "receipts") + ").")}''')
@@ -347,10 +354,10 @@ slide('Demo', 'Evidence first, <em>then a decision.</em>', '<div class="pair">' 
 slide('Cost to run', f'{usd(typical_cost, 3)} per run, <em>measured.</em>', f'<div class="numbers"><div><b>{num(TRACE.get("input_tokens", 0) / 1000)}k</b><span>input tokens</span></div><div><b>{num(TRACE.get("output_tokens", 0) / 1000)}k</b><span>output tokens</span></div><div><b>{usd(monthly(typical_cost, 1), 2)}</b><span>per user / month (20 clips)</span></div><div><b>{usd(monthly(typical_cost, 10_000) / 1000, 0)}k</b><span>10,000 users / month</span></div></div><p class="mid">Grouping a fire into one case: {usd(BEFORE.get("usage_usd", 0.122), 3)} → {usd(typical_cost, 3)} per run (−{1 - typical_cost / max(BEFORE.get("usage_usd", 0.122), 1e-9):.0%}). Parallel team: 777 s → 271 s.</p><p class="muted">Caps: $0.15 per run · $2 per day · $20 per month, checked before every request.</p>')
 slide('Safety', 'An injected frame <em>can’t change the answer.</em>', f'<div class="pair">{shot("injection-frame-text.jpg", "Instruction painted into the footage")}<div class="terminal small">{"".join(f"<div>{escape(re.sub(r"^test_\w+\.py::", "", l))}</div>" for l in safety_lines[1:5])}</div></div><p class="mid">Python checks every cited frame and timestamp · skipped checks become “not assessed”, never clear · $0.15 cap stopped a 37-concern run</p>')
 if manual and assisted:
-    slide('Impact', f'<em>{saving:.0%} less</em> reviewer time per clip.', f'<div class="numbers"><div><b>{manual["per_minute"] / 60:.1f} min</b><span>manual, per footage-minute</span></div><div><b>{assisted["per_minute"] / 60:.1f} min</b><span>with the app</span></div><div><b>{usd(usd_per_footage_minute, 2)}</b><span>AI cost per footage-minute</span></div></div><p class="mid">Timed self-trial, {manual["n"] + assisted["n"]} clips, disjoint sets. Fire, rack and shelf collapses found; balcony impact misread.</p><p class="muted">One participant (the builder). Next: a real safety coordinator.</p>')
+    slide('Impact', f'Not faster yet. <em>Broader,</em> but misses accidents.', f'<div class="numbers"><div><b>{manual["per_minute"] / 60:.1f} → {assisted["per_minute"] / 60:.1f}</b><span>my minutes per footage-minute, by hand → with app</span></div><div><b>{accepted} / {len(app_findings)}</b><span>app findings accepted</span></div><div><b>{len(missed)} / {acute_assisted}</b><span>accidents missed</span></div></div><p class="mid">Timed self-trial, 6 real videos, disjoint sets. The app found routine hazards I skipped and invented nothing, but missed fast impacts.</p><p class="muted">Impact case: a {usd(usd_per_footage_minute, 2)}/min first pass on footage nobody reviews today, with a person on every incident clip.</p>')
 else:
-    slide('Impact', 'Measured review time <em>vs. by hand</em>', '<p class="big">Timed self-trial results appear here once recorded.</p><p class="mid">Fire, rack and shelf collapses found; balcony impact misread.</p>')
-slide('What’s next', 'From prototype <em>to a pilot.</em>', '<ol><li>Two real safety coordinators: timed manual vs. assisted pilot.</li><li>Label 24 clips; report precision and recall.</li><li>Drop useless cache writes; denser frames around motion.</li><li>Site profile (jurisdiction, PPE); hosted multi-tenant version.</li></ol><p class="muted">Limits: sampled frames miss fast events · jurisdiction unknown by default · one user so far.</p>')
+    slide('Impact', 'Measured review time <em>vs. by hand</em>', '<p class="big">Timed self-trial results appear here once recorded.</p>')
+slide('What’s next', 'From prototype <em>to a pilot.</em>', '<ol><li>Catch accidents: denser frames around sudden motion.</li><li>Faster review: batch routine decisions, simpler navigation.</li><li>Pilot with two real safety coordinators; label 24 clips.</li><li>Site profile (jurisdiction, PPE); hosted multi-tenant version.</li></ol><p class="muted">Limits: sampled frames miss fast events · jurisdiction unknown by default · one user so far.</p>')
 
 
 def render(i, kicker, title, body):

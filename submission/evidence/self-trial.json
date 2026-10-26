@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "data_kind": "human_entered_self_trial",
+  "participant": "self (Mason Lewis, app builder)",
+  "date": "2026-10-25",
+  "source": "submission/pilot/self-trial-notes.md (stopwatch, transcribed)",
+  "task": "List every safety concern to raise with a supervisor, with timestamp, what is seen and one next action.",
+  "trials": [
+    {
+      "participant": "self",
+      "block_order": "1",
+      "condition": "manual",
+      "clip_id": "13-warehouse-rack-collapse.mp4",
+      "video_seconds": 64.8,
+      "elapsed_seconds": 114,
+      "concerns_found": 1,
+      "ai_wait_seconds": null,
+      "notes": [
+        {
+          "time": "0:34",
+          "seen": "Rack 13 collapses",
+          "action": "Nobody is injured. Operator on forklift backs away from nearby racks"
+        }
+      ],
+      "acute_events_found": 1
+    },
+    {
+      "participant": "self",
+      "block_order": "2",
+      "condition": "assisted",
+      "clip_id": "11-restaurant-kitchen-fire.mp4",
+      "video_seconds": 78.3,
+      "elapsed_seconds": 172,
+      "concerns_found": 2,
+      "ai_wait_seconds": 108,
+      "run_id": "46f88eee",
+      "findings": [
+        {
+          "time": "0:10",
+          "finding": "Fire or burn concern",
+          "decision": "accept",
+          "reason": "Large and uncontrolled fire."
+        },
+        {
+          "time": "0:30",
+          "finding": "Struck-by concern",
+          "decision": "dismiss",
+          "false_alarm": true,
+          "reason": "There was nothing that could hit any employees in this video"
+        }
+      ],
+      "missed": []
+    },
+    {
+      "participant": "self",
+      "block_order": "3",
+      "condition": "manual",
+      "clip_id": "05-warehouse-pallet-handling.mp4",
+      "video_seconds": 97.6,
+      "elapsed_seconds": 97,
+      "concerns_found": 1,
+      "ai_wait_seconds": null,
+      "notes": [
+        {
+          "time": "0:13",
+          "seen": "Operator crashes forklift into conveyor belt",
+          "action": "Operator gets up and runs off. Seems to be fine and other nearby workers come to check on him"
+        }
+      ],
+      "acute_events_found": 1
+    },
+    {
+      "participant": "self",
+      "block_order": "4",
+      "condition": "assisted",
+      "clip_id": "06-truck-pallet-unloading.mp4",
+      "video_seconds": 197.2,
+      "elapsed_seconds": 312,
+      "concerns_found": 5,
+      "ai_wait_seconds": 239,
+      "run_id": "dc578314",
+      "findings": [
+        {
+          "time": "0:02",
+          "finding": "Slip or trip hazard",
+          "decision": "accept",
+          "reason": "Ground is wet and uneven"
+        },
+        {
+          "time": "0:40",
+          "finding": "Struck-by concern",
+          "decision": "dismiss",
+          "false_alarm": true,
+          "reason": "Nothing that will fall or hit a worker"
+        },
+        {
+          "time": "0:30",
+          "finding": "Unstable stack",
+          "decision": "accept",
+          "reason": "Leaning pile of boxes near worker that could fall and hit them"
+        },
+        {
+          "time": "1:00",
+          "finding": "Fall concern",
+          "decision": "accept",
+          "reason": "Leaning boxes may hit worker"
+        }
+      ],
+      "missed": [
+        {
+          "time": "3:02",
+          "event": "Boxes fell off truck loading dock and could have hit a worker",
+          "acute": true
+        }
+      ]
+    },
+    {
+      "participant": "self",
+      "block_order": "5",
+      "condition": "manual",
+      "clip_id": "18-warehouse-forklift-traffic.mp4",
+      "video_seconds": 22.7,
+      "elapsed_seconds": 50,
+      "concerns_found": 1,
+      "ai_wait_seconds": null,
+      "notes": [
+        {
+          "time": "0:09",
+          "seen": "Worker hit by another worker operating a forklift from behind",
+          "action": "Worker hobbles off and sits down. Appears to be injured. Other workers come to check on them."
+        }
+      ],
+      "acute_events_found": 1
+    },
+    {
+      "participant": "self",
+      "block_order": "6",
+      "condition": "assisted",
+      "clip_id": "09-construction-balcony.mp4",
+      "video_seconds": 14.3,
+      "elapsed_seconds": 126,
+      "concerns_found": 2,
+      "ai_wait_seconds": 94,
+      "run_id": "686811e3",
+      "rerun_note": "AI re-run on 25 Oct 8:18 PM EDT with the current app before the trial",
+      "findings": [
+        {
+          "time": "0:01",
+          "finding": "Slip or trip hazard",
+          "decision": "accept",
+          "reason": "Loose rubble and other debris on the ground"
+        }
+      ],
+      "missed": [
+        {
+          "time": "0:06",
+          "event": "Worker drops boards on top of another worker's head; worker may be injured but walked off",
+          "acute": true
+        }
+      ]
+    }
+  ],
+  "wrap_up": {
+    "comparison": "The agent review team was much quick and able to provide more thorough analysis on the videos. I was more accurate and able to pick up on every event that occured, but that required a high level of attention that could be devoted to other tasks.",
+    "slowest": "Navigation could be more intuitive. The first few reviews I had to get aligned with where different buttons and videos were located. After I was accustomed, the app worked smoothly.",
+    "wrong": "The app did not make up any information. It did, however, make very conservative judgements that were not worrisome in reality."
+  }
+}

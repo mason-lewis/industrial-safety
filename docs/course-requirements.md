@@ -14,7 +14,7 @@ Goals and the offline checker for this table: [submission-goals.md](submission-g
 | R2 | Agent design and trace, 10 points | Report §4: SVG diagram, agent/tool table, model rationale, six-screenshot trace of kitchen-fire run 46f88eee | Done |
 | R3 | Tokenomics, 8 points | Report §5: input/cached/cache-write/output tokens per run from the audit log, per user, 100 and 10,000 users, before/after cost cuts (0d129747 → 46f88eee, 9e886270 → 56cf46ca) | Done; invoice not reconciled |
 | R4 | Safety, 8 points | Report §6: risk table, new prompt-injection tests, captured `pytest` output ([safety-tests.txt](../submission/evidence/safety-tests.txt)), real-run defenses | Done |
-| R5 | Impact, 5 points | Report §7 renders [self-trial.json](../submission/evidence/self-trial.json) using the [self-trial protocol](../submission/pilot/self-trial.md) | **Open: Mason must record the timed self-trial** |
+| R5 | Impact, 5 points | Timed self-trial on 25 Oct ([notes](../submission/pilot/self-trial-notes.md) → [self-trial.json](../submission/evidence/self-trial.json)): 1.4 min (manual) vs 2.1 min (assisted) of reviewer time per footage-minute; 5 of 7 app findings accepted, 2 false alarms; 2 of 3 accidents in the assisted videos missed. Report §7 presents this honestly, as reach rather than time saved | Done (single participant, the builder) |
 | R6 | Report design, 2 points | `report.html`, 14 letter pages, embedded images, no relative links; built by `scripts/build_course_artifacts.py` | Done |
 | S1 | Slides, 8 points | `slides.html`, 10 slides, reveal.js 6.0.2 from jsDelivr, embedded screenshots and diagram | Done; impact slide fills in with the self-trial |
 | P1 | Public repo, README, `.env.example`, no secrets | [github.com/mason-lewis/industrial-safety](https://github.com/mason-lewis/industrial-safety), built from the `scripts/package_submission.py` allowlist (581 files); G4 secret scan | Published 2026-10-25; GitHub clone healthy in 63 s with cold caches and `.env` in the parent folder |
@@ -46,7 +46,7 @@ The 2026-10-24 report and slides are archived in `submission/evidence/archive-20
 ## Final release gates
 
 - [x] Report and slides rebuilt from measured evidence (2026-10-25): token counts from the audit log, six-screenshot trace, prompt-injection test output, cost before/after.
-- [ ] Timed self-trial recorded in `submission/evidence/self-trial.json`, then report and slides rebuilt.
+- [x] Timed self-trial recorded in `submission/evidence/self-trial.json`; report and slides rebuilt (25 Oct).
 - [x] Public GitHub repository published from the allowlist package; GitHub clone started with `.env` one folder up in 63 s (`submission/evidence/fresh-clone.json`).
 - [ ] `scripts/check_submission.py` passes G1–G7.
 - [ ] Upload only report.html, slides.html and the optional 2–3 minute video to Canvas before Monday 6 p.m. (no URL field, no other files).

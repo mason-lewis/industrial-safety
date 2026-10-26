@@ -33,7 +33,12 @@ The creator asked for a full audit against the [course requirements](https://zli
 - **Verification.** 597 Python tests (340 backend, 257 top-level), 112 frontend tests, contract check, production build and the course, video-analysis and replay fixtures all passed with zero provider requests (`submission/evidence/verification-2026-10-25.json`).
 - **Published:** [github.com/mason-lewis/industrial-safety](https://github.com/mason-lewis/industrial-safety) (public, 581 allowlisted files). A cold clone from GitHub with `.env` only in the parent folder reached a healthy `./start --offline` in 63 s, and the parent key was detected (`submission/evidence/fresh-clone.json`). Re-publish after rebuilding: package to a new folder, then copy it over a clone of the repo and commit.
 - **Canvas files-only update (instructor, 25 Oct).** Canvas accepts only `report.html`, `slides.html` and an optional video; extra files are penalized. The repo URL must be inside both HTML files. The report cover now says the repository is public and gives `git clone https://github.com/mason-lewis/industrial-safety.git`. The title slide shows the link and clone command, and every slide footer carries the URL. `check_submission.py` G1 and G3 now fail without a GitHub URL and a public/private statement in each file.
-- **Open:** the timed self-trial (Mason), a re-push with its results, and the Canvas upload. No outside-user pilot or labeled accuracy study exists.
+- **Self-trial result (25 Oct).** Mason timed six real videos in disjoint, alternating sets ([notes](submission/pilot/self-trial-notes.md), transcribed to `submission/evidence/self-trial.json`). Before the trial he re-ran the balcony clip with the current app (Live run `686811e3`, $0.036: four slip/trip cases, no struck-by). A separate kitchen-fire Review run `a44eb170` ($0.042) also appears in the audit log that evening.
+  - Reviewer time per footage-minute was 1.4 min manual vs 2.1 min assisted (+49%). Deciding every finding with a written reason, and learning the navigation, took the time.
+  - He accepted 5 of 7 app findings; the 2 struck-by flags were false alarms.
+  - The app missed 2 of the 3 accidents in its videos (truck boxes falling at 3:02, a board landing on the balcony worker's head). Manually he caught all three accidents in his videos.
+  - Report §7, the impact slide and the limits now state that the app is not faster yet and misses fast impacts. The impact case is framed as a cheap first pass on routine footage, with a person on every incident clip. The token table uses the current balcony run.
+- **Open:** the Canvas upload (`report.html`, `slides.html`, optional video only). No outside-user pilot or labeled accuracy study exists.
 
 ## Slides restyle and title slide (2026-10-25)
 

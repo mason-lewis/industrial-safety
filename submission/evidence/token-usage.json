@@ -636,6 +636,52 @@
         "specialist_vehicles": 3,
         "team_combiner": 1
       }
+    },
+    {
+      "run_id": "a44eb170-5873-4ff5-a979-f02bce41af22",
+      "started_utc": "2026-10-26T00:06:43.117027+00:00",
+      "kind": "review",
+      "source": "11-restaurant-kitchen-fire.mp4",
+      "duration_s": 78.3,
+      "input_tokens": 254330,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 249515,
+      "uncached_input_tokens": 4815,
+      "output_tokens": 21409,
+      "reasoning_tokens": 953,
+      "requests": 32,
+      "usage_usd": 0.042375,
+      "requests_by_agent": {
+        "video_observer": 23,
+        "challenge_reviewer": 3,
+        "safety_reviewer": 2,
+        "specialist_applicability": 1,
+        "specialist_emergency": 2,
+        "team_combiner": 1
+      }
+    },
+    {
+      "run_id": "686811e3-db66-4a94-9ac7-9f94a519d10d",
+      "started_utc": "2026-10-26T00:18:36.737543+00:00",
+      "kind": "live",
+      "source": "09-construction-balcony.mp4",
+      "duration_s": 14.3,
+      "input_tokens": 206837,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 202175,
+      "uncached_input_tokens": 4662,
+      "output_tokens": 20555,
+      "reasoning_tokens": 4806,
+      "requests": 37,
+      "usage_usd": 0.036016,
+      "requests_by_agent": {
+        "video_observer": 7,
+        "safety_reviewer": 8,
+        "specialist_applicability": 5,
+        "specialist_surfaces": 7,
+        "challenge_reviewer": 9,
+        "team_combiner": 1
+      }
     }
   ]
 }

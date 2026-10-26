@@ -1466,8 +1466,8 @@
   },
   {
     "path": "docs/course-requirements.md",
-    "bytes": 7496,
-    "sha256": "c28da97e436b5bc73c5095dc0e458f553069b218ef02481efa8829008b3180a6"
+    "bytes": 7724,
+    "sha256": "ed04302a8abb5f8a69a9cafdfa744a19684acbc1abf92dce9a7d46c0a2867124"
   },
   {
     "path": "docs/course-research.md",
@@ -2176,8 +2176,8 @@
   },
   {
     "path": "harness.md",
-    "bytes": 297689,
-    "sha256": "bd18ba4781f1412e1b49aad6d863c12ec45317816df2bdfb5ac2d38ebe0aa6a1"
+    "bytes": 298808,
+    "sha256": "87507d431e0081980ea02440f8575858900efb24cdbcdaa94328d75da5a1934b"
   },
   {
     "path": "pyproject.toml",
@@ -2186,8 +2186,8 @@
   },
   {
     "path": "report.html",
-    "bytes": 1496912,
-    "sha256": "9ac29b391deaf1140899a6aa933410f9236368a1a2e24bd74a0c6d14805e2467"
+    "bytes": 1499100,
+    "sha256": "cc34e2b692064056d2f408f5a54bd62341b13f4358d99fcb66e41896666a7fb5"
   },
   {
     "path": "scripts/balcony_retest.py",
@@ -2206,8 +2206,8 @@
   },
   {
     "path": "scripts/build_course_artifacts.py",
-    "bytes": 51340,
-    "sha256": "9847d8e8aa2e54da7a3af8ce3c0ce418663fff8299eee330dde6c14f0002382f"
+    "bytes": 52834,
+    "sha256": "85e7c0468735b18db55887dbc36b8877fb808b0c24380402e414d5ca5e05838c"
   },
   {
     "path": "scripts/build_safety_library.py",
@@ -2381,8 +2381,8 @@
   },
   {
     "path": "slides.html",
-    "bytes": 935457,
-    "sha256": "30aef94714abb80ef4c13c542cfde7bc7dc920f7a64da3b677f15bf8d98edc4a"
+    "bytes": 935836,
+    "sha256": "c23dc643bf2721f081a9ae99221237b86e204953cbed8a1bea3e37b8e2be3962"
   },
   {
     "path": "start",
@@ -2391,8 +2391,8 @@
   },
   {
     "path": "submission/demo-video-script.md",
-    "bytes": 3056,
-    "sha256": "55a46a8261f04716c7a6320c7d75f11394bbc115c233f532b97920be3ab68877"
+    "bytes": 3188,
+    "sha256": "013d6eccd589a340d48780113abaabb9a83d70b86df51d2898945d6da7171046"
   },
   {
     "path": "submission/evidence/ai-control-2026-10-23.json",
@@ -2545,14 +2545,19 @@
     "sha256": "a03c6220e97e37c5fc9fc3d0a00d0048df4745ed02b5aee42ac16d911fb7ed38"
   },
   {
+    "path": "submission/evidence/self-trial.json",
+    "bytes": 5417,
+    "sha256": "7db4d8c7dea1a8576b2c60a10d768c8fc647b8630291167a2b9ca0de3b3e4baa"
+  },
+  {
     "path": "submission/evidence/slide-layout.json",
     "bytes": 1502,
     "sha256": "cd37207ecfb935219bba8506a6f344fa266ae7d810223fb848a255ebd7044ea8"
   },
   {
     "path": "submission/evidence/token-usage.json",
-    "bytes": 19324,
-    "sha256": "2c16a84395c5c8adfe010a5c95d852c72a417d6561a89e6fc1894f46754090df"
+    "bytes": 20726,
+    "sha256": "783172a46e57b4a3674bf1d1c4f2401d5c4597f2844882de33ddeb9cf55d4aea"
   },
   {
     "path": "submission/evidence/ui-redesign-2026-10-23.json",
@@ -2720,9 +2725,14 @@
     "sha256": "648df1506afdccb69c757a0e097e9705e38ceff94d8a9bef3567fc8a81f8690b"
   },
   {
+    "path": "submission/pilot/self-trial-notes.md",
+    "bytes": 5028,
+    "sha256": "45294dfc3aaab7bfe27c490072bf851916f87b046e75e66264baa2651452646e"
+  },
+  {
     "path": "submission/pilot/self-trial.md",
-    "bytes": 2360,
-    "sha256": "80d1a9aa7806276b5dbb5db29b97a8ba0895b84f65d226f417d60c185db9a0e5"
+    "bytes": 2600,
+    "sha256": "c9ceaf20545ce698a55374e8134e7bfaaa201b2d5ec0d5ba4329369925f3060d"
   },
   {
     "path": "submission/vendor/ibm-plex-sans/OFL.txt",

@@ -19,7 +19,9 @@ Mason is the participant, which is a known bias: he built the app and has seen t
 
 **Assisted:** open the saved run from **History**. Read the findings, open each one, check the evidence frames, record a decision with a reason, and open **View report**. Add anything the app missed to the same box, prefixed with `MISSED:`. Note any finding you dismissed as a false alarm, prefixed with `FALSE ALARM:`. Enter the run's AI processing time (the Agent team "Elapsed" tile) as the AI wait.
 
-**Steps**
+**Easiest path:** fill in [self-trial-notes.md](self-trial-notes.md) with a phone stopwatch while you watch. Claude converts it into `submission/evidence/self-trial.json`, so you can skip the worksheet steps below.
+
+**Steps (worksheet alternative)**
 
 1. Open `submission/pilot/label-and-time.html` in a browser. Enter participant code `self`.
 2. For each row above, fill in condition, block/order (e.g. `1`), video name, video length, then **Start timer** → do the task → **Stop timer**. Enter the concern count, then **Save actual trial**.
