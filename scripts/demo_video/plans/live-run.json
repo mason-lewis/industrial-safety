@@ -1,0 +1,22 @@
+{"paid": true, "steps":[
+ {"goto":"http://127.0.0.1:8000/","after":3500},
+ {"click":{"text":"^Get started"}},
+ {"wait":600},
+ {"click":{"text":"^Live$"}},
+ {"wait":2000},
+ {"record":true},
+ {"label":"library","wait":1500},
+ {"move":{"text":"^Restaurant Kitchen Fire$"}},
+ {"wait":500},
+ {"label":"click-video","click":{"text":"^Restaurant Kitchen Fire$"}},
+ {"label":"started","wait":3000},
+ {"eval":"location.href+' | '+document.body.innerText.slice(0,300).replace(/\\s+/g,' ')"},
+ {"label":"playing","waitFor":"/[0-9]+ of [0-9]+ intervals checked/.test(document.body.innerText) && /([0-9]+) of \\1 intervals checked/.test(document.body.innerText)","timeout":240000},
+ {"label":"all-checked","wait":4000},
+ {"eval":"document.body.innerText.match(/\\d+ of \\d+ intervals checked/)?.[0]+' | findings: '+(document.body.innerText.match(/FINDINGS\\s*(\\d+)/)||[])[1]"},
+ {"label":"team-wait","waitFor":"!/Working|Running|running/.test(document.querySelector('[class*=orch]')?.innerText||'')","timeout":120000},
+ {"wait":3000},
+ {"shot":"live-final.png"},
+ {"record":false},
+ {"eval":"location.href"}
+]}

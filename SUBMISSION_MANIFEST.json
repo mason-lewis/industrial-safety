@@ -1536,8 +1536,8 @@
   },
   {
     "path": "docs/submission-goals.md",
-    "bytes": 3430,
-    "sha256": "c3a03947ec2f07c7f6bf84b860199077c4701147087b0d186ff15f13e94bd534"
+    "bytes": 3661,
+    "sha256": "ed2c870a2ea45171432c358ff879c667cac3daf31be21870359a5795f7b711e0"
   },
   {
     "path": "docs/two-layer-safety.md",
@@ -2176,8 +2176,8 @@
   },
   {
     "path": "harness.md",
-    "bytes": 300318,
-    "sha256": "05d5a4909079677bac8da84e520de09783d022a5e2ffef1b1aa53327e8f818a5"
+    "bytes": 303292,
+    "sha256": "438e78548d001faa3249a455ef432f45844603169f4c765d9e04437b0f2e6ca5"
   },
   {
     "path": "pyproject.toml",
@@ -2231,8 +2231,8 @@
   },
   {
     "path": "scripts/check_submission.py",
-    "bytes": 10220,
-    "sha256": "fd2386e6175ed7e4be4942a2d5e71e4b6b8faba2978ceae6aecd24b4d234f80a"
+    "bytes": 10254,
+    "sha256": "10d093cf417a8c375b46d8bd71edf55c522455ffb8fabcd54ad2e6694ab3b36e"
   },
   {
     "path": "scripts/compare_scenes.py",
@@ -2248,6 +2248,51 @@
     "path": "scripts/course_fixture.py",
     "bytes": 3721,
     "sha256": "9a969a1ab3e242da2dfb245843cd06e857d7fe07f95a01ccb3a87edf1c87b038"
+  },
+  {
+    "path": "scripts/demo_video/capture.mjs",
+    "bytes": 8012,
+    "sha256": "06362623e197f7a2ba483a3ca292c8fb908554a719c08ed870027ea3c43c9961"
+  },
+  {
+    "path": "scripts/demo_video/cards.py",
+    "bytes": 9360,
+    "sha256": "cd6f58197bd5f9d83aa4847e3414fae4d4e2bad5154f0f0deded07e18ab88724"
+  },
+  {
+    "path": "scripts/demo_video/check_video.py",
+    "bytes": 8016,
+    "sha256": "c4d2aac92efc3f1ec50db7ce509ecf2bba9e191a6b89fa7c7ebffd775c4f1c18"
+  },
+  {
+    "path": "scripts/demo_video/edit.py",
+    "bytes": 16960,
+    "sha256": "58c36d21f0953f8cf6dfd04f8ec64db1ce9fb9611b8faf84567bd2aea2799d4b"
+  },
+  {
+    "path": "scripts/demo_video/plans/live-run.json",
+    "bytes": 1099,
+    "sha256": "9dd68399a736e8842879eb6e3dc4867a84dcd2ad64567015b710e6356f635737"
+  },
+  {
+    "path": "scripts/demo_video/plans/test.json",
+    "bytes": 233,
+    "sha256": "be21fd171e8ac4e9e799404c150ad6f2372d999d49f60576820f27610d16d80c"
+  },
+  {
+    "path": "scripts/demo_video/plans/walkthrough.json",
+    "bytes": 1735,
+    "sha256": "cb81d6b0404136774d582e3def633f235d1332a29a588db8a85c866f63bde764"
+  },
+  {
+    "path": "scripts/demo_video/script.json",
+    "bytes": 3861,
+    "sha256": "9f63c4ee7d97afb6afa71ee61a887e6173ca81e6cc096d51e79c2d40f6f26fd3"
+  },
+  {
+    "path": "scripts/demo_video/tts.py",
+    "bytes": 2945,
+    "sha256": "83389711a5509e79dab0a40299b7bc9bd03726ae399e00e9e27281c1cf0ff1ba"
   },
   {
     "path": "scripts/download_youtube",
@@ -2556,8 +2601,8 @@
   },
   {
     "path": "submission/evidence/token-usage.json",
-    "bytes": 20726,
-    "sha256": "783172a46e57b4a3674bf1d1c4f2401d5c4597f2844882de33ddeb9cf55d4aea"
+    "bytes": 21497,
+    "sha256": "13e190be9f4f6d83306c75aec3c2800616adfe50893eb15686b0df907514ae15"
   },
   {
     "path": "submission/evidence/ui-redesign-2026-10-23.json",

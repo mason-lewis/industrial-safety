@@ -682,6 +682,31 @@
         "challenge_reviewer": 9,
         "team_combiner": 1
       }
+    },
+    {
+      "run_id": "d235edfb-e9e9-4277-ba63-ece4800e1c8d",
+      "started_utc": "2026-10-26T01:05:08.151986+00:00",
+      "kind": "live",
+      "source": "11-restaurant-kitchen-fire.mp4",
+      "duration_s": 78.3,
+      "input_tokens": 351860,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 345434,
+      "uncached_input_tokens": 6426,
+      "output_tokens": 36168,
+      "reasoning_tokens": 4936,
+      "requests": 53,
+      "usage_usd": 0.061906,
+      "requests_by_agent": {
+        "video_observer": 24,
+        "safety_reviewer": 8,
+        "specialist_applicability": 4,
+        "specialist_surfaces": 2,
+        "challenge_reviewer": 9,
+        "specialist_emergency": 3,
+        "specialist_vehicles": 2,
+        "team_combiner": 1
+      }
     }
   ]
 }

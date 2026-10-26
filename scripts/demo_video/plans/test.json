@@ -1,0 +1,11 @@
+{"steps":[
+ {"goto":"http://127.0.0.1:8000/","after":3500},
+ {"record":true},
+ {"wait":800},
+ {"click":{"text":"^Get started"}},
+ {"wait":800},
+ {"click":{"text":"^Live$"}},
+ {"wait":1500},
+ {"shot":"live.png"},
+ {"record":false}
+]}

@@ -45,7 +45,22 @@ The creator asked for a full audit against the [course requirements](https://zli
   - The safety slide and §6 answer plainly whether text on the video can hijack the review. They also state what is not proven (a fooled "clear" on a filled-in check).
   - The impact slide and §7 read "slower per clip, 18× cheaper per camera-hour, coverage nobody would pay for otherwise".
 - **Plain wording (creator, 25 Oct).** "Camera-hour" and "footage-minute" were replaced throughout with "$3.08/hour per camera" ("/hr" in number tiles) and "minutes of my time per minute of video".
-- **Open:** the Canvas upload (`report.html`, `slides.html`, optional video only). No outside-user pilot or labeled accuracy study exists.
+- **Demo video pipeline (25 Oct).** `scripts/demo_video/` builds a 2:41 product-launch demo from `script.json` (12 scenes, about 340 words). Built with one paid Live run of the kitchen-fire clip, authorized by the creator: run `d235edfb`, $0.062, 53 requests, 3 findings including the priority fire.
+  - `capture.mjs` records the real app with a headless-Chrome screencast, an injected cursor and click ripples. Unpaid plans refuse to click library videos while the library is visible.
+  - `tts.py` generates narration with OpenAI `gpt-4o-mini-tts`, voice `ash`, on the creator's separate `OPENAI_TTS_API_KEY`. The course key only allows gpt-6-luna. Lines are cached by hash; 1,962 characters billed.
+  - `cards.py` renders Hi-Vis title and stat cards, with two-beat reveals, from the same evidence files as the report.
+  - `edit.py` renders one 30 fps timeline: retimed screencasts, Ken Burns cards, 0.4 s crossfades, a generated ambient pad side-chain ducked under the voice, loudnorm to -16 LUFS, and burned-in ASS subtitles plus an `.srt`. Flags: `--preview` (960×540) and `--reuse-video` (redo audio and mux only).
+  - `check_video.py` is the loop goal: duration, format, loudness, gaps, subtitle limits, narration match, evidence numbers, live-run cost, black frames and a contact sheet.
+  - Output goes to `submission/video/` (not in the package allowlist), for Canvas only.
+  - **Subtitle rework (creator feedback, 25 Oct).** Captions are now painted into the frames by `CaptionPainter` (PIL, Helvetica Neue Medium) instead of libass, which drew one box per line and had none on dark cards.
+    - Each cue gets one rounded dark panel, centered and 64 px above the bottom, with balanced two-line breaks of at most 40 characters. There are no single-word lines; fragments merge; every cue lasts at least 1.2 s.
+    - A `display` map in `script.json` shows spoken forms as digits ("fifty-seven dollars" → $57, "P P E" → PPE). Cards reserve the bottom 250 px for captions. The live badge moved off the page title.
+    - The narration now says "I also tested" (never "we"); that one TTS line was regenerated.
+  - **Checks added to `check_video.py`:** no we/our/us; no single-word lines; balanced lines; reading speed ≤ 21 characters per second; numbers shown as digits.
+    - Caption geometry is checked from `captions.json`, which `edit.py` logs per cue: centered, bottom edge 0.80–0.97 of the height, width ≤ 80%.
+    - Pixels are sampled inside each box: text ratio 0.04–0.40 and panel ≥ 45%. On dark frames, bright content beside the box counts as overlap.
+  - **Timing:** a 540p preview (`--preview`) takes about 1 minute and the 1080p render about 5–10 minutes. The earlier "about an hour" render never finished: OpenAI's streamed WAV header carries a placeholder frame count, so every line read as about 89,478 s. `wav_seconds` now uses the file size.
+- **Open:** the Canvas upload (`report.html`, `slides.html`, demo video only); the GitHub authorship rewrite (blocked as a destructive force-push; needs the creator's approval). No outside-user pilot or labeled accuracy study exists.
 
 ## Slides restyle and title slide (2026-10-25)
 

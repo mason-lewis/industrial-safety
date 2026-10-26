@@ -164,7 +164,7 @@ def newest_source_change():
     newest = 0.0
     for folder in ('backend/src', 'frontend/src', 'configs'):
         for path in (ROOT / folder).rglob('*'):
-            if path.is_file() and '__pycache__' not in path.parts:
+            if path.is_file() and '__pycache__' not in path.parts and not path.name.startswith('.'):
                 newest = max(newest, path.stat().st_mtime)
     return newest
 

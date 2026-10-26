@@ -25,6 +25,8 @@ Loop prompt:
 python3 scripts/package_submission.py /tmp/pkg-NEW && cd PATH_TO_CLONE_OF/industrial-safety && rsync -a --delete --exclude .git /tmp/pkg-NEW/ ./ && git add -A && git commit -m "Update submission" && git push
 ```
 
+Demo video loop: `/loop Run ./scripts/uv run --no-sync python scripts/demo_video/check_video.py SCRATCH/demo; fix the first failure (re-edit with --preview first; never start another paid run; TTS is cached); stop when all pass.`
+
 G8 (manual, not looped): the public GitHub repository is pushed and matches the local build; upload **only** `report.html`, `slides.html` and the optional 2–3 minute demo video to Canvas. Any other file is penalized.
 
 The self-trial in G2 needs a person: Mason times a few clips by hand and with the app using [the worksheet](../submission/pilot/label-and-time.html), then saves its JSON as `submission/evidence/self-trial.json`. The loop must not invent these numbers.

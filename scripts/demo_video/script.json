@@ -1,0 +1,83 @@
+{
+  "title": "Industrial Safety — product demo",
+  "voice": {
+    "model": "gpt-4o-mini-tts",
+    "voice": "ash",
+    "instructions": "You are presenting a product launch keynote video. Speak like a confident, warm founder: clear, natural pacing with small pauses between ideas, conversational rather than salesy. Slightly energetic on the reveal lines, calm and sincere on the limitations."
+  },
+  "scenes": [
+    {
+      "id": "cold-open",
+      "visual": "footage:kitchen-fire",
+      "overlay": "2.5 million workplace injuries a year",
+      "say": "Last year, American workplaces recorded two and a half million injuries. A lot of them happened right in front of a camera. And almost nobody was watching."
+    },
+    {
+      "id": "title",
+      "visual": "card:title",
+      "say": "This is Industrial Safety. An AI safety reviewer for workplace camera footage."
+    },
+    {
+      "id": "problem",
+      "visual": "card:cost-gap",
+      "say": "Here's the problem. Having a safety specialist review footage costs about fifty-seven dollars an hour, per camera. So nobody does it, and footage only gets pulled after someone gets hurt. Industrial Safety does that first pass for three dollars and eight cents an hour."
+    },
+    {
+      "id": "start",
+      "visual": "card:terminal+welcome",
+      "say": "It runs on your own computer. Clone the repo, run one command, and you're in."
+    },
+    {
+      "id": "live",
+      "visual": "capture:live-run",
+      "badge": "Real run · sped up",
+      "say": "Pick a video, and it reviews the footage as it plays. Every ten seconds gets checked: struck-by hazards, falls, fire, P P E, blocked exits, unstable stacks, slips and trips. Here, it flags the kitchen fire as a priority within seconds of the flare-up."
+    },
+    {
+      "id": "team",
+      "visual": "capture:agent-team",
+      "say": "Behind each review is a team of AI agents. A coordinator splits the video. An observer fills a safety checklist. A safety lead sends each case to specialists, and an independent challenger re-checks the original frames before anything reaches you."
+    },
+    {
+      "id": "evidence",
+      "visual": "capture:finding",
+      "say": "Every finding shows the exact frames the AI looked at, with timestamps. It says what it can see, and what it can't confirm. And a person always makes the call."
+    },
+    {
+      "id": "report",
+      "visual": "capture:report",
+      "say": "Then it rolls everything into a one-page report a manager can read in a minute."
+    },
+    {
+      "id": "safety",
+      "visual": "card:injection",
+      "say": "I also tested what happens if someone writes instructions on a sign in the video, telling the AI to mark everything safe. Even if the model obeys, the code rejects the answer, and a skipped check is recorded as not checked. Never as safe."
+    },
+    {
+      "id": "cost",
+      "visual": "card:cost",
+      "say": "Running live, twenty-four seven, that's about three dollars an hour per camera. Eighteen times cheaper than a person, with hard spending caps on every run, day, and month."
+    },
+    {
+      "id": "honest",
+      "visual": "card:limits",
+      "say": "It's not perfect yet. In my own timed test, reviewing with the app was slower per clip, and it missed two of three fast accidents. Catching those is next."
+    },
+    {
+      "id": "end",
+      "visual": "card:end",
+      "say": "Industrial Safety. Coverage nobody could afford before. It's open source on GitHub."
+    }
+  ],
+  "display": {
+    "\\btwo and a half million\\b": "2.5 million",
+    "\\bfifty-seven dollars\\b": "$57",
+    "\\bthree dollars and eight cents\\b": "$3.08",
+    "\\bthree dollars\\b": "$3",
+    "\\btwenty-four seven\\b": "24/7",
+    "\\bEighteen times\\b": "18×",
+    "\\btwo of three\\b": "2 of 3",
+    "\\bP P E\\b": "PPE",
+    "\\bten seconds\\b": "10 seconds"
+  }
+}
